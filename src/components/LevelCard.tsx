@@ -16,51 +16,48 @@ export const LevelCard: React.FC<LevelCardProps> = ({ level, featured = false })
 
   return (
     <div
-      className={`pixel-card group flex flex-col justify-between p-6 sm:p-7 relative overflow-hidden ${
-        featured ? "border-[#ff3366]/50 bg-[#1c1c22]/90 shadow-xl shadow-[#ff3366]/5" : ""
+      className={`stripe-card group flex flex-col justify-between p-6 sm:p-7 relative overflow-hidden ${
+        featured ? "border-[#635BFF]/50 bg-[#1E293B]/90 shadow-xl shadow-[#635BFF]/10" : ""
       }`}
     >
-      <div>
-        {/* Mock Browser Header with Power BI Mini Icon */}
-        <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-[#23232b]">
-          <div className="flex items-center gap-1.5">
-            <PowerBILogo className="w-3.5 h-3.5 mr-1 shrink-0" />
-            <span className="w-2 h-2 rounded-full bg-[#ff3366]/70" />
-            <span className="w-2 h-2 rounded-full bg-[#f2c811]/70" />
-            <span className="w-2 h-2 rounded-full bg-[#10b981]/70" />
-          </div>
-          <span className="text-[11px] font-mono text-[#9a9aa5] truncate max-w-[170px]">
-            {level.folder.toLowerCase()}.pbix
-          </span>
-          <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-[#1c1c22] text-[#ff3366] border border-[#23232b]">
-            L{String(level.id).padStart(2, "0")}
-          </span>
-        </div>
+      {/* Top Accent Gradient Border */}
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#635BFF] via-[#00D4FF] to-[#F2C811] opacity-80" />
 
-        {/* Company & Difficulty */}
-        <div className="flex items-center justify-between gap-2 mb-2 font-mono">
-          <span className="text-xs text-[#9a9aa5] truncate">
-            {level.company}
-          </span>
-          <div className="flex items-center gap-1.5">
-            {status === "completed" && (
-              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30 flex items-center gap-1">
-                <CheckCircle2 className="w-3 h-3" /> Done
-              </span>
-            )}
-            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#141418] border border-[#23232b] text-[#f5f5f7]">
-              {level.difficulty}
+      <div>
+        {/* Top Header: Badge, Level ID, and Status */}
+        <div className="flex items-center justify-between gap-2 mb-4 pt-1">
+          <div className="flex items-center gap-2">
+            <div className="p-1 rounded-md bg-[#1E293B] border border-white/10 flex items-center justify-center">
+              <PowerBILogo className="w-3.5 h-3.5" />
+            </div>
+            <span className="font-mono text-xs font-bold text-white">
+              LEVEL {String(level.id).padStart(2, "0")}
             </span>
           </div>
+
+          <div className="flex items-center gap-1.5">
+            {status === "completed" ? (
+              <span className="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-[#00D924]/10 text-[#00D924] border border-[#00D924]/30 flex items-center gap-1">
+                <CheckCircle2 className="w-3 h-3" /> Done
+              </span>
+            ) : (
+              <span className="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-[#1E293B] border border-white/10 text-[#94A3B8]">
+                {level.difficulty}
+              </span>
+            )}
+          </div>
         </div>
 
-        {/* Title */}
-        <h3 className="font-display font-bold text-lg sm:text-xl text-white group-hover:text-[#ff3366] transition-colors mb-2">
+        {/* Title and Company */}
+        <h3 className="font-display font-bold text-xl text-white group-hover:text-[#00D4FF] transition-colors mb-1.5">
           <Link to={`/levels/${level.slug}`}>{level.title}</Link>
         </h3>
+        <p className="text-xs text-[#94A3B8] font-mono mb-3.5">
+          {level.company}
+        </p>
 
         {/* Short Description */}
-        <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed mb-5">
+        <p className="text-xs sm:text-sm text-[#94A3B8] leading-relaxed mb-5">
           {level.shortDescription}
         </p>
 
@@ -69,24 +66,24 @@ export const LevelCard: React.FC<LevelCardProps> = ({ level, featured = false })
           {level.skills.slice(0, 3).map((skill, idx) => (
             <span
               key={idx}
-              className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-[#141418] border border-[#23232b] text-[#9a9aa5]"
+              className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-[#1E293B]/80 border border-white/5 text-[#94A3B8]"
             >
               {skill}
             </span>
           ))}
           {level.skills.length > 3 && (
-            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[#141418] text-[#9a9aa5]">
+            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[#1E293B]/40 text-[#94A3B8]">
               +{level.skills.length - 3}
             </span>
           )}
         </div>
       </div>
 
-      {/* Footer Info & Action */}
-      <div className="pt-4 border-t border-[#23232b] flex items-center justify-between gap-2">
-        <div className="flex items-center gap-3 text-xs text-[#9a9aa5] font-mono">
+      {/* Footer Info & Action Arrow */}
+      <div className="pt-4 border-t border-white/10 flex items-center justify-between gap-2">
+        <div className="flex items-center gap-3 text-xs text-[#94A3B8] font-mono">
           <span className="flex items-center gap-1">
-            <Clock className="w-3.5 h-3.5" />
+            <Clock className="w-3.5 h-3.5 text-[#635BFF]" />
             {level.estimatedHours}
           </span>
           <span className="flex items-center gap-1">
@@ -97,7 +94,7 @@ export const LevelCard: React.FC<LevelCardProps> = ({ level, featured = false })
 
         <Link
           to={`/levels/${level.slug}`}
-          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1c1c22] hover:bg-[#ff3366] text-white text-xs font-display font-bold border border-[#23232b] hover:border-[#ff3366] transition-all"
+          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E293B] hover:bg-[#635BFF] text-white text-xs font-display font-bold border border-white/10 hover:border-[#635BFF] transition-all"
         >
           <span>View Brief</span>
           <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />

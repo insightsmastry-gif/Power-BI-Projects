@@ -1,26 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, CheckCircle } from "lucide-react";
 import { GITHUB_CONFIG, getRepositoryUrl, getZipArchiveUrl } from "../config/github";
 import { PowerBILogo } from "./PowerBILogo";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="border-t border-[#23232b] bg-[#0a0a0c] text-[#9a9aa5] pt-16 pb-12 text-sm">
+    <footer className="border-t border-white/10 bg-[#080B1A] text-[#94A3B8] pt-16 pb-12 text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#23232b]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
           
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="p-1.5 rounded-xl bg-[#141418] border border-[#23232b] flex items-center justify-center">
+              <div className="p-1.5 rounded-xl bg-[#1E293B] border border-white/10 flex items-center justify-center">
                 <PowerBILogo className="w-5 h-5" />
               </div>
               <span className="font-display font-extrabold text-lg tracking-tight text-white">
-                Power BI <span className="text-[#ff3366]">Labs</span>
+                Power BI <span className="text-[#635BFF]">Labs</span>
               </span>
             </div>
-            <p className="text-xs text-[#9a9aa5] leading-relaxed max-w-sm">
+            <p className="text-xs text-[#94A3B8] leading-relaxed max-w-sm">
               An open-source, progressive 10-level Power BI curriculum designed to help aspiring data analysts and BI engineers master real-world business intelligence by building.
             </p>
             <div className="pt-2">
@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
                 href={getRepositoryUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-mono text-white hover:text-[#ff3366] transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-mono text-white hover:text-[#00D4FF] transition-colors"
               >
                 <Github className="w-4 h-4" />
                 <span>github.com/{GITHUB_CONFIG.username}/{GITHUB_CONFIG.repository}</span>
@@ -85,11 +85,12 @@ export const Footer: React.FC = () => {
 
         </div>
 
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#9a9aa5]">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#94A3B8]">
           <p>© {new Date().getFullYear()} Power BI Learning Labs. All projects & datasets open source.</p>
-          <p className="font-mono">
-            Inspired by Pixel Code Labs · Built for data analysts worldwide.
-          </p>
+          <div className="flex items-center gap-2 font-mono text-[11px] text-[#00D924]">
+            <CheckCircle className="w-3.5 h-3.5" />
+            <span>All 10 Project Datasets Live & Operational</span>
+          </div>
         </div>
       </div>
     </footer>

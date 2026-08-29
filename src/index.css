@@ -3,25 +3,24 @@
 @tailwind utilities;
 
 :root {
-  --canvas: #0a0a0c;
-  --surface: #141418;
-  --surface-2: #1c1c22;
-  --accent: #ff3366;
-  --accent-2: #ff5c85;
-  --text: #f5f5f7;
-  --text-muted: #9a9aa5;
-  --border: #23232b;
-  --ease-organic: cubic-bezier(0.25, 1, 0.5, 1);
+  --stripe-canvas: #080B1A;
+  --stripe-surface: #0F172A;
+  --stripe-surface-2: #1E293B;
+  --stripe-indigo: #635BFF;
+  --stripe-cyan: #00D4FF;
+  --stripe-rose: #FF70A6;
+  --stripe-gold: #F2C811;
+  --stripe-border: rgba(255, 255, 255, 0.08);
 }
 
 body {
-  background-color: var(--canvas);
-  color: var(--text);
+  background-color: var(--stripe-canvas);
+  color: #F8FAFC;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
 }
 
-h1, h2, h3, .font-display {
+h1, h2, h3, h4, .font-display {
   font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   letter-spacing: -0.025em;
 }
@@ -30,27 +29,54 @@ code, pre, .font-mono {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Custom Pixel Code Labs Card */
-.pixel-card {
-  background-color: var(--surface);
-  border: 1px solid var(--border);
+/* Stripe Iconic Mesh Gradient Background */
+.stripe-mesh-gradient {
+  background: 
+    radial-gradient(at 0% 0%, rgba(99, 91, 255, 0.18) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(0, 212, 255, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(255, 112, 166, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(242, 200, 17, 0.10) 0px, transparent 50%);
+}
+
+/* Stripe Angled Canvas Slice */
+.stripe-slant {
+  clip-path: polygon(0 0, 100% 4vw, 100% 100%, 0 calc(100% - 4vw));
+}
+
+/* Stripe Elevated Glass Cards */
+.stripe-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1.25rem;
-  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.pixel-card:hover {
-  background-color: var(--surface-2);
-  border-color: rgba(255, 51, 102, 0.4);
+.stripe-card:hover {
+  background: rgba(30, 41, 59, 0.85);
+  border-color: rgba(99, 91, 255, 0.35);
   transform: translateY(-2px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), 0 0 25px -5px rgba(99, 91, 255, 0.15);
 }
 
-/* Glowing Neon Elements */
-.pixel-glow {
-  box-shadow: 0 0 35px -5px rgba(255, 51, 102, 0.25);
+/* Stripe Glowing Button */
+.stripe-btn-primary {
+  background: linear-gradient(135deg, #635BFF 0%, #7A73FF 100%);
+  box-shadow: 0 4px 14px 0 rgba(99, 91, 255, 0.39);
+  transition: all 0.25s ease;
 }
 
-.pixel-glow-gold {
-  box-shadow: 0 0 35px -5px rgba(242, 200, 17, 0.2);
+.stripe-btn-primary:hover {
+  background: linear-gradient(135deg, #7A73FF 0%, #635BFF 100%);
+  box-shadow: 0 6px 20px rgba(99, 91, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Stripe Gradient Text */
+.stripe-gradient-text {
+  background: linear-gradient(135deg, #00D4FF 0%, #635BFF 50%, #FF70A6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Custom Scrollbar */
@@ -60,14 +86,14 @@ code, pre, .font-mono {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0c;
+  background: #080B1A;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #23232b;
+  background: #1E293B;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff3366;
+  background: #635BFF;
 }

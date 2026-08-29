@@ -62,9 +62,9 @@ export const Projects: React.FC = () => {
             ))}
           </div>
         ) : (
-          <div className="text-center py-20 pixel-card max-w-lg mx-auto">
+          <div className="text-center py-20 stripe-card max-w-lg mx-auto">
             <h3 className="font-display font-bold text-lg text-white mb-2">No Projects Match Your Search</h3>
-            <p className="text-xs text-[#9a9aa5] mb-6">
+            <p className="text-xs text-[#94A3B8] mb-6">
               Try adjusting your search terms or clearing the difficulty filters.
             </p>
             <button
@@ -73,7 +73,7 @@ export const Projects: React.FC = () => {
                 setSelectedDifficulty("All");
                 setSelectedSkill("All");
               }}
-              className="px-5 py-2 rounded-full bg-[#ff3366] text-white text-xs font-display font-bold"
+              className="stripe-btn-primary px-5 py-2 rounded-full text-white text-xs font-display font-bold"
             >
               Reset Filters
             </button>

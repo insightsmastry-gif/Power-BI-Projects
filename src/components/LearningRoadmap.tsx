@@ -10,7 +10,7 @@ export const LearningRoadmap: React.FC = () => {
 
   return (
     <div className="relative">
-      <div className="hidden lg:block absolute top-12 bottom-12 left-1/2 -ml-[1px] w-0.5 bg-gradient-to-b from-[#ff3366] via-[#f2c811] to-[#06b6d4] opacity-25" />
+      <div className="hidden lg:block absolute top-12 bottom-12 left-1/2 -ml-[1px] w-0.5 bg-gradient-to-b from-[#635BFF] via-[#00D4FF] to-[#F2C811] opacity-30" />
 
       <div className="space-y-8 sm:space-y-12">
         {LEVELS.map((level, index) => {
@@ -32,32 +32,32 @@ export const LearningRoadmap: React.FC = () => {
               {/* Content Card */}
               <div className="w-full lg:w-[46%]">
                 <div
-                  className={`pixel-card group p-6 sm:p-8 ${
+                  className={`stripe-card group p-6 sm:p-8 ${
                     status === "completed"
-                      ? "border-[#10b981]/50 bg-[#141418] shadow-lg shadow-[#10b981]/5"
+                      ? "border-[#00D924]/50 bg-[#0F172A] shadow-lg shadow-[#00D924]/5"
                       : status === "in-progress"
-                      ? "border-[#ff3366]/50 bg-[#1c1c22] shadow-lg shadow-[#ff3366]/5"
+                      ? "border-[#635BFF]/50 bg-[#1E293B] shadow-lg shadow-[#635BFF]/10"
                       : ""
                   }`}
                 >
                   <div className="flex items-center justify-between mb-3 font-mono">
-                    <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-[#1c1c22] text-[#ff3366] border border-[#23232b]">
+                    <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-[#1E293B] text-[#00D4FF] border border-white/10">
                       STAGE: {level.stage.toUpperCase()}
                     </span>
-                    <span className="text-xs text-[#9a9aa5] flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5" />
+                    <span className="text-xs text-[#94A3B8] flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5 text-[#635BFF]" />
                       {level.estimatedHours}
                     </span>
                   </div>
 
-                  <h3 className="font-display font-bold text-lg sm:text-xl text-white group-hover:text-[#ff3366] transition-colors mb-1">
+                  <h3 className="font-display font-bold text-lg sm:text-xl text-white group-hover:text-[#00D4FF] transition-colors mb-1">
                     <Link to={`/levels/${level.slug}`}>{level.title}</Link>
                   </h3>
-                  <p className="text-xs text-[#9a9aa5] font-mono mb-3">
+                  <p className="text-xs text-[#94A3B8] font-mono mb-3">
                     {level.company}
                   </p>
 
-                  <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed mb-4">
+                  <p className="text-xs sm:text-sm text-[#94A3B8] leading-relaxed mb-4">
                     {level.shortDescription}
                   </p>
 
@@ -65,35 +65,35 @@ export const LearningRoadmap: React.FC = () => {
                     {level.skills.slice(0, 3).map((skill, idx) => (
                       <span
                         key={idx}
-                        className="text-[11px] px-2 py-0.5 rounded bg-[#141418] border border-[#23232b] text-[#9a9aa5]"
+                        className="text-[11px] px-2 py-0.5 rounded bg-[#080B1A] border border-white/5 text-[#94A3B8]"
                       >
                         {skill}
                       </span>
                     ))}
                   </div>
 
-                  <div className="flex items-center justify-between border-t border-[#23232b] pt-4 font-mono">
+                  <div className="flex items-center justify-between border-t border-white/10 pt-4 font-mono">
                     <div className="flex items-center gap-2">
                       {status === "completed" ? (
-                        <span className="text-xs font-bold text-[#10b981] flex items-center gap-1">
+                        <span className="text-xs font-bold text-[#00D924] flex items-center gap-1">
                           <CheckCircle2 className="w-4 h-4" /> Completed
                         </span>
                       ) : status === "in-progress" ? (
-                        <span className="text-xs font-bold text-[#ff3366] flex items-center gap-1">
+                        <span className="text-xs font-bold text-[#635BFF] flex items-center gap-1">
                           <Sparkles className="w-4 h-4 animate-spin" /> In Progress
                         </span>
                       ) : !unlocked ? (
-                        <span className="text-xs text-[#9a9aa5] flex items-center gap-1">
+                        <span className="text-xs text-[#94A3B8] flex items-center gap-1">
                           <Lock className="w-3.5 h-3.5" /> Complete L{level.id - 1} to Unlock
                         </span>
                       ) : (
-                        <span className="text-xs text-[#9a9aa5]">Ready to Start</span>
+                        <span className="text-xs text-[#94A3B8]">Ready to Start</span>
                       )}
                     </div>
 
                     <Link
                       to={`/levels/${level.slug}`}
-                      className="inline-flex items-center gap-1 text-xs font-bold text-[#ff3366] hover:text-[#ff5c85]"
+                      className="inline-flex items-center gap-1 text-xs font-bold text-[#635BFF] hover:text-[#00D4FF]"
                     >
                       <span>View Brief</span>
                       <ArrowRight className="w-3.5 h-3.5" />
@@ -102,15 +102,15 @@ export const LearningRoadmap: React.FC = () => {
                 </div>
               </div>
 
-              {/* Central Milestone Node (desktop) */}
+              {/* Central Milestone Node */}
               <div className="hidden lg:flex items-center justify-center w-[8%]">
                 <div
                   className={`w-12 h-12 rounded-2xl flex items-center justify-center font-mono font-extrabold text-sm shadow-xl transition-transform duration-300 group-hover:scale-110 z-10 ${
                     status === "completed"
-                      ? "bg-[#10b981] text-black shadow-[#10b981]/30"
+                      ? "bg-[#00D924] text-black shadow-[#00D924]/30"
                       : status === "in-progress"
-                      ? "bg-[#ff3366] text-white shadow-[#ff3366]/30 ring-4 ring-[#ff3366]/20 animate-pulse"
-                      : "bg-[#141418] text-[#9a9aa5] border border-[#23232b]"
+                      ? "bg-[#635BFF] text-white shadow-[#635BFF]/30 ring-4 ring-[#635BFF]/20 animate-pulse"
+                      : "bg-[#0F172A] text-[#94A3B8] border border-white/10"
                   }`}
                 >
                   {String(level.id).padStart(2, "0")}
