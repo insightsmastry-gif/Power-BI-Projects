@@ -1,0 +1,81 @@
+EmployeeID,EmployeeName,Region,JobTitle,HireDate
+EMP001,Sheila Daniel,East,Analyst,2025-08-14
+EMP002,Emily Yates,North,Store Manager,2022-06-18
+EMP003,Aaron Cobb,East,Analyst,2024-01-01
+EMP004,Bob Allen,North,Sales Associate,2022-04-01
+EMP005,Michelle Cordova,South,Analyst,2024-10-11
+EMP006,Rachel Scott,South,Analyst,2025-12-25
+EMP007,Jason Chavez,South,Store Manager,2022-07-28
+EMP008,Daniel Andrews,North,Store Manager,2025-10-30
+EMP009,Daniel Hebert,East,Sales Associate,2023-01-14
+EMP010,Beth Johnson,East,Regional Manager,2026-05-17
+EMP011,Michael Hill,North,Regional Manager,2022-11-08
+EMP012,Kenneth Miles,North,Sales Associate,2025-01-16
+EMP013,Kelsey Rogers,South,Sales Associate,2024-05-28
+EMP014,Robert Cowan,North,Store Manager,2023-09-02
+EMP015,Keith Kelley,East,Analyst,2023-12-11
+EMP016,Eric Krause,South,Analyst,2022-12-15
+EMP017,David Moore,West,Analyst,2025-04-02
+EMP018,Robert Smith,West,Sales Associate,2020-09-12
+EMP019,Julie Mccarthy,South,Store Manager,2024-04-17
+EMP020,Heather Sloan,North,Analyst,2025-08-20
+EMP021,Lisa Jones,North,Sales Associate,2022-09-13
+EMP022,Bruce Brown,North,Analyst,2024-09-03
+EMP023,Damon Porter,West,Regional Manager,2023-06-30
+EMP024,Amber Villanueva,West,Sales Associate,2022-01-24
+EMP025,Tammy Pierce,West,Store Manager,2021-09-24
+EMP026,John Vasquez,South,Regional Manager,2020-11-11
+EMP027,David Perez,East,Sales Associate,2020-09-11
+EMP028,Charlotte Tapia,North,Analyst,2024-02-07
+EMP029,Denise Gallagher,West,Regional Manager,2026-02-23
+EMP030,Thomas Young,North,Analyst,2026-03-10
+EMP031,Kurt Gordon,South,Store Manager,2024-04-23
+EMP032,Dr. Melissa Moore,South,Regional Manager,2023-02-15
+EMP033,Brandon Turner,West,Regional Manager,2021-12-04
+EMP034,Sandra Johnson,South,Regional Manager,2021-11-21
+EMP035,Terri Holt,West,Store Manager,2021-05-10
+EMP036,Roberto Davidson,North,Regional Manager,2021-10-29
+EMP037,Jamie Crawford,South,Store Manager,2021-11-22
+EMP038,Stephen Mccarthy,North,Analyst,2022-08-16
+EMP039,Elizabeth Jackson,West,Regional Manager,2023-09-28
+EMP040,Christy Keith,East,Sales Associate,2024-10-09
+EMP041,Kayla Morris,North,Sales Associate,2021-10-09
+EMP042,Jillian Salazar,North,Regional Manager,2021-12-02
+EMP043,Samuel Kelly,West,Sales Associate,2023-04-12
+EMP044,David Davidson,South,Regional Manager,2022-09-24
+EMP045,Lawrence Smith,South,Store Manager,2024-10-01
+EMP046,Troy Roberts,South,Analyst,2021-07-06
+EMP047,Theresa Rojas,South,Regional Manager,2021-02-09
+EMP048,Christopher Green,North,Regional Manager,2023-05-31
+EMP049,Stephen Chavez,North,Regional Manager,2022-08-27
+EMP050,Craig Jimenez,North,Analyst,2020-10-10
+EMP051,Derrick Wilson,East,Sales Associate,2021-04-06
+EMP052,Gregory James,East,Store Manager,2024-04-13
+EMP053,Roberto Gutierrez,East,Store Manager,2022-06-09
+EMP054,Christian Jones,East,Store Manager,2026-02-12
+EMP055,Travis Sutton,East,Store Manager,2026-04-19
+EMP056,John Hicks,South,Store Manager,2026-04-26
+EMP057,Dr. John Torres,North,Analyst,2023-07-12
+EMP058,Charlene Carlson,North,Regional Manager,2023-02-06
+EMP059,Steven Davis,East,Sales Associate,2022-01-17
+EMP060,John Hampton,South,Analyst,2025-01-25
+EMP061,Krista Taylor,North,Analyst,2021-03-21
+EMP062,Christopher Dodson,West,Analyst,2024-08-24
+EMP063,Mr. James Phillips,South,Analyst,2024-04-07
+EMP064,Shannon Bell,North,Regional Manager,2022-07-02
+EMP065,Jay Martinez,East,Store Manager,2023-02-23
+EMP066,Daniel Campbell,North,Analyst,2026-05-05
+EMP067,Brittany Johnson,North,Store Manager,2023-03-01
+EMP068,Sara Arellano,North,Analyst,2023-05-27
+EMP069,Jared Parker,North,Regional Manager,2021-02-27
+EMP070,Thomas Reyes,South,Analyst,2024-09-07
+EMP071,Christopher Beard,West,Sales Associate,2021-08-07
+EMP072,Travis Rose,West,Analyst,2020-12-04
+EMP073,Frances Dyer,North,Store Manager,2023-03-12
+EMP074,Anthony Warner,West,Sales Associate,2025-04-09
+EMP075,Paul Webb,North,Analyst,2025-09-02
+EMP076,Pam Jones,North,Store Manager,2021-10-03
+EMP077,Daniel Guerra,North,Store Manager,2024-07-20
+EMP078,Shelley Garrett,East,Analyst,2026-05-29
+EMP079,Sandra Park,South,Store Manager,2025-07-29
+EMP080,Brenda Sims,South,Sales Associate,2026-07-16

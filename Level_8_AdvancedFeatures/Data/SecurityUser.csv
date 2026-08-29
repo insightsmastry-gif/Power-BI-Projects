@@ -1,0 +1,10 @@
+UserEmail,Region,Role
+manager.north1@electrohub.com,North,Regional Manager
+manager.north2@electrohub.com,North,Regional Manager
+manager.south1@electrohub.com,South,Regional Manager
+manager.south2@electrohub.com,South,Regional Manager
+manager.east1@electrohub.com,East,Regional Manager
+manager.east2@electrohub.com,East,Regional Manager
+manager.west1@electrohub.com,West,Regional Manager
+manager.west2@electrohub.com,West,Regional Manager
+admin@electrohub.com,All,Global Admin

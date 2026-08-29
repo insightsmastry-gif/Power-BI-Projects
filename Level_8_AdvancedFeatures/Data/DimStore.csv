@@ -1,0 +1,16 @@
+StoreID,StoreName,Region,City,StoreType
+ST01,ElectroHub 1,South,Hendersontown,Flagship
+ST02,ElectroHub 2,South,Lake Aaron,Flagship
+ST03,ElectroHub 3,North,West Sharonburgh,Standard
+ST04,ElectroHub 4,East,Jamesfurt,Standard
+ST05,ElectroHub 5,West,Port Cole,Standard
+ST06,ElectroHub 6,North,Crystalmouth,Flagship
+ST07,ElectroHub 7,East,West John,Standard
+ST08,ElectroHub 8,South,New Jennifer,Outlet
+ST09,ElectroHub 9,South,Angelaburgh,Flagship
+ST10,ElectroHub 10,South,Kirbyburgh,Flagship
+ST11,ElectroHub 11,West,North Shannonside,Outlet
+ST12,ElectroHub 12,West,Martinmouth,Flagship
+ST13,ElectroHub 13,West,Mahoneybury,Standard
+ST14,ElectroHub 14,North,Port Angela,Flagship
+ST15,ElectroHub 15,North,Port Walter,Flagship

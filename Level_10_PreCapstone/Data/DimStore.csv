@@ -1,0 +1,21 @@
+StoreID,StoreName,City,Region,StoreType,SquareFeet,OpeningDate
+STR01,VoltEdge Store 1,Thompsonfort,North,Flagship,19456,2025-06-02
+STR02,VoltEdge Store 2,Jaredstad,North,Street,12588,2023-08-01
+STR03,VoltEdge Store 3,Danielfurt,West,Mall,15082,2019-06-29
+STR04,VoltEdge Store 4,,West,Outlet,4349,2023-09-15
+STR05,VoltEdge Store 5,Lopezmouth,North,Flagship,5751,2021-06-07
+STR06,VoltEdge Store 6,Port Hollyfort,South,Street,14633,2020-04-02
+STR07,VoltEdge Store 7,East Dustinmouth,West,Flagship,14340,2019-10-24
+STR08,VoltEdge Store 8,New Deborahport,North,Mall,7634,2021-03-21
+STR09,VoltEdge Store 9,West Sara,North,Mall,15857,2023-01-16
+STR10,VoltEdge Store 10,Ballton,South,Street,16111,2024-07-26
+STR11,VoltEdge Store 11,Craigberg,North,Outlet,14295,2021-03-11
+STR12,VoltEdge Store 12,Port Jimmy,East,Flagship,14944,2018-12-18
+STR13,VoltEdge Store 13,New Jillshire,North,Outlet,3300,2020-07-20
+STR14,VoltEdge Store 14,Port Monicaville,South,Mall,19603,2026-03-15
+STR15,VoltEdge Store 15,Kendratown,West,Outlet,2300,2025-02-20
+STR16,VoltEdge Store 16,East Marymouth,North,Street,3433,2026-03-08
+STR17,VoltEdge Store 17,,East,Mall,11211,2022-10-13
+STR18,VoltEdge Store 18,Mathewsport,South,Mall,9147,2024-07-07
+STR19,VoltEdge Store 19,Jenniferview,South,Street,9719,2023-08-19
+STR20,VoltEdge Store 20,Josephborough,East,Flagship,20657,2021-01-13

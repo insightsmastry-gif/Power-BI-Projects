@@ -1,0 +1,301 @@
+CustomerID,CustomerName,Gender,AgeGroup,City,Region,LoyaltyTier
+CUS0001,Angela Brown,Other,18-25,South Jason,South,Bronze
+CUS0002,Michael Powell,Female,36-50,Wigginsshire,North,Platinum
+CUS0003,Mr. Jeremiah Galvan MD,Male,51+,Colonberg,North,Gold
+CUS0004,Kari Ellis,Male,26-35,Lake Jasonfort,South,Gold
+CUS0005,Christopher Hansen,Other,36-50,New Melissaville,East,Gold
+CUS0006,Kenneth Williams,Other,26-35,North Nathan,North,Gold
+CUS0007,Elizabeth Tucker PhD,Other,36-50,Port Brittany,West,Platinum
+CUS0008,Steven Small,Female,51+,,West,Bronze
+CUS0009,Bryan Bailey PhD,Male,26-35,Olsonport,West,Silver
+CUS0010,Stephanie Harrington,Male,36-50,Davenportberg,East,Platinum
+CUS0011,Kathy Murray,Female,26-35,Contrerasberg,West,Gold
+CUS0012,Erika Marsh,Female,18-25,Hughesfurt,North,Platinum
+CUS0013,Angel Santiago,Male,36-50,Fitzgeraldland,West,Bronze
+CUS0014,Michelle Armstrong,Male,36-50,,South,Silver
+CUS0015,Angela Friedman,Male,26-35,New Aimeefort,South,Platinum
+CUS0016,Alicia Barrett,Other,51+,North Joshua,North,Bronze
+CUS0017,Ronald Combs,Other,26-35,Millerside,East,Platinum
+CUS0018,Jennifer Williams,Female,18-25,West Samuelchester,South,Silver
+CUS0019,Joseph Reyes,Male,51+,North Tinaside,East,Platinum
+CUS0020,Charles Scott,Male,18-25,East Kristopherchester,South,Platinum
+CUS0021,Amy Woodward,Other,26-35,North Jennifer,West,Bronze
+CUS0022,Brett Thomas,Other,36-50,Jonathanville,West,Bronze
+CUS0023,David Harper,Male,26-35,South William,West,Gold
+CUS0024,Tiffany Adams,Male,36-50,Stevenchester,West,Bronze
+CUS0025,Allen Schultz,Other,36-50,West Angelashire,South,Platinum
+CUS0026,Danielle Peters,Female,26-35,West Ashley,North,Bronze
+CUS0027,Ryan Mason,Other,18-25,West Amber,West,Silver
+CUS0028,David Cisneros,Female,36-50,Williamsmouth,East,Gold
+CUS0029,Lisa Delgado,Female,51+,North Brian,East,Gold
+CUS0030,Denise King,Female,18-25,,North,Platinum
+CUS0031,Katrina Williams,Female,26-35,West Christopherville,West,Silver
+CUS0032,Molly Lutz,Female,36-50,Clarkhaven,East,Silver
+CUS0033,Emily Fleming,Female,51+,Cynthiamouth,East,Bronze
+CUS0034,Matthew Morris,Other,51+,South Susan,North,Gold
+CUS0035,Thomas Anderson,Male,36-50,New Thomastown,South,Gold
+CUS0036,Jennifer Woodard,Other,18-25,Farmerside,West,Platinum
+CUS0037,Shawn Curtis,Female,36-50,Port Lisamouth,West,Silver
+CUS0038,Heather Hess,Other,51+,Paultown,East,Platinum
+CUS0039,Jacob Lee,Other,18-25,East Juliaview,West,Platinum
+CUS0040,Michelle Lee,Other,36-50,Lindseybury,South,Gold
+CUS0041,Johnny Cox,Other,18-25,Trevorborough,West,Silver
+CUS0042,William Little,Male,51+,Port Joshuahaven,North,Platinum
+CUS0043,Juan Keller MD,Female,51+,North Brianna,North,Silver
+CUS0044,Bethany Mahoney,Female,18-25,New Jessica,North,Platinum
+CUS0045,Ryan Johnson,Other,26-35,Erinmouth,West,Silver
+CUS0046,Jeffery Nunez,Male,26-35,Port Sheilachester,South,Gold
+CUS0047,Jennifer Martinez,Female,18-25,Simpsonhaven,South,Silver
+CUS0048,Stacey Walker,Female,36-50,Samanthaside,South,Gold
+CUS0049,Aaron Lee,Other,18-25,New Lindseybury,South,Silver
+CUS0050,Jessica Jones,Male,26-35,East Frank,West,Gold
+CUS0051,Mark Davis,Male,26-35,Reynoldstown,West,Silver
+CUS0052,Lori Cook,Female,36-50,Johnfort,North,Gold
+CUS0053,Glen Brown,Other,51+,Aprilbury,South,Gold
+CUS0054,Patricia Harvey,Other,18-25,Lake Seanville,South,Silver
+CUS0055,Antonio Johnson,Male,26-35,Pamelaland,East,Platinum
+CUS0056,Amy Lang,Female,18-25,West Cherylchester,East,Platinum
+CUS0057,Michael Hansen,Other,36-50,Melissafurt,North,Silver
+CUS0058,Paul Hall,Other,36-50,South Patrickchester,East,Gold
+CUS0059,Lisa Morgan,Female,51+,South Zacharyshire,North,Silver
+CUS0060,Brian Larson,Male,18-25,New Kristineborough,West,Bronze
+CUS0061,Beth Hicks,Female,36-50,Robertmouth,North,Silver
+CUS0062,Chad Williams,Female,36-50,West Breanna,East,Gold
+CUS0063,Marissa Howard,Other,36-50,East Terrance,West,Platinum
+CUS0064,Donna Cordova,Male,26-35,North John,North,Silver
+CUS0065,Kristin Brown,Other,18-25,Jamesborough,South,Platinum
+CUS0066,Christina Jones,Other,18-25,Lake Thomas,West,Gold
+CUS0067,Julie Schwartz,Male,51+,Christinachester,West,Bronze
+CUS0068,Brian Walter,Male,26-35,South Jeffreytown,South,Silver
+CUS0069,Melissa Owens,Other,18-25,East Timothy,East,Platinum
+CUS0070,Robin Aguirre,Female,36-50,Harrisburgh,West,Gold
+CUS0071,Adriana Smith,Male,18-25,Anthonyville,East,Gold
+CUS0072,Jeremiah Welch,Female,36-50,Bradleytown,East,Gold
+CUS0073,Duane Robinson,Male,26-35,Jennifermouth,West,Silver
+CUS0074,Danielle Gonzalez,Other,36-50,Port Jose,West,Bronze
+CUS0075,Ronald Taylor,Female,51+,West Sharonport,West,Gold
+CUS0076,Jacob Watson,Male,26-35,New Tiffany,South,Platinum
+CUS0077,Dr. Sherry Jones MD,Female,26-35,Port Jake,North,Gold
+CUS0078,Melissa Stewart,Other,51+,Rowlandbury,North,Bronze
+CUS0079,Pamela Matthews,Other,26-35,Kristinemouth,South,Platinum
+CUS0080,Mark Ramirez,Other,51+,Port William,South,Platinum
+CUS0081,Katherine Acosta,Other,18-25,Gibbsland,South,Silver
+CUS0082,James Khan,Male,18-25,Victormouth,West,Gold
+CUS0083,Micheal Fox,Female,18-25,Baldwinfort,West,Bronze
+CUS0084,Kevin Little,Female,18-25,East Jeffreyborough,West,Platinum
+CUS0085,David Robinson,Male,18-25,Onealshire,East,Bronze
+CUS0086,Ryan Scott,Male,18-25,East Karenport,North,Silver
+CUS0087,Gregory Silva,Other,26-35,Huntmouth,East,Gold
+CUS0088,John Ortiz,Other,18-25,Stewartfurt,West,Platinum
+CUS0089,Jeremy Baker,Other,51+,West Rachelport,South,Bronze
+CUS0090,Kayla Schneider,Female,26-35,Saraville,North,Silver
+CUS0091,Isaac Payne,Other,26-35,Jamesmouth,South,Bronze
+CUS0092,Patrick Mack,Other,26-35,Jamesberg,West,Silver
+CUS0093,Dr. Nancy Gaines MD,Male,18-25,Juanstad,East,Silver
+CUS0094,Jennifer Sullivan,Male,51+,South Destinyberg,North,Silver
+CUS0095,Crystal Cummings,Male,51+,South Jesus,North,Bronze
+CUS0096,Kristen Harrison,Other,26-35,Petersonland,South,Silver
+CUS0097,Cole Carrillo,Other,51+,Clarkmouth,West,Gold
+CUS0098,Amanda Taylor,Male,51+,West Sherry,North,Gold
+CUS0099,Robert Flowers,Female,36-50,,West,Platinum
+CUS0100,Jennifer Osborne,Male,26-35,Marktown,North,Platinum
+CUS0101,Amanda Taylor,Male,26-35,Ashleyshire,South,Bronze
+CUS0102,Veronica Harris,Male,26-35,Brownfurt,West,Bronze
+CUS0103,Brian Hudson,Female,36-50,Fowlerport,West,Platinum
+CUS0104,Brian Tran,Female,36-50,Port Hannahfort,South,Gold
+CUS0105,Cristian Pruitt,Female,51+,Campbellbury,North,Platinum
+CUS0106,Joseph Gibson,Other,18-25,Aprilburgh,West,Gold
+CUS0107,Theodore Myers,Female,26-35,East Amandafort,East,Gold
+CUS0108,Jasmine Berger,Male,36-50,East Monica,West,Silver
+CUS0109,Robert Ortega,Female,51+,New Barbara,East,Platinum
+CUS0110,Dale Moran,Female,36-50,Hilltown,North,Platinum
+CUS0111,Jill Summers DDS,Male,36-50,New Mark,West,Gold
+CUS0112,Katherine Ford,Female,51+,Lake Christophermouth,West,Bronze
+CUS0113,Ryan Sparks,Female,18-25,Austinburgh,South,Platinum
+CUS0114,Christopher Williamson,Male,36-50,Ellisburgh,South,Platinum
+CUS0115,Anna Hale,Other,18-25,East Nicoleburgh,South,Silver
+CUS0116,Mark Carter,Female,18-25,Lake Jessicaborough,West,Gold
+CUS0117,Jennifer Gill,Male,51+,West Charlesville,North,Bronze
+CUS0118,Penny Ortiz,Female,26-35,West Jared,West,Bronze
+CUS0119,Alexander Fowler,Other,51+,Jamesfurt,North,Gold
+CUS0120,Jennifer Smith,Female,51+,Lake Sallymouth,North,Silver
+CUS0121,Julie Murray,Male,51+,New Dianemouth,West,Gold
+CUS0122,Robert Skinner,Female,36-50,Port Andrew,North,Silver
+CUS0123,Edward Nichols,Female,26-35,Jacksontown,North,Silver
+CUS0124,Brittany Howard,Female,26-35,Lake Austin,East,Silver
+CUS0125,Cindy Horton,Female,36-50,South Hannahmouth,North,Platinum
+CUS0126,Aaron Barton,Male,18-25,East Nicholas,North,Gold
+CUS0127,Brandon Fisher,Other,18-25,West Loriland,West,Bronze
+CUS0128,Stephen Robles,Other,18-25,Lake Gary,West,Bronze
+CUS0129,Brian Murphy,Other,51+,New Jamie,West,Bronze
+CUS0130,Teresa Martinez,Female,26-35,North Michael,North,Platinum
+CUS0131,James Stewart,Female,18-25,Lewisbury,North,Platinum
+CUS0132,Robert Santos,Female,18-25,Bradleyborough,East,Silver
+CUS0133,Randall Porter,Male,51+,Lake Amandashire,East,Platinum
+CUS0134,Tyler Greene,Other,51+,Gregoryberg,West,Silver
+CUS0135,Mark Henson,Other,36-50,Tiffanyfort,West,Bronze
+CUS0136,Alan Barr,Other,18-25,Reyesbury,East,Bronze
+CUS0137,Michele Smith,Male,18-25,New Katherineville,North,Bronze
+CUS0138,Oscar Todd,Other,51+,North Devinfort,North,Bronze
+CUS0139,Christian Harris,Female,36-50,East Sandramouth,North,Silver
+CUS0140,Erin Ramirez,Male,36-50,New Latoyachester,North,Silver
+CUS0141,Donna Johnson,Female,36-50,Matthewborough,West,Silver
+CUS0142,Susan Ortega,Other,26-35,Port Grace,South,Bronze
+CUS0143,Lisa James,Male,18-25,Isaiahtown,South,Platinum
+CUS0144,John Mckay,Female,51+,Lake Victoriaborough,East,Platinum
+CUS0145,Christopher Dunn,Other,36-50,East William,South,Platinum
+CUS0146,John Martin,Female,51+,East Roger,East,Gold
+CUS0147,Elizabeth Ray,Male,36-50,West Michelle,South,Platinum
+CUS0148,Dr. Ian Gray,Other,36-50,Alexanderhaven,South,Bronze
+CUS0149,Jessica Moore,Female,18-25,Smithfurt,West,Gold
+CUS0150,Bradley Knox,Male,36-50,Brookeberg,South,Platinum
+CUS0151,Casey James,Female,18-25,Shawnfurt,East,Bronze
+CUS0152,Karen Cook,Male,26-35,Gonzalezborough,West,Silver
+CUS0153,Scott Cross,Female,51+,Travischester,West,Platinum
+CUS0154,Tracy Brooks,Female,18-25,Parkershire,West,Bronze
+CUS0155,Stephen Riddle,Other,36-50,South Sarahburgh,East,Platinum
+CUS0156,Jeffrey Scott,Male,51+,Williamfort,East,Bronze
+CUS0157,Isabel Brown,Female,36-50,Housebury,West,Bronze
+CUS0158,Andrew Li,Female,36-50,Lake Elizabethberg,North,Bronze
+CUS0159,Jesus Becker,Male,36-50,Johnshire,West,Silver
+CUS0160,Sarah Smith,Female,18-25,Lake Jenniferfurt,East,Platinum
+CUS0161,Kevin Santana,Female,36-50,South Gabriel,East,Bronze
+CUS0162,Michael Mason,Other,51+,Willischester,South,Silver
+CUS0163,Tammy Booth,Female,36-50,Lake Ashleystad,South,Gold
+CUS0164,Debra Clark,Male,51+,Haletown,North,Bronze
+CUS0165,Dr. April Jones,Male,18-25,Warrenport,North,Gold
+CUS0166,Carolyn Brooks,Other,18-25,East Tom,East,Platinum
+CUS0167,Ashley Bradley,Other,51+,East James,East,Silver
+CUS0168,Rhonda Lee,Male,18-25,Alexanderville,South,Gold
+CUS0169,Carol Carter,Other,51+,Martinezland,North,Silver
+CUS0170,Kevin Woods,Male,51+,North Brucetown,South,Gold
+CUS0171,Rachel Williams,Other,18-25,New Latoya,North,Silver
+CUS0172,Joseph Hayden,Male,51+,Sarahfort,East,Silver
+CUS0173,Lindsey Rogers,Female,51+,Yvonnebury,South,Bronze
+CUS0174,Mary Gray,Female,36-50,West Morganville,East,Silver
+CUS0175,Seth Morales,Other,51+,North Carolyn,North,Silver
+CUS0176,Diana Lyons,Male,36-50,West Shannon,West,Gold
+CUS0177,Sheila Robertson,Other,36-50,North Valerie,West,Gold
+CUS0178,Robin Smith,Female,18-25,Morganmouth,East,Silver
+CUS0179,Cynthia Washington,Other,26-35,West Ronniefort,West,Bronze
+CUS0180,Dr. Susan Navarro,Female,36-50,Catherineberg,West,Silver
+CUS0181,Sherri Glover,Male,36-50,East Tylerland,West,Bronze
+CUS0182,Michael Dunn,Female,26-35,Jacksonmouth,West,Gold
+CUS0183,Karen Fernandez,Other,18-25,East George,East,Gold
+CUS0184,Melissa Garcia,Male,26-35,East Sarahmouth,West,Platinum
+CUS0185,Pamela Robinson,Female,51+,,West,Platinum
+CUS0186,Tammy Schultz,Female,36-50,Davismouth,East,Gold
+CUS0187,Tara Miranda,Other,36-50,Lake Matthewfurt,West,Gold
+CUS0188,Rachel Burch,Male,26-35,Stokesbury,East,Bronze
+CUS0189,Earl Rodriguez,Male,26-35,Joyborough,South,Platinum
+CUS0190,Audrey Richardson,Male,36-50,Stephanieshire,West,Silver
+CUS0191,Emily Lawrence,Other,51+,Port Paul,East,Bronze
+CUS0192,Ray Salinas,Other,26-35,New Elizabeth,East,Platinum
+CUS0193,Ashley Smith,Male,18-25,Stewartport,North,Silver
+CUS0194,Kathryn Bryant,Female,36-50,Dustinton,East,Platinum
+CUS0195,Ellen Mooney,Other,26-35,West Wendyshire,West,Gold
+CUS0196,Ronald Simpson,Female,18-25,Brownmouth,North,Gold
+CUS0197,Mitchell Charles,Female,51+,Lake Jill,South,Silver
+CUS0198,Patty Gates,Other,26-35,Evansburgh,North,Platinum
+CUS0199,Kimberly Rogers DDS,Male,51+,Katherinefurt,East,Gold
+CUS0200,Nicholas Campbell,Other,18-25,Lake Melissa,East,Silver
+CUS0201,Carlos Goodwin,Male,51+,Port Sarahport,North,Silver
+CUS0202,Christopher Taylor,Other,26-35,Carterberg,West,Gold
+CUS0203,Robert Gonzalez,Male,26-35,West Jessicashire,North,Silver
+CUS0204,Richard Garrison,Female,26-35,Clementschester,West,Bronze
+CUS0205,Carol Brown,Other,51+,Terriburgh,South,Gold
+CUS0206,Autumn Robertson,Female,51+,Brittneyberg,East,Platinum
+CUS0207,Jennifer Johnson,Male,18-25,South Tracy,North,Silver
+CUS0208,Tiffany Delgado,Other,18-25,Parsonsland,South,Bronze
+CUS0209,Sharon Santos,Female,26-35,Cynthiamouth,West,Bronze
+CUS0210,Bryan Miller,Female,51+,Mayhaven,North,Gold
+CUS0211,Kevin Archer,Other,36-50,Hillville,East,Gold
+CUS0212,Catherine Washington,Other,51+,Evansberg,West,Silver
+CUS0213,Arthur Stout,Female,51+,South Lisa,East,Gold
+CUS0214,Justin Herrera,Male,18-25,Brownshire,South,Silver
+CUS0215,Sabrina Pearson,Female,26-35,Lake Priscilla,North,Silver
+CUS0216,Kyle White,Other,51+,Mcbrideville,West,Bronze
+CUS0217,Kenneth Delgado,Female,36-50,New Jonathanton,West,Gold
+CUS0218,Caleb Evans,Male,26-35,South Tiffany,East,Platinum
+CUS0219,Danielle Williams,Male,36-50,Donnamouth,South,Bronze
+CUS0220,John Edwards,Male,18-25,Catherinehaven,South,Silver
+CUS0221,Brett Weiss,Other,51+,North Jacob,North,Silver
+CUS0222,Ronnie Bernard,Male,26-35,New Michael,North,Silver
+CUS0223,Marcus Jones,Female,51+,Jorgeburgh,West,Gold
+CUS0224,Bradley King,Male,51+,Bentleyberg,West,Platinum
+CUS0225,Andrea Oconnor,Male,51+,Lake Nathan,East,Silver
+CUS0226,Samantha Jacobs,Female,26-35,Underwoodmouth,West,Platinum
+CUS0227,Jessica Johnson DDS,Male,26-35,West Davidville,South,Bronze
+CUS0228,Jennifer Murphy,Other,51+,West Reginaview,West,Silver
+CUS0229,Robert Hill,Female,51+,South Tiffanybury,North,Bronze
+CUS0230,Brian Frost,Female,26-35,New Jessica,South,Silver
+CUS0231,Roberto Burns,Female,36-50,Jackieport,East,Platinum
+CUS0232,Lisa Mosley,Male,36-50,West Stacey,West,Silver
+CUS0233,Gregory Figueroa,Male,26-35,Woodsberg,West,Platinum
+CUS0234,Michael Reeves,Other,18-25,East Nicholas,North,Gold
+CUS0235,Amy Swanson,Female,26-35,Jasminebury,East,Gold
+CUS0236,Jennifer Ellis,Other,51+,Andersenmouth,South,Bronze
+CUS0237,Desiree Patterson,Male,51+,West Cynthia,South,Silver
+CUS0238,Eric Townsend,Male,36-50,Lake Christopherbury,West,Bronze
+CUS0239,Carmen Brown,Female,26-35,Angelafort,East,Bronze
+CUS0240,Alexandra Vaughan,Other,26-35,South Tyler,East,Gold
+CUS0241,Megan Patel,Female,36-50,South Alexanderborough,West,Silver
+CUS0242,Nichole Klein,Other,51+,Johnhaven,West,Bronze
+CUS0243,Amanda West,Female,18-25,Lake Sarah,North,Platinum
+CUS0244,Stephanie Thompson,Female,18-25,Maryhaven,East,Platinum
+CUS0245,Anthony Simpson,Other,36-50,West Tara,West,Platinum
+CUS0246,Michael Decker,Male,51+,West Kevinport,East,Platinum
+CUS0247,Aaron Welch,Other,18-25,Robinsonport,East,Gold
+CUS0248,Tina Robertson,Other,36-50,South Patriciafort,West,Platinum
+CUS0249,Aaron Stevens,Other,26-35,Michaeltown,South,Silver
+CUS0250,Nathan Morales,Other,26-35,North Ryanborough,North,Silver
+CUS0251,Jose Hernandez,Female,36-50,South Adamview,East,Platinum
+CUS0252,James Evans,Other,51+,Mcclainside,North,Bronze
+CUS0253,Ashley Gonzales,Other,51+,Martinstad,South,Silver
+CUS0254,Abigail Stephenson,Other,36-50,North Jake,East,Gold
+CUS0255,James Manning,Male,51+,,East,Bronze
+CUS0256,Victoria Wilson,Female,51+,Pierceberg,North,Gold
+CUS0257,Phillip Macias,Male,18-25,,North,Silver
+CUS0258,Beth Cooper,Other,18-25,Port Gabrielleton,South,Silver
+CUS0259,Gloria Bray,Other,18-25,South Timothyport,North,Silver
+CUS0260,Dr. David Hernandez,Other,51+,,North,Platinum
+CUS0261,Dennis Haynes,Male,26-35,Gonzalezville,South,Gold
+CUS0262,Kathryn White,Female,18-25,East David,East,Bronze
+CUS0263,Donald Lee,Male,18-25,South Andres,North,Gold
+CUS0264,Sean James,Male,26-35,Isabelbury,West,Gold
+CUS0265,Jeffery Brown,Male,36-50,Schneiderport,West,Platinum
+CUS0266,Jack Hahn,Male,26-35,Wrightton,West,Platinum
+CUS0267,Aaron Guerrero,Male,51+,Jasonfort,North,Gold
+CUS0268,Lawrence Jordan,Female,36-50,Stacystad,West,Gold
+CUS0269,Brian Caldwell,Female,36-50,West Michael,East,Platinum
+CUS0270,Natalie Chapman,Female,36-50,Johnview,East,Gold
+CUS0271,James Eaton,Male,36-50,Lake Julia,East,Silver
+CUS0272,Kevin Barr,Other,51+,East Janet,South,Bronze
+CUS0273,Angela Payne,Female,18-25,Kevinfort,East,Gold
+CUS0274,Christina Le MD,Female,18-25,South Andrea,South,Gold
+CUS0275,Shawn Castaneda,Male,36-50,Patriciamouth,South,Gold
+CUS0276,Autumn Graham,Male,18-25,Barneshaven,West,Silver
+CUS0277,Carol Hill,Male,51+,West Brandon,East,Bronze
+CUS0278,Rebecca Benson,Male,26-35,Simpsonside,North,Gold
+CUS0279,Valerie Martin,Female,51+,Hartfurt,East,Gold
+CUS0280,Devon White,Female,26-35,New Jeffery,North,Silver
+CUS0281,Sherry Gibbs,Male,26-35,Gordonhaven,West,Platinum
+CUS0282,Samuel Phillips,Other,36-50,Andreaburgh,West,Silver
+CUS0283,Joseph Carter,Male,26-35,West Sara,East,Bronze
+CUS0284,Richard Day,Male,36-50,Port Jason,South,Silver
+CUS0285,Matthew Chen,Other,18-25,Markside,South,Gold
+CUS0286,Casey Villanueva,Female,18-25,Markton,South,Silver
+CUS0287,Alexandra Kelly,Female,26-35,Gregorytown,East,Bronze
+CUS0288,Veronica Osborne,Other,36-50,Lake Juliefurt,North,Silver
+CUS0289,Dawn Sims,Other,18-25,Port Scott,North,Gold
+CUS0290,Damon Soto,Other,26-35,Moorebury,East,Platinum
+CUS0291,Jessica Hernandez,Other,36-50,Davisburgh,North,Bronze
+CUS0292,Robert Thompson,Female,51+,Hardingburgh,East,Bronze
+CUS0293,Alisha Martin,Male,26-35,Port Phillip,South,Gold
+CUS0294,Andrea Jones,Female,51+,South Regina,North,Bronze
+CUS0295,Ariel Rose,Other,18-25,New Coryfurt,North,Silver
+CUS0296,Ronald Hines,Female,26-35,East Johnland,East,Gold
+CUS0297,Todd Greene,Female,18-25,Port Danielmouth,South,Silver
+CUS0298,Angela Taylor,Other,51+,Ochoaport,South,Platinum
+CUS0299,Christopher Brown,Female,51+,Courtneyville,North,Silver
+CUS0300,Andrew Stephens,Female,26-35,New Oliviachester,East,Silver

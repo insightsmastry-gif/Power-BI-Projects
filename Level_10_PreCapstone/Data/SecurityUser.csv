@@ -1,0 +1,10 @@
+UserEmail,Region,Role
+rm.north1@voltedge.com,North,Regional Manager
+rm.north2@voltedge.com,North,Regional Manager
+rm.south1@voltedge.com,South,Regional Manager
+rm.south2@voltedge.com,South,Regional Manager
+rm.east1@voltedge.com,East,Regional Manager
+rm.east2@voltedge.com,East,Regional Manager
+rm.west1@voltedge.com,West,Regional Manager
+rm.west2@voltedge.com,West,Regional Manager
+bi.admin@voltedge.com,All,Admin

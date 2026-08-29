@@ -1,0 +1,13 @@
+ProductID,ProductName,Category,SubCategory,UnitCost,UnitPrice
+P101,Phone,Electronics,Phone,5.59,69.16
+P102,Headphones,Electronics,Headphones,23.75,36.5
+P103,Charger,Electronics,Charger,22.58,67.34
+P201,T-Shirt,Clothing,T-Shirt,20.07,85.48
+P202,Jeans,Clothing,Jeans,11.27,83.85
+P203,Jacket,Clothing,Jacket,23.35,33.07
+P301,Lamp,Home,Lamp,26.69,33.93
+P302,Pillow,Home,Pillow,17.41,74.62
+P303,Mug,Home,Mug,7.77,86.95
+P401,Ball,Sports,Ball,21.06,33.24
+P402,Bottle,Sports,Bottle,29.4,37.5
+P403,Mat,Sports,Mat,33.98,21.05

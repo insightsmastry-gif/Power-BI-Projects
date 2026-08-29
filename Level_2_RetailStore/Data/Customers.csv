@@ -1,0 +1,81 @@
+CustomerID,CustomerName,City,Gender,AgeGroup
+C001,Allison Hill,New York,Male,46-60
+C002,Noah Rhodes,Phoenix,Female,60+
+C003,Angie Henderson,Phoenix,Male,18-25
+C004,Daniel Wagner,Chicago,Male,46-60
+C005,Cristian Santos,Phoenix,Female,60+
+C006,Connie Lawrence,New York,Male,26-35
+C007,Abigail Shaffer,Chicago,Female,36-45
+C008,Gina Moore,New York,Male,36-45
+C009,Gabrielle Davis,Philadelphia,Male,26-35
+C010,Ryan Munoz,Houston,Male,26-35
+C011,Monica Herrera,Philadelphia,Male,46-60
+C012,Jamie Arnold,New York,Female,26-35
+C013,Lisa Hensley,Philadelphia,Male,60+
+C014,Michele Williams,Phoenix,Female,46-60
+C015,Dylan Miller,Chicago,Male,60+
+C016,Brian Ramirez,Houston,Male,18-25
+C017,Holly Wood,Phoenix,Male,18-25
+C018,Derek Zuniga,Houston,Female,36-45
+C019,Lisa Jackson,New York,Female,46-60
+C020,Carla Gray,Phoenix,Male,36-45
+C021,Margaret Hawkins DDS,Philadelphia,Female,46-60
+C022,Patty Perez,Chicago,Female,18-25
+C023,Ethan Adams,Philadelphia,Female,26-35
+C024,Tommy Walter,New York,Male,36-45
+C025,Matthew Foster,Chicago,Female,26-35
+C026,Judy Baker,Phoenix,Female,36-45
+C027,Justin Baker,New York,Male,18-25
+C028,Stephanie Ross,Houston,Female,36-45
+C029,Zachary Hicks,Houston,Male,26-35
+C030,Anthony Rodriguez,New York,Male,46-60
+C031,Rebecca Henderson,Phoenix,Female,18-25
+C032,James Ferrell,New York,Male,36-45
+C033,Tricia Valencia,Philadelphia,Male,60+
+C034,Nathan Maldonado,Philadelphia,Female,46-60
+C035,Debra Davidson,New York,Female,46-60
+C036,Jeffrey Chavez,Phoenix,Male,60+
+C037,Sherri Baker,Chicago,Male,46-60
+C038,Cassandra Gaines,Chicago,Male,36-45
+C039,Elizabeth Fowler,Houston,Female,46-60
+C040,Brittany Farmer,Chicago,Male,26-35
+C041,Paula Moreno,Phoenix,Female,46-60
+C042,Fred Smith,Houston,Female,18-25
+C043,Sherry Decker,Houston,Female,26-35
+C044,Anthony Humphrey,Phoenix,Male,46-60
+C045,Angelica Tucker,New York,Male,36-45
+C046,Philip Cannon,New York,Female,36-45
+C047,John Pierce,Philadelphia,Female,36-45
+C048,Shane Henderson,Phoenix,Female,46-60
+C049,Joshua Blair,Philadelphia,Male,36-45
+C050,Eric Carney,Houston,Male,46-60
+C051,Jessica Holmes,Houston,Male,46-60
+C052,Danny Morgan,Houston,Female,46-60
+C053,Crystal Robinson,Philadelphia,Male,36-45
+C054,Mark Perez,Phoenix,Female,46-60
+C055,Shannon Jones,Houston,Male,60+
+C056,Michael Lewis,Chicago,Male,60+
+C057,Timothy Duncan,New York,Female,26-35
+C058,Richard Aguirre,Phoenix,Female,18-25
+C059,Brent Jordan,Phoenix,Female,26-35
+C060,John Daniel,Houston,Male,36-45
+C061,Victoria Garcia,Chicago,Female,46-60
+C062,Gerald Hensley,New York,Female,60+
+C063,Connor West,Phoenix,Female,60+
+C064,Donald Wright,Philadelphia,Female,60+
+C065,Jessica Callahan,New York,Female,60+
+C066,Amber Kidd,Philadelphia,Male,18-25
+C067,Tracy House,Chicago,Female,26-35
+C068,Carol Tucker,Philadelphia,Male,60+
+C069,James Brown,Phoenix,Female,46-60
+C070,William Baker,New York,Male,18-25
+C071,Jordan Henderson,Houston,Male,60+
+C072,Whitney Peters,Philadelphia,Male,46-60
+C073,Brittney Phillips,Houston,Female,46-60
+C074,Lauren Daniels,Philadelphia,Male,36-45
+C075,Amy Silva,New York,Female,18-25
+C076,Sarah Moore,Houston,Female,18-25
+C077,Angela Lopez,New York,Male,36-45
+C078,Megan Young,Houston,Female,46-60
+C079,Steve Sanchez,Chicago,Female,36-45
+C080,Lisa Barnes,Phoenix,Male,46-60

@@ -1,0 +1,201 @@
+CustomerID,CustomerName,Gender,AgeGroup,City,CustomerSegment
+C0001,Alison Cooper,Male,26-35,Los Angeles,New
+C0002,Robert Spears,Female,65+,Chicago,Premium
+C0003,Kelli Arnold,Male,26-35,Boston,Regular
+C0004,Jeffery Murray,Female,36-50,Chicago,New
+C0005,Lori Lopez,Female,65+,Seattle,Premium
+C0006,Jennifer Mclaughlin,Male,51-65,Boston,New
+C0007,Joanna Jordan,Female,65+,Boston,Premium
+C0008,Daniel Ramirez,Male,51-65,New York,Regular
+C0009,Rebecca Ray,Male,36-50,New York,Premium
+C0010,Kimberly Diaz,Male,26-35,Dallas,Regular
+C0011,Brian Lambert,Female,26-35,Chicago,Regular
+C0012,Vincent Edwards MD,Female,26-35,New York,New
+C0013,Brian Bell,Female,51-65,Miami,New
+C0014,Christopher Nunez,Male,51-65,Chicago,New
+C0015,Tamara Lawrence,Female,65+,Miami,New
+C0016,Emily Allen,Female,36-50,Los Angeles,Premium
+C0017,James Thomas,Female,36-50,Dallas,Premium
+C0018,Kyle Andrews,Female,18-25,Chicago,Premium
+C0019,John Medina,Male,65+,Chicago,Regular
+C0020,Tara Thompson,Female,65+,Seattle,Regular
+C0021,Dylan Lopez,Male,36-50,Dallas,Premium
+C0022,Lisa Glenn,Female,65+,New York,Premium
+C0023,Kari Lee,Female,51-65,Miami,Regular
+C0024,Justin Delgado,Male,18-25,Atlanta,New
+C0025,John Mckinney,Male,36-50,Atlanta,New
+C0026,Christopher Cunningham,Male,18-25,Seattle,Regular
+C0027,Connie Johnson,Female,65+,Los Angeles,New
+C0028,Dylan Norman,Male,65+,Atlanta,Premium
+C0029,Patricia Simpson,Male,51-65,Dallas,New
+C0030,Laura Adams,Female,36-50,Los Angeles,Premium
+C0031,Wendy Weaver,Male,65+,Miami,Regular
+C0032,Olivia Alexander,Female,18-25,New York,New
+C0033,Jeffery Fitzgerald,Female,65+,Boston,Regular
+C0034,Danielle Golden,Male,65+,Miami,New
+C0035,Dennis Atkins,Male,26-35,Dallas,New
+C0036,Sean Wilson,Male,26-35,New York,New
+C0037,Christine Rojas,Female,18-25,Seattle,Regular
+C0038,Shannon Bishop,Male,51-65,Miami,Premium
+C0039,Luis Glover,Female,51-65,Chicago,Premium
+C0040,Renee Hudson,Male,18-25,Los Angeles,Premium
+C0041,Linda Jackson,Male,51-65,Los Angeles,Premium
+C0042,Eileen Armstrong,Male,26-35,Los Angeles,Premium
+C0043,Kayla Mccullough,Male,26-35,Seattle,New
+C0044,Brandy Brady,Male,36-50,Atlanta,Regular
+C0045,Anthony Ramirez,Female,18-25,New York,New
+C0046,Meredith Anderson,Male,36-50,Boston,Regular
+C0047,Frank Wright,Male,65+,New York,Regular
+C0048,Jenna Thomas,Female,51-65,Los Angeles,Regular
+C0049,Lori Brooks,Female,18-25,Chicago,Regular
+C0050,Robert Mack,Female,26-35,Dallas,Premium
+C0051,Paul Neal,Male,26-35,Seattle,New
+C0052,Jordan Freeman,Male,51-65,Chicago,New
+C0053,Sheila Boone,Male,51-65,New York,New
+C0054,William Reid,Male,65+,Boston,Premium
+C0055,Sarah Flynn,Female,18-25,Seattle,New
+C0056,Walter Summers,Male,65+,Chicago,Regular
+C0057,Frank Campbell MD,Female,26-35,Chicago,New
+C0058,Samuel Kramer,Female,51-65,Miami,Premium
+C0059,Pamela Williams,Male,65+,Boston,Premium
+C0060,Sara Smith,Male,36-50,Chicago,Regular
+C0061,Brooke Bryant,Female,26-35,Miami,Regular
+C0062,Jessica Forbes DVM,Female,18-25,Atlanta,New
+C0063,Elizabeth Baxter,Male,65+,Boston,New
+C0064,Anna Ward,Female,65+,Miami,New
+C0065,Matthew Banks,Male,36-50,Seattle,Regular
+C0066,Mario Barber,Female,26-35,Los Angeles,New
+C0067,Jessica Davis,Female,51-65,Miami,Premium
+C0068,Daniel Miller,Male,51-65,New York,Premium
+C0069,Kelly Wallace,Male,36-50,Atlanta,New
+C0070,Greg Martinez,Female,36-50,Atlanta,Premium
+C0071,Melissa Woods,Male,65+,New York,Regular
+C0072,Brandon Shaffer,Male,36-50,Chicago,New
+C0073,Jacob Evans,Female,18-25,New York,Regular
+C0074,Robert Baxter,Female,51-65,Dallas,Premium
+C0075,Megan Jones,Male,51-65,Chicago,New
+C0076,Lisa Martin,Female,18-25,Dallas,Regular
+C0077,Daniel Goodman,Female,26-35,Dallas,New
+C0078,Lisa Ramos,Female,18-25,Dallas,Premium
+C0079,Steven Taylor,Male,65+,New York,Regular
+C0080,Nicholas Bell,Female,26-35,Boston,Premium
+C0081,Richard Wright,Male,26-35,Seattle,Regular
+C0082,Danielle Burke,Female,26-35,Seattle,Premium
+C0083,Dominique Pugh,Male,26-35,Chicago,New
+C0084,Ryan Liu,Male,65+,Los Angeles,Premium
+C0085,Lawrence Lopez,Female,26-35,Los Angeles,Premium
+C0086,Matthew Bowers,Male,51-65,Miami,Premium
+C0087,Cynthia Cruz,Female,26-35,Atlanta,Premium
+C0088,Mark Jones,Male,51-65,New York,New
+C0089,Alexandria Ward,Female,26-35,Dallas,Regular
+C0090,James Combs,Male,18-25,Chicago,Premium
+C0091,Joshua Thompson,Male,26-35,Seattle,Regular
+C0092,William Jones,Female,51-65,Los Angeles,New
+C0093,Alexis Lewis,Female,36-50,Los Angeles,Regular
+C0094,Tiffany Sanders,Male,51-65,Dallas,Regular
+C0095,Micheal Wang,Female,26-35,Chicago,New
+C0096,James Davidson,Male,51-65,Atlanta,Regular
+C0097,Brittany Miller,Male,26-35,New York,Premium
+C0098,Thomas Mccann,Male,18-25,Boston,Regular
+C0099,Gabriel Willis,Female,65+,Seattle,Premium
+C0100,Marie Day,Male,51-65,New York,New
+C0101,Jeffrey Ashley,Male,26-35,Seattle,Regular
+C0102,David Middleton,Male,26-35,Seattle,Premium
+C0103,Logan Brown,Male,36-50,Atlanta,Regular
+C0104,Mary Thompson,Male,51-65,Miami,Regular
+C0105,Chad Smith,Female,65+,Boston,Regular
+C0106,Gregory Holmes PhD,Male,26-35,Seattle,New
+C0107,Jacob Brady,Female,18-25,Atlanta,Regular
+C0108,Morgan Wilson,Male,65+,Los Angeles,New
+C0109,Frances Patterson,Male,26-35,Seattle,Regular
+C0110,Deborah Proctor,Male,18-25,Miami,New
+C0111,Kathleen Dixon,Male,65+,Chicago,New
+C0112,Scott Jackson,Female,36-50,New York,Regular
+C0113,Raymond Shannon,Male,26-35,New York,Premium
+C0114,Ashley Yang,Male,65+,New York,Premium
+C0115,Scott Smith,Male,26-35,New York,New
+C0116,Jack Mora,Male,18-25,Atlanta,New
+C0117,Tyler Johnson,Female,36-50,Miami,Premium
+C0118,Michelle Rios,Male,51-65,Los Angeles,Premium
+C0119,David Moon,Female,51-65,Chicago,Premium
+C0120,Roger Duncan,Female,26-35,Chicago,Premium
+C0121,Michael Williams,Male,51-65,Los Angeles,Regular
+C0122,Jose Williams,Female,18-25,Miami,Premium
+C0123,Shawn Cline,Male,18-25,Atlanta,Premium
+C0124,Emily Miller,Male,51-65,Chicago,New
+C0125,Jacob Carter,Female,26-35,Miami,Premium
+C0126,Nancy Sanchez,Female,51-65,Atlanta,Premium
+C0127,Wesley Cuevas,Female,51-65,Seattle,Premium
+C0128,Morgan Payne,Female,51-65,Chicago,New
+C0129,Brittany Randolph,Male,26-35,Dallas,New
+C0130,Joshua Fields,Male,65+,Dallas,New
+C0131,Alexandra Rogers,Female,51-65,Miami,Premium
+C0132,Jamie Rojas,Female,26-35,Miami,Regular
+C0133,Daniel Bird,Female,18-25,Atlanta,Premium
+C0134,Tyrone Kaufman,Female,18-25,Dallas,Regular
+C0135,Douglas Williams,Female,65+,Chicago,New
+C0136,Ryan Gutierrez,Female,65+,Miami,Regular
+C0137,Judy Adkins,Female,18-25,Dallas,Premium
+C0138,Kathy Walsh,Male,36-50,Chicago,New
+C0139,Kevin Brown,Female,65+,Dallas,Regular
+C0140,Bianca Carter,Female,36-50,Atlanta,Regular
+C0141,Tammy Long,Male,51-65,Seattle,New
+C0142,Erika Chavez,Male,18-25,Boston,Regular
+C0143,Tony Taylor,Male,18-25,New York,Premium
+C0144,Ashley Garcia,Male,36-50,Seattle,Regular
+C0145,Erik Martinez,Male,26-35,Los Angeles,Regular
+C0146,Randy Hayes,Female,65+,Seattle,New
+C0147,Samuel Davis,Female,51-65,Seattle,New
+C0148,Elizabeth Bush,Male,36-50,Los Angeles,Regular
+C0149,Cindy Gates,Male,26-35,Chicago,Premium
+C0150,Michael Schmitt,Male,65+,Miami,Regular
+C0151,Anthony Evans,Female,36-50,Dallas,Regular
+C0152,Carrie Crane,Male,51-65,Boston,Regular
+C0153,Kristi Pierce,Male,51-65,Atlanta,Premium
+C0154,Brian Leon,Female,26-35,New York,New
+C0155,Antonio Norman,Female,51-65,Chicago,Premium
+C0156,Craig Morales,Male,51-65,Seattle,Premium
+C0157,Teresa Miller,Male,36-50,Boston,Regular
+C0158,Sylvia Jones,Male,65+,Los Angeles,New
+C0159,Christina Brewer PhD,Female,26-35,Boston,New
+C0160,Ryan Lamb,Male,36-50,Los Angeles,New
+C0161,Tom Williams,Male,36-50,Atlanta,Regular
+C0162,Jessica Ramsey,Female,26-35,Seattle,Premium
+C0163,James Simmons MD,Male,65+,Los Angeles,New
+C0164,Denise Griffin,Male,51-65,Seattle,Regular
+C0165,Lucas Jensen,Male,26-35,Los Angeles,Premium
+C0166,Kathleen Andrade,Female,51-65,Seattle,Regular
+C0167,Brandon Reyes,Female,51-65,Boston,Premium
+C0168,Marvin Robles,Male,26-35,New York,New
+C0169,Zachary Stephens,Male,36-50,Miami,Regular
+C0170,James Reeves,Female,51-65,Miami,Regular
+C0171,Richard Cooper,Female,51-65,Seattle,Premium
+C0172,Erica Nelson,Female,51-65,Seattle,Regular
+C0173,Kyle Johnson,Female,36-50,Dallas,Premium
+C0174,Diana Stokes,Female,36-50,Boston,Premium
+C0175,Hunter Silva,Male,36-50,Boston,Regular
+C0176,Christopher Wright,Male,18-25,Dallas,Regular
+C0177,Joseph Moody,Male,36-50,Boston,Regular
+C0178,Pamela Gould,Male,18-25,Boston,Regular
+C0179,Vickie Price,Male,36-50,Boston,Regular
+C0180,Wendy Thompson,Female,36-50,Boston,New
+C0181,Evan Rojas,Male,18-25,Chicago,Regular
+C0182,Kevin Warner,Male,26-35,Boston,New
+C0183,Keith Thomas,Male,18-25,Miami,New
+C0184,Sara Cochran,Male,26-35,New York,New
+C0185,Kimberly Thompson,Male,51-65,Seattle,New
+C0186,Anthony Guzman,Male,51-65,Dallas,New
+C0187,John Rivera,Female,65+,Chicago,Premium
+C0188,Renee Peterson,Female,65+,New York,Premium
+C0189,Robert Oneill,Male,65+,New York,Regular
+C0190,Charles Bush,Male,26-35,Los Angeles,Regular
+C0191,Brian Fox,Male,18-25,Boston,Regular
+C0192,Benjamin Bush,Male,36-50,Dallas,Regular
+C0193,Laurie Rogers,Female,65+,Los Angeles,New
+C0194,William Oconnor,Female,65+,Los Angeles,Regular
+C0195,Mark Freeman,Female,36-50,Seattle,New
+C0196,Michael Hoffman,Male,65+,New York,New
+C0197,Lisa Kelly,Female,36-50,Chicago,Regular
+C0198,Robin Gray,Male,18-25,Atlanta,Premium
+C0199,Elizabeth Thompson,Male,65+,Miami,Regular
+C0200,Michael Berry,Female,18-25,Boston,Premium

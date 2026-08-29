@@ -1,0 +1,18 @@
+StoreID,StoreName,Region,City,StoreType,OpeningDate
+ST01,PrimeTech 1,South,New Johnburgh,Flagship,2024-06-07
+ST02,PrimeTech 2,West,Port Andreaton,Flagship,2021-10-27
+ST03,PrimeTech 3,West,West Timothy,Flagship,2021-07-21
+ST04,PrimeTech 4,East,Lake Anthonyfort,Mall,2023-04-19
+ST05,PrimeTech 5,West,Christopherbury,Outlet,2025-01-28
+ST06,PrimeTech 6,North,Kevintown,Mall,2020-03-03
+ST07,PrimeTech 7,West,Port Danielport,Flagship,2024-02-05
+ST08,PrimeTech 8,West,West Laurie,Flagship,2023-11-29
+ST09,PrimeTech 9,West,Jonesborough,Outlet,2023-04-04
+ST10,PrimeTech 10,South,Holtmouth,Flagship,2022-03-20
+ST11,PrimeTech 11,East,Millerfort,Flagship,2021-02-01
+ST12,PrimeTech 12,West,North Kayla,Flagship,2020-07-22
+ST13,PrimeTech 13,South,New Christopher,Flagship,2023-10-29
+ST14,PrimeTech 14,North,New Christopher,Outlet,2020-12-29
+ST15,PrimeTech 15,South,West Brittanyport,Mall,2023-01-06
+ST16,PrimeTech 16,South,New Alicia,Mall,2023-04-07
+ST17,PrimeTech 17,West,New Noahchester,Mall,2021-06-18

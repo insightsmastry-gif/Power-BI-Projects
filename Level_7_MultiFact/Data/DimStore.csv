@@ -1,0 +1,13 @@
+StoreID,StoreName,Region,City,StoreType
+ST01,TechWorld 1,North,Simpsonfurt,Street
+ST02,TechWorld 2,South,Wallacebury,Flagship
+ST03,TechWorld 3,West,South Jack,Mall
+ST04,TechWorld 4,East,Patelport,Flagship
+ST05,TechWorld 5,East,New Kathryntown,Mall
+ST06,TechWorld 6,South,Sandraview,Street
+ST07,TechWorld 7,East,Port Anthony,Street
+ST08,TechWorld 8,South,Glennton,Flagship
+ST09,TechWorld 9,West,New Paulport,Street
+ST10,TechWorld 10,West,Colemanshire,Mall
+ST11,TechWorld 11,West,Franciscofurt,Mall
+ST12,TechWorld 12,North,Reesebury,Flagship

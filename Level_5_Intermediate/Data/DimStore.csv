@@ -1,0 +1,13 @@
+StoreID,StoreName,City,Region,StoreType,SquareFeet
+STR01,TechHub Store 1,North Anthony,West,Outlet,2434
+STR02,TechHub Store 2,Johnport,South,Outlet,5836
+STR03,TechHub Store 3,Benitezville,East,Flagship,2020
+STR04,TechHub Store 4,Port Nathanhaven,North,Standard,12112
+STR05,TechHub Store 5,Davidville,South,Standard,12264
+STR06,TechHub Store 6,Evanstown,West,Standard,5513
+STR07,TechHub Store 7,Morganbury,West,Outlet,3829
+STR08,TechHub Store 8,West Kevin,West,Outlet,9477
+STR09,TechHub Store 9,Lake Nicholas,South,Flagship,9445
+STR10,TechHub Store 10,North Mark,South,Outlet,6971
+STR11,TechHub Store 11,Port Kimberly,West,Outlet,4535
+STR12,TechHub Store 12,Garciachester,East,Outlet,10115

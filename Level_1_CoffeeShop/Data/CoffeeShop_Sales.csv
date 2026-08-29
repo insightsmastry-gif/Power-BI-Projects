@@ -1,0 +1,501 @@
+OrderID,OrderDate,OrderTime,Product,Category,Quantity,UnitPrice,SalesAmount,PaymentMethod,DayOfWeek
+ORD0001,2024-11-23,08:01,Mocha,Coffee,2,4.5,9.0,Cash,Saturday
+ORD0002,2024-03-12,18:06,Muffin,Food,1,2.2,2.2,Mobile,Tuesday
+ORD0003,2024-08-04,07:01,Cappuccino,Coffee,2,3.5,7.0,Cash,Sunday
+ORD0004,2024-09-15,16:01,Muffin,Food,2,2.2,4.4,Mobile,Sunday
+ORD0005,2024-11-28,18:34,Tea,Tea,2,2.8,5.6,Card,Thursday
+ORD0006,2024-10-28,11:51,Espresso,Coffee,2,2.5,5.0,Mobile,Monday
+ORD0007,2024-08-04,12:17,Latte,Coffee,2,4.0,8.0,Card,Sunday
+ORD0008,2024-02-22,08:24,Cappuccino,Coffee,3,3.5,10.5,Card,Thursday
+ORD0009,2024-11-05,11:51,Espresso,Coffee,4,2.5,10.0,Mobile,Tuesday
+ORD0010,2024-03-04,13:05,Muffin,Food,3,2.2,6.6,Mobile,Monday
+ORD0011,2024-11-12,20:23,Sandwich,Food,2,5.5,11.0,Mobile,Tuesday
+ORD0012,2024-02-05,07:42,Americano,Coffee,3,3.0,9.0,Cash,Monday
+ORD0013,2024-04-29,20:06,Tea,Tea,3,2.8,8.4,Card,Monday
+ORD0014,2024-11-21,20:23,Latte,Coffee,3,4.0,12.0,Card,Thursday
+ORD0015,2024-04-17,17:17,Cappuccino,Coffee,2,3.5,7.0,Mobile,Wednesday
+ORD0016,2024-05-05,09:29,Tea,Tea,3,2.8,8.4,Mobile,Sunday
+ORD0017,2024-12-18,15:14,Cold Brew,Coffee,1,3.8,3.8,Cash,Wednesday
+ORD0018,2024-01-17,19:20,Tea,Tea,3,2.8,8.4,Cash,Wednesday
+ORD0019,2024-04-18,16:56,Cold Brew,Coffee,2,3.8,7.6,Mobile,Thursday
+ORD0020,2024-09-12,13:56,Croissant,Food,2,2.5,5.0,Card,Thursday
+ORD0021,2024-03-12,10:47,Muffin,Food,3,2.2,6.6,Mobile,Tuesday
+ORD0022,2024-10-26,13:57,Sandwich,Food,4,5.5,22.0,Card,Saturday
+ORD0023,2024-04-22,09:32,Croissant,Food,1,2.5,2.5,Cash,Monday
+ORD0024,2024-02-26,09:40,Latte,Coffee,4,4.0,16.0,Mobile,Monday
+ORD0025,2024-02-02,13:24,Sandwich,Food,4,5.5,22.0,Mobile,Friday
+ORD0026,2024-05-08,15:55,Espresso,Coffee,1,2.5,2.5,Mobile,Wednesday
+ORD0027,2024-10-01,19:17,Cold Brew,Coffee,1,3.8,3.8,Card,Tuesday
+ORD0028,2024-08-10,09:29,Espresso,Coffee,3,2.5,7.5,Mobile,Saturday
+ORD0029,2024-04-01,15:58,Cappuccino,Coffee,3,3.5,10.5,Mobile,Monday
+ORD0030,2024-09-16,16:12,Latte,Coffee,3,4.0,12.0,Cash,Monday
+ORD0031,2024-10-03,19:59,Muffin,Food,1,2.2,2.2,Mobile,Thursday
+ORD0032,2024-06-14,14:01,Cappuccino,Coffee,3,3.5,10.5,Card,Friday
+ORD0033,2024-05-02,07:15,Sandwich,Food,1,5.5,5.5,Cash,Thursday
+ORD0034,2024-09-05,20:04,Muffin,Food,2,2.2,4.4,Cash,Thursday
+ORD0035,2024-12-03,14:35,Latte,Coffee,3,4.0,12.0,Mobile,Tuesday
+ORD0036,2024-11-06,13:13,Muffin,Food,2,2.2,4.4,Mobile,Wednesday
+ORD0037,2024-06-08,13:42,Cold Brew,Coffee,4,3.8,15.2,Mobile,Saturday
+ORD0038,2024-08-19,08:15,Americano,Coffee,1,3.0,3.0,Card,Monday
+ORD0039,2024-01-11,16:35,Americano,Coffee,2,3.0,6.0,Cash,Thursday
+ORD0040,2024-02-06,18:40,Espresso,Coffee,2,2.5,5.0,Cash,Tuesday
+ORD0041,2024-01-17,20:21,Cappuccino,Coffee,2,3.5,7.0,Card,Wednesday
+ORD0042,2024-12-08,14:13,Muffin,Food,2,2.2,4.4,Mobile,Sunday
+ORD0043,2024-10-19,16:30,Americano,Coffee,4,3.0,12.0,Card,Saturday
+ORD0044,2024-04-07,08:06,Tea,Tea,3,2.8,8.4,Card,Sunday
+ORD0045,2024-07-29,14:55,Espresso,Coffee,1,2.5,2.5,Cash,Monday
+ORD0046,2024-07-25,18:21,Cappuccino,Coffee,2,3.5,7.0,Cash,Thursday
+ORD0047,2024-04-07,15:28,Latte,Coffee,4,4.0,16.0,Cash,Sunday
+ORD0048,2024-05-22,14:15,Cappuccino,Coffee,4,3.5,14.0,Mobile,Wednesday
+ORD0049,2024-02-20,07:41,Muffin,Food,1,2.2,2.2,Cash,Tuesday
+ORD0050,2024-05-01,09:26,Croissant,Food,4,2.5,10.0,Cash,Wednesday
+ORD0051,2024-07-24,07:10,Tea,Tea,1,2.8,2.8,Card,Wednesday
+ORD0052,2024-05-15,19:50,Croissant,Food,3,2.5,7.5,Card,Wednesday
+ORD0053,2024-12-22,18:50,Muffin,Food,4,2.2,8.8,Cash,Sunday
+ORD0054,2024-04-07,11:13,Espresso,Coffee,1,2.5,2.5,Mobile,Sunday
+ORD0055,2024-06-09,07:03,Sandwich,Food,4,5.5,22.0,Mobile,Sunday
+ORD0056,2024-09-28,09:03,Muffin,Food,1,2.2,2.2,Cash,Saturday
+ORD0057,2024-02-05,16:04,Americano,Coffee,4,3.0,12.0,Cash,Monday
+ORD0058,2024-10-18,10:37,Sandwich,Food,1,5.5,5.5,Mobile,Friday
+ORD0059,2024-02-11,13:42,Sandwich,Food,3,5.5,16.5,Card,Sunday
+ORD0060,2024-04-14,17:45,Cold Brew,Coffee,2,3.8,7.6,Card,Sunday
+ORD0061,2024-07-21,09:42,Mocha,Coffee,4,4.5,18.0,Card,Sunday
+ORD0062,2024-02-07,07:29,Sandwich,Food,1,5.5,5.5,Cash,Wednesday
+ORD0063,2024-10-02,10:32,Mocha,Coffee,2,4.5,9.0,Card,Wednesday
+ORD0064,2024-02-05,10:23,Mocha,Coffee,2,4.5,9.0,Card,Monday
+ORD0065,2024-10-05,18:19,Sandwich,Food,1,5.5,5.5,Mobile,Saturday
+ORD0066,2024-10-10,11:59,Cappuccino,Coffee,2,3.5,7.0,Card,Thursday
+ORD0067,2024-02-29,08:47,Muffin,Food,2,2.2,4.4,Card,Thursday
+ORD0068,2024-05-24,16:13,Cold Brew,Coffee,2,3.8,7.6,Mobile,Friday
+ORD0069,2024-11-20,20:16,Muffin,Food,4,2.2,8.8,Card,Wednesday
+ORD0070,2024-01-27,08:40,Tea,Tea,3,2.8,8.4,Cash,Saturday
+ORD0071,2024-01-02,12:49,Latte,Coffee,3,4.0,12.0,Cash,Tuesday
+ORD0072,2024-08-14,15:45,Tea,Tea,1,2.8,2.8,Cash,Wednesday
+ORD0073,2024-02-08,18:57,Latte,Coffee,1,4.0,4.0,Card,Thursday
+ORD0074,2024-10-25,15:09,Tea,Tea,2,2.8,5.6,Cash,Friday
+ORD0075,2024-06-06,12:57,Espresso,Coffee,3,2.5,7.5,Cash,Thursday
+ORD0076,2024-12-15,10:42,Cappuccino,Coffee,3,3.5,10.5,Mobile,Sunday
+ORD0077,2024-07-27,16:47,Latte,Coffee,2,4.0,8.0,Cash,Saturday
+ORD0078,2024-03-31,13:01,Latte,Coffee,3,4.0,12.0,Card,Sunday
+ORD0079,2024-12-08,20:47,Americano,Coffee,3,3.0,9.0,Cash,Sunday
+ORD0080,2024-12-25,08:24,Espresso,Coffee,4,2.5,10.0,Cash,Wednesday
+ORD0081,2024-04-12,20:58,Croissant,Food,3,2.5,7.5,Card,Friday
+ORD0082,2024-04-26,10:01,Americano,Coffee,4,3.0,12.0,Card,Friday
+ORD0083,2024-05-22,20:04,Mocha,Coffee,3,4.5,13.5,Mobile,Wednesday
+ORD0084,2024-09-17,13:43,Muffin,Food,3,2.2,6.6,Cash,Tuesday
+ORD0085,2024-02-29,11:11,Sandwich,Food,3,5.5,16.5,Cash,Thursday
+ORD0086,2024-02-25,16:27,Cold Brew,Coffee,3,3.8,11.4,Card,Sunday
+ORD0087,2024-11-06,15:07,Tea,Tea,2,2.8,5.6,Card,Wednesday
+ORD0088,2024-01-23,18:27,Espresso,Coffee,2,2.5,5.0,Card,Tuesday
+ORD0089,2024-08-08,08:42,Cold Brew,Coffee,3,3.8,11.4,Mobile,Thursday
+ORD0090,2024-03-04,18:57,Mocha,Coffee,3,4.5,13.5,Mobile,Monday
+ORD0091,2024-07-28,12:25,Mocha,Coffee,2,4.5,9.0,Cash,Sunday
+ORD0092,2024-08-03,17:24,Latte,Coffee,3,4.0,12.0,Card,Saturday
+ORD0093,2024-10-07,20:00,Mocha,Coffee,3,4.5,13.5,Cash,Monday
+ORD0094,2024-08-08,19:37,Sandwich,Food,3,5.5,16.5,Card,Thursday
+ORD0095,2024-08-14,14:43,Americano,Coffee,4,3.0,12.0,Mobile,Wednesday
+ORD0096,2024-03-27,17:05,Mocha,Coffee,3,4.5,13.5,Cash,Wednesday
+ORD0097,2024-04-30,17:19,Americano,Coffee,2,3.0,6.0,Cash,Tuesday
+ORD0098,2024-01-13,07:15,Croissant,Food,1,2.5,2.5,Card,Saturday
+ORD0099,2024-07-31,17:36,Americano,Coffee,4,3.0,12.0,Card,Wednesday
+ORD0100,2024-07-23,10:09,Espresso,Coffee,1,2.5,2.5,Card,Tuesday
+ORD0101,2024-04-22,09:51,Muffin,Food,4,2.2,8.8,Cash,Monday
+ORD0102,2024-10-12,10:58,Cappuccino,Coffee,4,3.5,14.0,Cash,Saturday
+ORD0103,2024-08-25,17:33,Muffin,Food,3,2.2,6.6,Card,Sunday
+ORD0104,2024-11-09,20:46,Muffin,Food,4,2.2,8.8,Mobile,Saturday
+ORD0105,2024-08-16,09:47,Croissant,Food,4,2.5,10.0,Card,Friday
+ORD0106,2024-05-06,20:40,Mocha,Coffee,4,4.5,18.0,Mobile,Monday
+ORD0107,2024-05-02,11:28,Cappuccino,Coffee,3,3.5,10.5,Cash,Thursday
+ORD0108,2024-05-19,12:20,Muffin,Food,1,2.2,2.2,Cash,Sunday
+ORD0109,2024-03-18,10:24,Latte,Coffee,2,4.0,8.0,Cash,Monday
+ORD0110,2024-07-31,13:21,Muffin,Food,4,2.2,8.8,Card,Wednesday
+ORD0111,2024-02-01,10:53,Tea,Tea,4,2.8,11.2,Mobile,Thursday
+ORD0112,2024-12-22,07:54,Sandwich,Food,4,5.5,22.0,Card,Sunday
+ORD0113,2024-01-04,12:19,Tea,Tea,4,2.8,11.2,Mobile,Thursday
+ORD0114,2024-10-06,19:38,Americano,Coffee,4,3.0,12.0,Cash,Sunday
+ORD0115,2024-05-19,13:31,Espresso,Coffee,4,2.5,10.0,Card,Sunday
+ORD0116,2024-12-08,17:51,Tea,Tea,2,2.8,5.6,Card,Sunday
+ORD0117,2024-03-06,16:34,Espresso,Coffee,4,2.5,10.0,Mobile,Wednesday
+ORD0118,2024-10-15,17:01,Cappuccino,Coffee,4,3.5,14.0,Cash,Tuesday
+ORD0119,2024-08-24,09:03,Mocha,Coffee,4,4.5,18.0,Card,Saturday
+ORD0120,2024-04-18,14:20,Cold Brew,Coffee,4,3.8,15.2,Card,Thursday
+ORD0121,2024-08-03,11:53,Cappuccino,Coffee,4,3.5,14.0,Cash,Saturday
+ORD0122,2024-10-03,07:22,Americano,Coffee,1,3.0,3.0,Mobile,Thursday
+ORD0123,2024-01-21,19:01,Americano,Coffee,2,3.0,6.0,Cash,Sunday
+ORD0124,2024-11-14,09:15,Latte,Coffee,4,4.0,16.0,Mobile,Thursday
+ORD0125,2024-02-28,16:13,Croissant,Food,3,2.5,7.5,Card,Wednesday
+ORD0126,2024-03-26,16:38,Cappuccino,Coffee,2,3.5,7.0,Card,Tuesday
+ORD0127,2024-02-25,16:01,Mocha,Coffee,4,4.5,18.0,Card,Sunday
+ORD0128,2024-04-11,08:37,Americano,Coffee,1,3.0,3.0,Mobile,Thursday
+ORD0129,2024-06-03,20:43,Sandwich,Food,1,5.5,5.5,Mobile,Monday
+ORD0130,2024-01-22,12:34,Tea,Tea,3,2.8,8.4,Cash,Monday
+ORD0131,2024-09-16,17:21,Espresso,Coffee,4,2.5,10.0,Card,Monday
+ORD0132,2024-02-24,13:23,Croissant,Food,2,2.5,5.0,Card,Saturday
+ORD0133,2024-03-31,18:33,Mocha,Coffee,4,4.5,18.0,Card,Sunday
+ORD0134,2024-08-11,20:46,Sandwich,Food,3,5.5,16.5,Card,Sunday
+ORD0135,2024-05-05,20:59,Cappuccino,Coffee,3,3.5,10.5,Card,Sunday
+ORD0136,2024-05-04,19:29,Sandwich,Food,4,5.5,22.0,Card,Saturday
+ORD0137,2024-01-15,14:54,Cold Brew,Coffee,2,3.8,7.6,Card,Monday
+ORD0138,2024-04-18,12:51,Mocha,Coffee,3,4.5,13.5,Card,Thursday
+ORD0139,2024-11-01,18:56,Mocha,Coffee,1,4.5,4.5,Mobile,Friday
+ORD0140,2024-04-07,08:15,Tea,Tea,4,2.8,11.2,Mobile,Sunday
+ORD0141,2024-05-03,18:30,Croissant,Food,4,2.5,10.0,Cash,Friday
+ORD0142,2024-02-17,11:14,Tea,Tea,2,2.8,5.6,Card,Saturday
+ORD0143,2024-12-05,16:23,Croissant,Food,3,2.5,7.5,Card,Thursday
+ORD0144,2024-10-08,12:22,Croissant,Food,3,2.5,7.5,Card,Tuesday
+ORD0145,2024-05-08,10:07,Americano,Coffee,3,3.0,9.0,Cash,Wednesday
+ORD0146,2024-10-01,19:44,Latte,Coffee,2,4.0,8.0,Cash,Tuesday
+ORD0147,2024-09-04,11:46,Sandwich,Food,3,5.5,16.5,Cash,Wednesday
+ORD0148,2024-04-09,11:14,Cold Brew,Coffee,2,3.8,7.6,Card,Tuesday
+ORD0149,2024-01-08,18:34,Latte,Coffee,3,4.0,12.0,Cash,Monday
+ORD0150,2024-01-28,15:18,Latte,Coffee,4,4.0,16.0,Cash,Sunday
+ORD0151,2024-01-07,16:18,Croissant,Food,4,2.5,10.0,Card,Sunday
+ORD0152,2024-06-23,09:03,Mocha,Coffee,4,4.5,18.0,Cash,Sunday
+ORD0153,2024-02-03,13:31,Cappuccino,Coffee,1,3.5,3.5,Cash,Saturday
+ORD0154,2024-03-17,19:36,Mocha,Coffee,1,4.5,4.5,Cash,Sunday
+ORD0155,2024-03-01,15:48,Tea,Tea,2,2.8,5.6,Mobile,Friday
+ORD0156,2024-07-13,14:58,Croissant,Food,3,2.5,7.5,Mobile,Saturday
+ORD0157,2024-08-07,11:36,Sandwich,Food,1,5.5,5.5,Mobile,Wednesday
+ORD0158,2024-02-20,19:13,Americano,Coffee,3,3.0,9.0,Mobile,Tuesday
+ORD0159,2024-02-11,09:15,Latte,Coffee,1,4.0,4.0,Cash,Sunday
+ORD0160,2024-01-02,13:28,Sandwich,Food,4,5.5,22.0,Card,Tuesday
+ORD0161,2024-01-17,10:18,Mocha,Coffee,4,4.5,18.0,Cash,Wednesday
+ORD0162,2024-12-17,10:59,Mocha,Coffee,2,4.5,9.0,Card,Tuesday
+ORD0163,2024-02-28,15:14,Latte,Coffee,3,4.0,12.0,Cash,Wednesday
+ORD0164,2024-02-06,07:10,Mocha,Coffee,3,4.5,13.5,Card,Tuesday
+ORD0165,2024-03-04,14:44,Mocha,Coffee,4,4.5,18.0,Card,Monday
+ORD0166,2024-09-13,15:31,Croissant,Food,1,2.5,2.5,Mobile,Friday
+ORD0167,2024-01-21,13:47,Cold Brew,Coffee,3,3.8,11.4,Cash,Sunday
+ORD0168,2024-02-16,10:43,Sandwich,Food,1,5.5,5.5,Mobile,Friday
+ORD0169,2024-05-17,16:02,Latte,Coffee,4,4.0,16.0,Mobile,Friday
+ORD0170,2024-11-29,14:58,Mocha,Coffee,2,4.5,9.0,Mobile,Friday
+ORD0171,2024-08-11,17:52,Croissant,Food,1,2.5,2.5,Card,Sunday
+ORD0172,2024-06-27,13:21,Cold Brew,Coffee,1,3.8,3.8,Cash,Thursday
+ORD0173,2024-06-17,13:44,Croissant,Food,3,2.5,7.5,Mobile,Monday
+ORD0174,2024-07-24,20:48,Muffin,Food,1,2.2,2.2,Card,Wednesday
+ORD0175,2024-02-15,12:16,Cold Brew,Coffee,1,3.8,3.8,Card,Thursday
+ORD0176,2024-09-20,20:00,Muffin,Food,4,2.2,8.8,Card,Friday
+ORD0177,2024-01-28,10:33,Cold Brew,Coffee,4,3.8,15.2,Mobile,Sunday
+ORD0178,2024-08-14,19:03,Americano,Coffee,3,3.0,9.0,Mobile,Wednesday
+ORD0179,2024-03-08,11:28,Croissant,Food,1,2.5,2.5,Cash,Friday
+ORD0180,2024-11-18,16:51,Americano,Coffee,2,3.0,6.0,Card,Monday
+ORD0181,2024-10-09,07:35,Tea,Tea,1,2.8,2.8,Cash,Wednesday
+ORD0182,2024-02-28,14:07,Latte,Coffee,4,4.0,16.0,Mobile,Wednesday
+ORD0183,2024-05-29,15:45,Mocha,Coffee,4,4.5,18.0,Card,Wednesday
+ORD0184,2024-08-29,10:29,Muffin,Food,2,2.2,4.4,Card,Thursday
+ORD0185,2024-04-07,16:32,Latte,Coffee,1,4.0,4.0,Card,Sunday
+ORD0186,2024-07-31,12:59,Muffin,Food,3,2.2,6.6,Cash,Wednesday
+ORD0187,2024-05-24,18:19,Sandwich,Food,4,5.5,22.0,Cash,Friday
+ORD0188,2024-08-16,15:30,Cold Brew,Coffee,3,3.8,11.4,Mobile,Friday
+ORD0189,2024-10-05,13:29,Cold Brew,Coffee,2,3.8,7.6,Mobile,Saturday
+ORD0190,2024-05-02,16:24,Americano,Coffee,4,3.0,12.0,Cash,Thursday
+ORD0191,2024-06-11,18:30,Tea,Tea,4,2.8,11.2,Mobile,Tuesday
+ORD0192,2024-11-29,09:31,Espresso,Coffee,2,2.5,5.0,Mobile,Friday
+ORD0193,2024-10-29,12:55,Cappuccino,Coffee,4,3.5,14.0,Cash,Tuesday
+ORD0194,2024-09-26,14:00,Latte,Coffee,4,4.0,16.0,Mobile,Thursday
+ORD0195,2024-03-20,08:30,Mocha,Coffee,3,4.5,13.5,Mobile,Wednesday
+ORD0196,2024-12-20,13:41,Cappuccino,Coffee,3,3.5,10.5,Mobile,Friday
+ORD0197,2024-09-30,13:20,Croissant,Food,1,2.5,2.5,Mobile,Monday
+ORD0198,2024-02-05,10:40,Mocha,Coffee,2,4.5,9.0,Mobile,Monday
+ORD0199,2024-02-16,13:06,Cappuccino,Coffee,4,3.5,14.0,Cash,Friday
+ORD0200,2024-12-21,11:57,Espresso,Coffee,1,2.5,2.5,Card,Saturday
+ORD0201,2024-01-29,11:22,Cold Brew,Coffee,4,3.8,15.2,Cash,Monday
+ORD0202,2024-05-05,15:26,Sandwich,Food,2,5.5,11.0,Cash,Sunday
+ORD0203,2024-03-30,08:39,Tea,Tea,2,2.8,5.6,Card,Saturday
+ORD0204,2024-10-25,09:14,Croissant,Food,3,2.5,7.5,Card,Friday
+ORD0205,2024-05-10,17:00,Croissant,Food,3,2.5,7.5,Mobile,Friday
+ORD0206,2024-10-06,09:04,Croissant,Food,3,2.5,7.5,Mobile,Sunday
+ORD0207,2024-06-02,17:27,Mocha,Coffee,4,4.5,18.0,Card,Sunday
+ORD0208,2024-04-11,13:54,Croissant,Food,1,2.5,2.5,Cash,Thursday
+ORD0209,2024-07-14,16:22,Sandwich,Food,3,5.5,16.5,Mobile,Sunday
+ORD0210,2024-05-31,07:53,Tea,Tea,3,2.8,8.4,Cash,Friday
+ORD0211,2024-10-16,20:43,Espresso,Coffee,4,2.5,10.0,Card,Wednesday
+ORD0212,2024-04-27,16:51,Cold Brew,Coffee,2,3.8,7.6,Mobile,Saturday
+ORD0213,2024-04-07,16:16,Latte,Coffee,1,4.0,4.0,Mobile,Sunday
+ORD0214,2024-11-26,07:19,Croissant,Food,1,2.5,2.5,Mobile,Tuesday
+ORD0215,2024-07-05,18:08,Cappuccino,Coffee,3,3.5,10.5,Card,Friday
+ORD0216,2024-07-31,09:12,Latte,Coffee,3,4.0,12.0,Mobile,Wednesday
+ORD0217,2024-09-13,11:53,Latte,Coffee,3,4.0,12.0,Card,Friday
+ORD0218,2024-05-31,18:55,Cold Brew,Coffee,1,3.8,3.8,Card,Friday
+ORD0219,2024-02-08,09:48,Americano,Coffee,4,3.0,12.0,Mobile,Thursday
+ORD0220,2024-07-06,08:50,Tea,Tea,1,2.8,2.8,Card,Saturday
+ORD0221,2024-10-01,08:29,Cold Brew,Coffee,3,3.8,11.4,Mobile,Tuesday
+ORD0222,2024-07-14,20:40,Cold Brew,Coffee,1,3.8,3.8,Mobile,Sunday
+ORD0223,2024-04-29,14:01,Sandwich,Food,3,5.5,16.5,Mobile,Monday
+ORD0224,2024-04-23,17:04,Croissant,Food,3,2.5,7.5,Mobile,Tuesday
+ORD0225,2024-07-28,08:08,Espresso,Coffee,1,2.5,2.5,Card,Sunday
+ORD0226,2024-09-09,08:06,Americano,Coffee,2,3.0,6.0,Card,Monday
+ORD0227,2024-08-20,12:42,Muffin,Food,4,2.2,8.8,Mobile,Tuesday
+ORD0228,2024-03-20,13:41,Cappuccino,Coffee,4,3.5,14.0,Mobile,Wednesday
+ORD0229,2024-07-27,11:02,Cold Brew,Coffee,2,3.8,7.6,Card,Saturday
+ORD0230,2024-08-15,10:54,Cold Brew,Coffee,1,3.8,3.8,Mobile,Thursday
+ORD0231,2024-07-07,15:57,Cold Brew,Coffee,1,3.8,3.8,Card,Sunday
+ORD0232,2024-05-21,10:07,Croissant,Food,1,2.5,2.5,Mobile,Tuesday
+ORD0233,2024-04-18,17:40,Sandwich,Food,1,5.5,5.5,Cash,Thursday
+ORD0234,2024-06-19,10:08,Sandwich,Food,2,5.5,11.0,Cash,Wednesday
+ORD0235,2024-10-10,10:37,Americano,Coffee,2,3.0,6.0,Card,Thursday
+ORD0236,2024-03-16,19:57,Sandwich,Food,1,5.5,5.5,Card,Saturday
+ORD0237,2024-03-15,09:34,Mocha,Coffee,2,4.5,9.0,Cash,Friday
+ORD0238,2024-12-04,20:01,Latte,Coffee,1,4.0,4.0,Card,Wednesday
+ORD0239,2024-05-01,16:20,Espresso,Coffee,2,2.5,5.0,Card,Wednesday
+ORD0240,2024-01-27,09:47,Tea,Tea,1,2.8,2.8,Mobile,Saturday
+ORD0241,2024-02-02,14:28,Cold Brew,Coffee,1,3.8,3.8,Card,Friday
+ORD0242,2024-09-14,10:39,Espresso,Coffee,3,2.5,7.5,Card,Saturday
+ORD0243,2024-11-25,07:03,Croissant,Food,4,2.5,10.0,Card,Monday
+ORD0244,2024-12-17,08:31,Croissant,Food,1,2.5,2.5,Cash,Tuesday
+ORD0245,2024-06-13,16:09,Cappuccino,Coffee,2,3.5,7.0,Card,Thursday
+ORD0246,2024-11-15,17:37,Muffin,Food,3,2.2,6.6,Card,Friday
+ORD0247,2024-11-01,15:18,Croissant,Food,4,2.5,10.0,Cash,Friday
+ORD0248,2024-12-25,08:54,Muffin,Food,2,2.2,4.4,Card,Wednesday
+ORD0249,2024-08-19,10:26,Cold Brew,Coffee,4,3.8,15.2,Card,Monday
+ORD0250,2024-07-31,18:06,Cold Brew,Coffee,4,3.8,15.2,Card,Wednesday
+ORD0251,2024-12-06,11:23,Latte,Coffee,4,4.0,16.0,Cash,Friday
+ORD0252,2024-02-16,20:05,Cappuccino,Coffee,4,3.5,14.0,Cash,Friday
+ORD0253,2024-07-09,19:08,Muffin,Food,1,2.2,2.2,Mobile,Tuesday
+ORD0254,2024-10-14,15:21,Cappuccino,Coffee,4,3.5,14.0,Card,Monday
+ORD0255,2024-12-06,19:27,Espresso,Coffee,3,2.5,7.5,Mobile,Friday
+ORD0256,2024-06-08,12:06,Sandwich,Food,2,5.5,11.0,Cash,Saturday
+ORD0257,2024-12-02,14:14,Cappuccino,Coffee,3,3.5,10.5,Mobile,Monday
+ORD0258,2024-07-07,08:48,Mocha,Coffee,2,4.5,9.0,Card,Sunday
+ORD0259,2024-10-14,19:52,Sandwich,Food,1,5.5,5.5,Mobile,Monday
+ORD0260,2024-12-02,20:44,Mocha,Coffee,1,4.5,4.5,Cash,Monday
+ORD0261,2024-05-19,18:48,Mocha,Coffee,3,4.5,13.5,Card,Sunday
+ORD0262,2024-01-04,09:55,Latte,Coffee,4,4.0,16.0,Cash,Thursday
+ORD0263,2024-03-13,18:40,Espresso,Coffee,1,2.5,2.5,Mobile,Wednesday
+ORD0264,2024-09-28,10:24,Tea,Tea,4,2.8,11.2,Card,Saturday
+ORD0265,2024-03-21,12:19,Cold Brew,Coffee,1,3.8,3.8,Cash,Thursday
+ORD0266,2024-03-20,09:48,Sandwich,Food,1,5.5,5.5,Mobile,Wednesday
+ORD0267,2024-02-11,11:28,Tea,Tea,4,2.8,11.2,Mobile,Sunday
+ORD0268,2024-08-14,13:17,Americano,Coffee,1,3.0,3.0,Card,Wednesday
+ORD0269,2024-08-08,08:18,Sandwich,Food,4,5.5,22.0,Mobile,Thursday
+ORD0270,2024-12-07,11:02,Americano,Coffee,4,3.0,12.0,Mobile,Saturday
+ORD0271,2024-01-29,07:13,Mocha,Coffee,2,4.5,9.0,Cash,Monday
+ORD0272,2024-05-10,11:20,Cappuccino,Coffee,1,3.5,3.5,Card,Friday
+ORD0273,2024-08-08,09:08,Tea,Tea,2,2.8,5.6,Mobile,Thursday
+ORD0274,2024-10-13,20:42,Cold Brew,Coffee,1,3.8,3.8,Card,Sunday
+ORD0275,2024-01-22,13:01,Croissant,Food,1,2.5,2.5,Card,Monday
+ORD0276,2024-10-21,13:36,Tea,Tea,4,2.8,11.2,Card,Monday
+ORD0277,2024-02-28,13:01,Cold Brew,Coffee,2,3.8,7.6,Mobile,Wednesday
+ORD0278,2024-08-23,20:44,Cold Brew,Coffee,1,3.8,3.8,Card,Friday
+ORD0279,2024-02-24,10:27,Sandwich,Food,4,5.5,22.0,Mobile,Saturday
+ORD0280,2024-02-10,13:55,Mocha,Coffee,3,4.5,13.5,Cash,Saturday
+ORD0281,2024-06-19,19:10,Cappuccino,Coffee,1,3.5,3.5,Mobile,Wednesday
+ORD0282,2024-09-18,10:57,Cold Brew,Coffee,3,3.8,11.4,Mobile,Wednesday
+ORD0283,2024-11-26,20:09,Americano,Coffee,1,3.0,3.0,Cash,Tuesday
+ORD0284,2024-05-11,10:11,Sandwich,Food,2,5.5,11.0,Mobile,Saturday
+ORD0285,2024-02-08,09:49,Croissant,Food,4,2.5,10.0,Mobile,Thursday
+ORD0286,2024-10-23,14:43,Sandwich,Food,3,5.5,16.5,Mobile,Wednesday
+ORD0287,2024-06-10,09:28,Cappuccino,Coffee,4,3.5,14.0,Card,Monday
+ORD0288,2024-11-19,11:50,Mocha,Coffee,1,4.5,4.5,Card,Tuesday
+ORD0289,2024-09-16,08:19,Croissant,Food,4,2.5,10.0,Cash,Monday
+ORD0290,2024-01-30,12:53,Mocha,Coffee,1,4.5,4.5,Mobile,Tuesday
+ORD0291,2024-02-16,16:38,Muffin,Food,4,2.2,8.8,Card,Friday
+ORD0292,2024-10-24,15:50,Espresso,Coffee,4,2.5,10.0,Mobile,Thursday
+ORD0293,2024-11-29,10:20,Sandwich,Food,4,5.5,22.0,Mobile,Friday
+ORD0294,2024-03-18,07:28,Cappuccino,Coffee,3,3.5,10.5,Mobile,Monday
+ORD0295,2024-02-13,15:41,Latte,Coffee,1,4.0,4.0,Cash,Tuesday
+ORD0296,2024-12-28,14:28,Muffin,Food,2,2.2,4.4,Card,Saturday
+ORD0297,2024-07-09,11:24,Tea,Tea,3,2.8,8.4,Mobile,Tuesday
+ORD0298,2024-11-02,07:50,Cold Brew,Coffee,1,3.8,3.8,Card,Saturday
+ORD0299,2024-02-18,15:43,Tea,Tea,3,2.8,8.4,Card,Sunday
+ORD0300,2024-12-02,16:55,Latte,Coffee,3,4.0,12.0,Cash,Monday
+ORD0301,2024-10-25,17:09,Cold Brew,Coffee,3,3.8,11.4,Mobile,Friday
+ORD0302,2024-12-23,17:25,Latte,Coffee,1,4.0,4.0,Card,Monday
+ORD0303,2024-10-13,13:41,Cold Brew,Coffee,2,3.8,7.6,Mobile,Sunday
+ORD0304,2024-12-25,20:47,Muffin,Food,1,2.2,2.2,Mobile,Wednesday
+ORD0305,2024-12-09,13:32,Cold Brew,Coffee,1,3.8,3.8,Card,Monday
+ORD0306,2024-06-07,09:13,Cold Brew,Coffee,4,3.8,15.2,Cash,Friday
+ORD0307,2024-04-25,09:09,Cappuccino,Coffee,3,3.5,10.5,Cash,Thursday
+ORD0308,2024-09-16,19:34,Muffin,Food,1,2.2,2.2,Mobile,Monday
+ORD0309,2024-06-21,19:39,Latte,Coffee,4,4.0,16.0,Cash,Friday
+ORD0310,2024-03-24,09:53,Sandwich,Food,2,5.5,11.0,Mobile,Sunday
+ORD0311,2024-08-12,07:26,Cold Brew,Coffee,2,3.8,7.6,Card,Monday
+ORD0312,2024-11-08,11:48,Croissant,Food,2,2.5,5.0,Mobile,Friday
+ORD0313,2024-05-02,11:51,Croissant,Food,2,2.5,5.0,Card,Thursday
+ORD0314,2024-12-13,16:28,Croissant,Food,3,2.5,7.5,Card,Friday
+ORD0315,2024-09-14,15:26,Latte,Coffee,2,4.0,8.0,Mobile,Saturday
+ORD0316,2024-03-11,20:16,Espresso,Coffee,4,2.5,10.0,Card,Monday
+ORD0317,2024-10-10,08:45,Muffin,Food,1,2.2,2.2,Card,Thursday
+ORD0318,2024-02-12,19:10,Mocha,Coffee,4,4.5,18.0,Mobile,Monday
+ORD0319,2024-03-16,20:27,Cappuccino,Coffee,2,3.5,7.0,Card,Saturday
+ORD0320,2024-06-27,07:26,Espresso,Coffee,4,2.5,10.0,Mobile,Thursday
+ORD0321,2024-07-10,10:24,Cappuccino,Coffee,3,3.5,10.5,Cash,Wednesday
+ORD0322,2024-01-15,12:59,Cappuccino,Coffee,3,3.5,10.5,Cash,Monday
+ORD0323,2024-03-11,07:18,Croissant,Food,2,2.5,5.0,Mobile,Monday
+ORD0324,2024-08-28,14:39,Espresso,Coffee,1,2.5,2.5,Cash,Wednesday
+ORD0325,2024-05-11,10:53,Latte,Coffee,4,4.0,16.0,Cash,Saturday
+ORD0326,2024-05-27,10:19,Cappuccino,Coffee,1,3.5,3.5,Cash,Monday
+ORD0327,2024-08-02,17:50,Sandwich,Food,4,5.5,22.0,Cash,Friday
+ORD0328,2024-02-26,20:57,Croissant,Food,1,2.5,2.5,Mobile,Monday
+ORD0329,2024-09-20,16:15,Latte,Coffee,3,4.0,12.0,Card,Friday
+ORD0330,2024-01-01,16:22,Americano,Coffee,4,3.0,12.0,Cash,Monday
+ORD0331,2024-12-06,17:05,Muffin,Food,3,2.2,6.6,Cash,Friday
+ORD0332,2024-09-26,15:32,Muffin,Food,1,2.2,2.2,Card,Thursday
+ORD0333,2024-08-28,07:40,Tea,Tea,3,2.8,8.4,Card,Wednesday
+ORD0334,2024-01-09,12:50,Cappuccino,Coffee,3,3.5,10.5,Cash,Tuesday
+ORD0335,2024-12-02,17:06,Sandwich,Food,3,5.5,16.5,Cash,Monday
+ORD0336,2024-01-23,12:34,Cold Brew,Coffee,2,3.8,7.6,Mobile,Tuesday
+ORD0337,2024-08-25,18:30,Latte,Coffee,2,4.0,8.0,Cash,Sunday
+ORD0338,2024-08-22,07:18,Americano,Coffee,1,3.0,3.0,Cash,Thursday
+ORD0339,2024-01-22,12:59,Mocha,Coffee,4,4.5,18.0,Mobile,Monday
+ORD0340,2024-08-30,11:02,Americano,Coffee,3,3.0,9.0,Card,Friday
+ORD0341,2024-01-25,20:41,Cold Brew,Coffee,3,3.8,11.4,Cash,Thursday
+ORD0342,2024-07-07,13:56,Tea,Tea,4,2.8,11.2,Card,Sunday
+ORD0343,2024-06-22,09:31,Croissant,Food,3,2.5,7.5,Mobile,Saturday
+ORD0344,2024-05-16,19:05,Tea,Tea,1,2.8,2.8,Card,Thursday
+ORD0345,2024-11-04,20:11,Muffin,Food,3,2.2,6.6,Card,Monday
+ORD0346,2024-02-22,08:20,Mocha,Coffee,3,4.5,13.5,Card,Thursday
+ORD0347,2024-11-04,18:27,Latte,Coffee,4,4.0,16.0,Card,Monday
+ORD0348,2024-08-16,07:46,Cold Brew,Coffee,4,3.8,15.2,Card,Friday
+ORD0349,2024-11-23,19:03,Cappuccino,Coffee,4,3.5,14.0,Card,Saturday
+ORD0350,2024-09-19,19:47,Latte,Coffee,1,4.0,4.0,Cash,Thursday
+ORD0351,2024-11-07,17:50,Croissant,Food,1,2.5,2.5,Cash,Thursday
+ORD0352,2024-02-04,10:49,Cold Brew,Coffee,3,3.8,11.4,Card,Sunday
+ORD0353,2024-10-17,07:38,Latte,Coffee,4,4.0,16.0,Card,Thursday
+ORD0354,2024-07-09,14:48,Cappuccino,Coffee,2,3.5,7.0,Mobile,Tuesday
+ORD0355,2024-07-06,13:20,Mocha,Coffee,2,4.5,9.0,Cash,Saturday
+ORD0356,2024-01-14,18:11,Croissant,Food,4,2.5,10.0,Mobile,Sunday
+ORD0357,2024-03-01,11:49,Mocha,Coffee,4,4.5,18.0,Cash,Friday
+ORD0358,2024-11-09,11:44,Croissant,Food,2,2.5,5.0,Cash,Saturday
+ORD0359,2024-03-10,20:04,Croissant,Food,2,2.5,5.0,Mobile,Sunday
+ORD0360,2024-08-15,08:51,Cold Brew,Coffee,3,3.8,11.4,Mobile,Thursday
+ORD0361,2024-02-03,15:34,Mocha,Coffee,3,4.5,13.5,Cash,Saturday
+ORD0362,2024-12-30,18:59,Latte,Coffee,3,4.0,12.0,Mobile,Monday
+ORD0363,2024-04-24,08:12,Latte,Coffee,2,4.0,8.0,Card,Wednesday
+ORD0364,2024-01-14,12:35,Sandwich,Food,3,5.5,16.5,Card,Sunday
+ORD0365,2024-10-09,09:39,Cappuccino,Coffee,1,3.5,3.5,Card,Wednesday
+ORD0366,2024-07-22,18:46,Croissant,Food,4,2.5,10.0,Card,Monday
+ORD0367,2024-10-21,08:08,Cold Brew,Coffee,1,3.8,3.8,Card,Monday
+ORD0368,2024-08-26,17:33,Cold Brew,Coffee,2,3.8,7.6,Mobile,Monday
+ORD0369,2024-11-23,16:11,Latte,Coffee,4,4.0,16.0,Mobile,Saturday
+ORD0370,2024-01-29,20:07,Muffin,Food,2,2.2,4.4,Card,Monday
+ORD0371,2024-03-25,09:20,Americano,Coffee,3,3.0,9.0,Mobile,Monday
+ORD0372,2024-05-25,20:05,Mocha,Coffee,2,4.5,9.0,Mobile,Saturday
+ORD0373,2024-10-09,11:08,Mocha,Coffee,1,4.5,4.5,Mobile,Wednesday
+ORD0374,2024-11-24,09:37,Sandwich,Food,2,5.5,11.0,Cash,Sunday
+ORD0375,2024-12-03,16:46,Sandwich,Food,3,5.5,16.5,Mobile,Tuesday
+ORD0376,2024-01-22,20:55,Espresso,Coffee,1,2.5,2.5,Cash,Monday
+ORD0377,2024-11-24,19:36,Mocha,Coffee,2,4.5,9.0,Mobile,Sunday
+ORD0378,2024-08-01,16:40,Espresso,Coffee,4,2.5,10.0,Mobile,Thursday
+ORD0379,2024-10-06,11:41,Mocha,Coffee,4,4.5,18.0,Cash,Sunday
+ORD0380,2024-12-16,13:19,Croissant,Food,1,2.5,2.5,Mobile,Monday
+ORD0381,2024-01-31,09:28,Tea,Tea,4,2.8,11.2,Card,Wednesday
+ORD0382,2024-04-14,12:38,Latte,Coffee,3,4.0,12.0,Mobile,Sunday
+ORD0383,2024-06-12,18:55,Cold Brew,Coffee,4,3.8,15.2,Cash,Wednesday
+ORD0384,2024-07-08,15:35,Cappuccino,Coffee,3,3.5,10.5,Cash,Monday
+ORD0385,2024-08-26,08:17,Croissant,Food,2,2.5,5.0,Cash,Monday
+ORD0386,2024-02-19,07:18,Tea,Tea,4,2.8,11.2,Cash,Monday
+ORD0387,2024-03-22,20:20,Sandwich,Food,3,5.5,16.5,Cash,Friday
+ORD0388,2024-03-22,14:32,Croissant,Food,4,2.5,10.0,Card,Friday
+ORD0389,2024-09-11,07:05,Tea,Tea,4,2.8,11.2,Cash,Wednesday
+ORD0390,2024-04-20,16:22,Espresso,Coffee,1,2.5,2.5,Card,Saturday
+ORD0391,2024-09-10,16:56,Croissant,Food,3,2.5,7.5,Mobile,Tuesday
+ORD0392,2024-01-05,20:06,Tea,Tea,2,2.8,5.6,Card,Friday
+ORD0393,2024-07-06,19:25,Cold Brew,Coffee,1,3.8,3.8,Card,Saturday
+ORD0394,2024-01-27,16:35,Americano,Coffee,3,3.0,9.0,Mobile,Saturday
+ORD0395,2024-05-27,08:24,Muffin,Food,4,2.2,8.8,Mobile,Monday
+ORD0396,2024-05-23,20:39,Sandwich,Food,1,5.5,5.5,Cash,Thursday
+ORD0397,2024-02-19,13:23,Cold Brew,Coffee,3,3.8,11.4,Cash,Monday
+ORD0398,2024-04-11,16:32,Tea,Tea,1,2.8,2.8,Cash,Thursday
+ORD0399,2024-01-20,09:45,Cold Brew,Coffee,4,3.8,15.2,Mobile,Saturday
+ORD0400,2024-08-21,09:38,Muffin,Food,2,2.2,4.4,Card,Wednesday
+ORD0401,2024-11-09,12:10,Tea,Tea,3,2.8,8.4,Mobile,Saturday
+ORD0402,2024-06-21,15:53,Muffin,Food,4,2.2,8.8,Mobile,Friday
+ORD0403,2024-10-15,11:30,Espresso,Coffee,3,2.5,7.5,Card,Tuesday
+ORD0404,2024-12-10,08:26,Sandwich,Food,3,5.5,16.5,Mobile,Tuesday
+ORD0405,2024-12-18,17:01,Sandwich,Food,4,5.5,22.0,Card,Wednesday
+ORD0406,2024-12-01,19:49,Sandwich,Food,2,5.5,11.0,Mobile,Sunday
+ORD0407,2024-01-27,16:30,Latte,Coffee,4,4.0,16.0,Cash,Saturday
+ORD0408,2024-12-14,10:02,Sandwich,Food,1,5.5,5.5,Cash,Saturday
+ORD0409,2024-01-10,14:20,Tea,Tea,2,2.8,5.6,Card,Wednesday
+ORD0410,2024-12-19,10:26,Muffin,Food,4,2.2,8.8,Mobile,Thursday
+ORD0411,2024-02-01,18:08,Muffin,Food,2,2.2,4.4,Mobile,Thursday
+ORD0412,2024-06-15,17:30,Muffin,Food,4,2.2,8.8,Card,Saturday
+ORD0413,2024-03-29,14:58,Muffin,Food,3,2.2,6.6,Mobile,Friday
+ORD0414,2024-06-30,17:49,Mocha,Coffee,4,4.5,18.0,Cash,Sunday
+ORD0415,2024-05-06,11:35,Mocha,Coffee,2,4.5,9.0,Card,Monday
+ORD0416,2024-05-27,18:13,Croissant,Food,3,2.5,7.5,Card,Monday
+ORD0417,2024-06-27,15:59,Mocha,Coffee,3,4.5,13.5,Cash,Thursday
+ORD0418,2024-10-20,17:34,Tea,Tea,4,2.8,11.2,Card,Sunday
+ORD0419,2024-03-15,11:02,Mocha,Coffee,1,4.5,4.5,Card,Friday
+ORD0420,2024-08-14,17:16,Croissant,Food,2,2.5,5.0,Cash,Wednesday
+ORD0421,2024-10-02,11:59,Muffin,Food,3,2.2,6.6,Cash,Wednesday
+ORD0422,2024-02-25,16:47,Sandwich,Food,2,5.5,11.0,Cash,Sunday
+ORD0423,2024-01-26,17:57,Muffin,Food,2,2.2,4.4,Mobile,Friday
+ORD0424,2024-04-29,07:06,Tea,Tea,3,2.8,8.4,Mobile,Monday
+ORD0425,2024-08-29,08:43,Latte,Coffee,1,4.0,4.0,Mobile,Thursday
+ORD0426,2024-03-21,13:41,Croissant,Food,4,2.5,10.0,Mobile,Thursday
+ORD0427,2024-04-12,19:18,Cold Brew,Coffee,3,3.8,11.4,Mobile,Friday
+ORD0428,2024-01-31,19:05,Sandwich,Food,2,5.5,11.0,Mobile,Wednesday
+ORD0429,2024-01-20,09:26,Latte,Coffee,1,4.0,4.0,Card,Saturday
+ORD0430,2024-09-10,09:59,Mocha,Coffee,1,4.5,4.5,Cash,Tuesday
+ORD0431,2024-06-01,16:38,Cappuccino,Coffee,3,3.5,10.5,Card,Saturday
+ORD0432,2024-08-20,17:34,Muffin,Food,4,2.2,8.8,Cash,Tuesday
+ORD0433,2024-09-15,14:17,Americano,Coffee,1,3.0,3.0,Card,Sunday
+ORD0434,2024-03-24,18:29,Mocha,Coffee,2,4.5,9.0,Cash,Sunday
+ORD0435,2024-06-21,19:18,Sandwich,Food,2,5.5,11.0,Cash,Friday
+ORD0436,2024-11-08,20:40,Tea,Tea,4,2.8,11.2,Mobile,Friday
+ORD0437,2024-06-16,08:25,Cappuccino,Coffee,2,3.5,7.0,Cash,Sunday
+ORD0438,2024-09-01,12:59,Americano,Coffee,1,3.0,3.0,Card,Sunday
+ORD0439,2024-07-15,10:28,Mocha,Coffee,3,4.5,13.5,Card,Monday
+ORD0440,2024-10-25,18:36,Espresso,Coffee,3,2.5,7.5,Mobile,Friday
+ORD0441,2024-07-03,18:15,Espresso,Coffee,1,2.5,2.5,Card,Wednesday
+ORD0442,2024-06-06,09:25,Muffin,Food,3,2.2,6.6,Mobile,Thursday
+ORD0443,2024-03-01,17:58,Mocha,Coffee,3,4.5,13.5,Mobile,Friday
+ORD0444,2024-04-23,10:08,Croissant,Food,2,2.5,5.0,Card,Tuesday
+ORD0445,2024-11-06,12:26,Muffin,Food,4,2.2,8.8,Mobile,Wednesday
+ORD0446,2024-12-06,20:13,Americano,Coffee,1,3.0,3.0,Mobile,Friday
+ORD0447,2024-08-16,15:45,Cold Brew,Coffee,1,3.8,3.8,Mobile,Friday
+ORD0448,2024-02-27,07:53,Muffin,Food,2,2.2,4.4,Mobile,Tuesday
+ORD0449,2024-10-01,09:10,Cold Brew,Coffee,4,3.8,15.2,Cash,Tuesday
+ORD0450,2024-12-14,10:45,Sandwich,Food,4,5.5,22.0,Cash,Saturday
+ORD0451,2024-09-18,14:51,Espresso,Coffee,4,2.5,10.0,Cash,Wednesday
+ORD0452,2024-09-19,13:29,Sandwich,Food,1,5.5,5.5,Mobile,Thursday
+ORD0453,2024-08-24,17:51,Mocha,Coffee,1,4.5,4.5,Card,Saturday
+ORD0454,2024-05-10,20:00,Americano,Coffee,1,3.0,3.0,Cash,Friday
+ORD0455,2024-08-04,12:44,Cappuccino,Coffee,1,3.5,3.5,Cash,Sunday
+ORD0456,2024-08-29,07:18,Tea,Tea,2,2.8,5.6,Cash,Thursday
+ORD0457,2024-11-24,18:41,Tea,Tea,3,2.8,8.4,Card,Sunday
+ORD0458,2024-08-17,20:58,Tea,Tea,4,2.8,11.2,Cash,Saturday
+ORD0459,2024-12-15,17:55,Muffin,Food,2,2.2,4.4,Mobile,Sunday
+ORD0460,2024-06-27,08:11,Muffin,Food,4,2.2,8.8,Mobile,Thursday
+ORD0461,2024-03-06,18:14,Espresso,Coffee,1,2.5,2.5,Card,Wednesday
+ORD0462,2024-08-25,17:46,Muffin,Food,4,2.2,8.8,Mobile,Sunday
+ORD0463,2024-07-13,20:14,Americano,Coffee,4,3.0,12.0,Card,Saturday
+ORD0464,2024-03-20,11:12,Cappuccino,Coffee,1,3.5,3.5,Mobile,Wednesday
+ORD0465,2024-08-02,16:49,Espresso,Coffee,2,2.5,5.0,Cash,Friday
+ORD0466,2024-02-04,08:38,Espresso,Coffee,4,2.5,10.0,Mobile,Sunday
+ORD0467,2024-12-10,18:55,Espresso,Coffee,2,2.5,5.0,Mobile,Tuesday
+ORD0468,2024-01-23,13:28,Americano,Coffee,2,3.0,6.0,Cash,Tuesday
+ORD0469,2024-03-12,15:18,Americano,Coffee,3,3.0,9.0,Mobile,Tuesday
+ORD0470,2024-11-02,19:43,Cold Brew,Coffee,2,3.8,7.6,Card,Saturday
+ORD0471,2024-03-14,17:33,Americano,Coffee,4,3.0,12.0,Card,Thursday
+ORD0472,2024-05-20,07:35,Sandwich,Food,2,5.5,11.0,Mobile,Monday
+ORD0473,2024-12-13,13:35,Croissant,Food,1,2.5,2.5,Card,Friday
+ORD0474,2024-11-25,17:24,Muffin,Food,3,2.2,6.6,Mobile,Monday
+ORD0475,2024-08-01,13:09,Mocha,Coffee,4,4.5,18.0,Cash,Thursday
+ORD0476,2024-10-02,14:15,Americano,Coffee,3,3.0,9.0,Mobile,Wednesday
+ORD0477,2024-03-14,19:29,Espresso,Coffee,4,2.5,10.0,Card,Thursday
+ORD0478,2024-10-12,15:08,Tea,Tea,2,2.8,5.6,Card,Saturday
+ORD0479,2024-04-14,12:41,Cappuccino,Coffee,4,3.5,14.0,Card,Sunday
+ORD0480,2024-02-17,15:46,Americano,Coffee,1,3.0,3.0,Card,Saturday
+ORD0481,2024-07-12,17:38,Sandwich,Food,1,5.5,5.5,Cash,Friday
+ORD0482,2024-04-06,19:48,Sandwich,Food,2,5.5,11.0,Card,Saturday
+ORD0483,2024-04-16,20:58,Cold Brew,Coffee,3,3.8,11.4,Cash,Tuesday
+ORD0484,2024-04-18,10:47,Cappuccino,Coffee,4,3.5,14.0,Cash,Thursday
+ORD0485,2024-12-22,16:45,Americano,Coffee,4,3.0,12.0,Cash,Sunday
+ORD0486,2024-10-09,12:49,Mocha,Coffee,4,4.5,18.0,Card,Wednesday
+ORD0487,2024-09-30,17:22,Mocha,Coffee,3,4.5,13.5,Card,Monday
+ORD0488,2024-09-19,14:29,Cappuccino,Coffee,4,3.5,14.0,Card,Thursday
+ORD0489,2024-04-14,12:20,Tea,Tea,1,2.8,2.8,Mobile,Sunday
+ORD0490,2024-04-23,18:09,Espresso,Coffee,3,2.5,7.5,Mobile,Tuesday
+ORD0491,2024-10-26,16:46,Tea,Tea,3,2.8,8.4,Cash,Saturday
+ORD0492,2024-04-10,12:14,Tea,Tea,2,2.8,5.6,Card,Wednesday
+ORD0493,2024-10-08,17:43,Cold Brew,Coffee,3,3.8,11.4,Card,Tuesday
+ORD0494,2024-11-24,18:31,Croissant,Food,2,2.5,5.0,Mobile,Sunday
+ORD0495,2024-06-29,09:08,Muffin,Food,4,2.2,8.8,Cash,Saturday
+ORD0496,2024-10-04,17:03,Muffin,Food,1,2.2,2.2,Cash,Friday
+ORD0497,2024-12-08,07:48,Espresso,Coffee,4,2.5,10.0,Cash,Sunday
+ORD0498,2024-11-18,10:04,Latte,Coffee,1,4.0,4.0,Cash,Monday
+ORD0499,2024-09-15,14:23,Espresso,Coffee,4,2.5,10.0,Mobile,Sunday
+ORD0500,2024-09-06,07:00,Muffin,Food,4,2.2,8.8,Cash,Friday

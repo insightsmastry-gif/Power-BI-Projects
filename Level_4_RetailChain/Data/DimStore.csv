@@ -1,0 +1,9 @@
+StoreID,StoreName,City,Region,StoreType,OpeningDate
+ST01,UrbanMart New York,New York,East,Outlet,2020-01-08
+ST02,UrbanMart Boston,Boston,East,Outlet,2019-05-27
+ST03,UrbanMart Chicago,Chicago,Central,Outlet,2020-10-13
+ST04,UrbanMart Dallas,Dallas,Central,Mall,2025-04-17
+ST05,UrbanMart Los Angeles,Los Angeles,West,Outlet,2020-12-23
+ST06,UrbanMart Seattle,Seattle,West,Mall,2022-12-29
+ST07,UrbanMart Miami,Miami,South,Outlet,2024-04-12
+ST08,UrbanMart Atlanta,Atlanta,South,Outlet,2020-12-16
