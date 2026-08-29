@@ -2,7 +2,7 @@ name: Deploy Power BI Learning Path to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["website-source"]
   workflow_dispatch:
 
 permissions:
