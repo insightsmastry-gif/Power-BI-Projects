@@ -1,126 +1,56 @@
-# Power BI Learning Path 📊
+# Power BI Learning Projects – Levels 1 to 10 📊
 
-> Master Power BI by Building Real-World Projects.
+> **Complete Progressive Hands-On Curriculum from Absolute Beginner to Enterprise Pre-Capstone.**
 
-A progressive, production-grade 10-level Power BI educational platform that takes students from absolute beginner to enterprise pre-capstone proficiency.
+🌐 **Live Interactive Platform:** [https://insightsmastry-gif.github.io/Power-BI-Projects/](https://insightsmastry-gif.github.io/Power-BI-Projects/)
 
 ---
 
-## 🌟 Key Features
+## 🎯 About This Repository
 
-- **10 Structured Hands-On Projects:** From single-table coffee shop analytics to 4-fact enterprise supply chain models.
-- **45+ Real CSV Datasets:** Transaction logs, returns, monthly target quotas, customer demographics, inventory snapshots, and security users.
-- **Client-Side Progress Tracker:** Local progress persistence via `localStorage` with unlock progression and completion badges.
-- **Interactive Project Explorer:** Instant filtering by difficulty (Beginner, Intermediate, Advanced, Expert) and skill tags.
-- **DAX Formula Library:** Syntax-highlighted DAX snippets with one-click copy for every level.
-- **Centralized GitHub Configuration:** All download URLs, raw file links, and repository endpoints are managed in one clean config file.
-- **Dark & Light Mode:** Tailored design system with smooth transitions.
-- **100% GitHub Pages Ready:** Automatic build & deploy via official GitHub Actions workflow.
+This repository contains **10 structured Power BI projects** with real datasets, business scenarios, and instructions to help you progress from basic visuals to enterprise-grade multi-fact dimensional models.
 
 ---
 
 ## 🗺️ 10 Progressive Learning Levels
 
-| Level | Project Name | Company | Stage | Est. Time | Focus Area |
-|---|---|---|---|---|---|
-| **01** | **Coffee Shop Analytics** | Bean & Brew | Foundation | 2–4 hrs | First dashboard, Power Query types, basic DAX |
-| **02** | **Retail Store Model** | CityStyle Retail | Foundation | 4–6 hrs | 1-to-Many relationships, RELATED(), margins |
-| **03** | **E-Commerce Analytics** | ShopNova Online | Foundation | 5–8 hrs | Date Dimension, Time Intelligence (YTD, MoM%) |
-| **04** | **Retail Chain Star Schema** | UrbanMart | Core Intermediate | 8–12 hrs | Kimball Star Schema, multi-page report navigation |
-| **05** | **Intermediate Capstone** | TechHub Electronics | Core Intermediate | 12–18 hrs | Multi-facts, data hygiene, target vs actual |
-| **06** | **Sales Performance** | NovaMart | Adv. Intermediate | 10–14 hrs | Dynamic RANKX, spend segmentation, moving averages |
-| **07** | **Multi-Fact Inventory** | TechWorld | Adv. Intermediate | 12–16 hrs | Snapshot modeling, Stock Turnover, Days of Supply |
-| **08** | **Advanced Features & RLS** | GlobalDirect | Adv. Intermediate | 14–18 hrs | Dynamic RLS, Field Parameters, What-If modeling |
-| **09** | **Complex DAX** | Premier Retail | Adv. Intermediate | 16–22 hrs | Context Transition, USERELATIONSHIP, Tooltips |
-| **10** | **Pre-Capstone (VoltEdge)** | VoltEdge Solutions | Pre-Capstone | 20–30 hrs | 4 Facts, dirty data, employee hierarchies, RLS |
+| Level | Project Name | Company | Difficulty | Est. Time | Focus Area |
+|:---:|---|---|:---:|:---:|---|
+| **01** | **[Level_1_CoffeeShop](./Level_1_CoffeeShop)** | Bean & Brew | `Beginner` | 2–4 hrs | First dashboard, Power Query data types, basic DAX |
+| **02** | **[Level_2_RetailStore](./Level_2_RetailStore)** | CityStyle Retail | `Beginner` | 4–6 hrs | 1-to-Many relationships, `RELATED()`, profit margins |
+| **03** | **[Level_3_Ecommerce](./Level_3_Ecommerce)** | ShopNova Online | `Beginner+` | 5–8 hrs | Date Dimension table, Time Intelligence (`TOTALYTD`, `MoM%`) |
+| **04** | **[Level_4_RetailChain](./Level_4_RetailChain)** | UrbanMart | `Intermediate` | 8–12 hrs | Kimball Star Schema (4 Dims + 1 Fact), multi-page navigation |
+| **05** | **[Level_5_Intermediate](./Level_5_Intermediate)** | TechHub Electronics | `Intermediate` | 12–18 hrs | Multi-fact modeling, dirty data hygiene, target vs actual |
+| **06** | **[Level_6_SalesPerformance](./Level_6_SalesPerformance)** | NovaMart | `Intermediate` | 10–14 hrs | Dynamic `RANKX`, customer spend tiers (`SWITCH`), moving averages |
+| **07** | **[Level_7_MultiFact](./Level_7_MultiFact)** | TechWorld Retail | `Advanced` | 12–16 hrs | Snapshot modeling, Stock Turnover, Days of Supply (DOH) |
+| **08** | **[Level_8_AdvancedFeatures](./Level_8_AdvancedFeatures)** | GlobalDirect | `Advanced` | 14–18 hrs | Dynamic Row-Level Security (`RLS`), Field Parameters, What-If |
+| **09** | **[Level_9_ComplexDAX](./Level_9_ComplexDAX)** | Premier Retail | `Advanced` | 16–22 hrs | Context Transition, `USERELATIONSHIP`, Tooltip pages |
+| **10** | **[Level_10_PreCapstone](./Level_10_PreCapstone)** | VoltEdge Solutions | `Expert Challenge` | 20–30 hrs | 4 Facts, 5 Dims, dirty data ETL, employee hierarchy, RLS |
 
 ---
 
-## 🛠️ Tech Stack
+## 📁 Folder Structure
 
-- **Framework:** React 18 + Vite 6
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS + PostCSS
-- **Routing:** React Router (`HashRouter` for GitHub Pages deep linking)
-- **Icons:** Lucide React
-- **Animations:** Framer Motion
+Each project folder contains:
+- `Data/` → All raw CSV datasets for the project
+- `Documentation/PROJECT_BRIEF.md` → Business scenario, required DAX measures, and deliverables
+
+Start with: **[`00_LEARNING_PATH_OVERVIEW.md`](./00_LEARNING_PATH_OVERVIEW.md)**
 
 ---
 
-## 💻 Local Development
+## 🚀 How to Practice
 
-1. **Clone the repository:**
+1. Clone or download this repository:
    ```bash
    git clone https://github.com/insightsmastry-gif/Power-BI-Projects.git
-   cd Power-BI-Projects
    ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start local development server:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in browser:** `http://localhost:5173/`
-
----
-
-## ⚙️ Centralized GitHub Configuration
-
-All GitHub URLs, repository names, and download links are centralized in:
-`src/config/github.ts`
-
-```typescript
-export const GITHUB_CONFIG = {
-  username: "insightsmastry-gif",
-  repository: "Power-BI-Projects",
-  branch: "main",
-  siteUrl: "https://insightsmastry-gif.github.io/Power-BI-Projects"
-};
-```
-
----
-
-## ➕ Adding Resources or Modifying Levels
-
-To add `.pbix`, `.xlsx`, `.csv`, `.pdf` or modify project metadata, simply update:
-`src/data/levels.ts`
-
-Example resource item:
-```typescript
-resources: [
-  {
-    name: "Completed Power BI Model",
-    fileName: "Level1_CoffeeShop.pbix",
-    type: "PBIX",
-    path: "Level_1_CoffeeShop/Level1_CoffeeShop.pbix",
-    description: "Official solution model.",
-    isDataset: false
-  }
-]
-```
-
----
-
-## 🚀 GitHub Pages Deployment
-
-1. Go to your repository on GitHub: **Settings > Pages**
-2. Under **Build and deployment > Source**, select **GitHub Actions**
-3. Push to `main` branch:
-   ```bash
-   git add .
-   git commit -m "Deploy Power BI Learning Platform"
-   git push origin main
-   ```
-4. The workflow in `.github/workflows/deploy.yml` will automatically build and deploy your site to:
-   `https://insightsmastry-gif.github.io/Power-BI-Projects/`
+2. Open **Level 1** (`Level_1_CoffeeShop/Documentation/PROJECT_BRIEF.md`).
+3. Import the CSV dataset located in `Data/` into Power BI Desktop.
+4. Follow the step-by-step instructions and author the required DAX measures.
+5. Visit the **[Interactive Learning Platform](https://insightsmastry-gif.github.io/Power-BI-Projects/)** to track your progress and unlock each milestone!
 
 ---
 
 ## 📄 License
-
 MIT License. Open source for all students and educators.
