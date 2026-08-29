@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Github, ExternalLink, CheckCircle } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import { GITHUB_CONFIG, getRepositoryUrl, getZipArchiveUrl } from "../config/github";
 import { PowerBILogo } from "./PowerBILogo";
 
@@ -87,10 +87,9 @@ export const Footer: React.FC = () => {
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#94A3B8]">
           <p>© {new Date().getFullYear()} Power BI Learning Labs. All projects & datasets open source.</p>
-          <div className="flex items-center gap-2 font-mono text-[11px] text-[#00D924]">
-            <CheckCircle className="w-3.5 h-3.5" />
-            <span>All 10 Project Datasets Live & Operational</span>
-          </div>
+          <p className="font-mono text-xs text-[#94A3B8]">
+            Managed by InsightsMastery Academy · Built for data analysts and Business Analysts.
+          </p>
         </div>
       </div>
     </footer>
