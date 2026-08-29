@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Github, Menu, X, ArrowRight } from "lucide-react";
 import { GITHUB_CONFIG, getRepositoryUrl } from "../config/github";
+import { PowerBILogo } from "./PowerBILogo";
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,14 +20,14 @@ export const Navbar: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 pt-4">
       <div className="max-w-7xl mx-auto">
-        <nav className="rounded-full bg-[#141418]/90 backdrop-blur-md border border-[#23232b] px-4 sm:px-6 py-3 flex items-center justify-between shadow-2xl transition-all">
+        <nav className="rounded-full bg-[#141418]/90 backdrop-blur-md border border-[#23232b] px-4 sm:px-6 py-2.5 flex items-center justify-between shadow-2xl transition-all">
           
-          {/* Logo Badge in Pixel Code Labs style */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <span className="text-xs font-mono font-bold px-2 py-1 rounded-md bg-[#1c1c22] border border-[#23232b] text-[#ff3366] group-hover:border-[#ff3366]/40 transition-colors">
-              &lt;/&gt;
-            </span>
-            <span className="font-syne font-extrabold text-base sm:text-lg tracking-tight text-white flex items-center gap-1.5">
+          {/* Official Power BI Brand Logo */}
+          <Link to="/" className="flex items-center gap-2.5 group">
+            <div className="p-1.5 rounded-xl bg-[#1c1c22] border border-[#23232b] group-hover:border-[#F2C811]/40 transition-colors flex items-center justify-center">
+              <PowerBILogo className="w-5 h-5" />
+            </div>
+            <span className="font-display font-extrabold text-base sm:text-lg tracking-tight text-white flex items-center gap-1.5">
               Power BI <span className="text-[#ff3366]">Labs</span>
             </span>
           </Link>
@@ -62,7 +63,7 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/levels/coffee-shop"
-              className="px-4 py-2 rounded-full bg-[#ff3366] hover:bg-[#ff5c85] text-white font-syne font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-[#ff3366]/20 transition-all transform hover:-translate-y-0.5"
+              className="px-4 py-2 rounded-full bg-[#ff3366] hover:bg-[#ff5c85] text-white font-display font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-[#ff3366]/20 transition-all transform hover:-translate-y-0.5"
             >
               <span>Start Learning</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -115,7 +116,7 @@ export const Navbar: React.FC = () => {
               <Link
                 to="/levels/coffee-shop"
                 onClick={() => setIsOpen(false)}
-                className="px-4 py-2 rounded-full bg-[#ff3366] text-white font-syne font-bold text-xs"
+                className="px-4 py-2 rounded-full bg-[#ff3366] text-white font-display font-bold text-xs"
               >
                 Start Level 1 →
               </Link>

@@ -50,7 +50,7 @@ export const LearningRoadmap: React.FC = () => {
                     </span>
                   </div>
 
-                  <h3 className="font-syne font-bold text-xl sm:text-2xl text-white group-hover:text-[#ff3366] transition-colors mb-1">
+                  <h3 className="font-display font-bold text-lg sm:text-xl text-white group-hover:text-[#ff3366] transition-colors mb-1">
                     <Link to={`/levels/${level.slug}`}>{level.title}</Link>
                   </h3>
                   <p className="text-xs text-[#9a9aa5] font-mono mb-3">

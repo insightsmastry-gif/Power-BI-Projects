@@ -22,8 +22,8 @@ body {
 }
 
 h1, h2, h3, .font-display {
-  font-family: 'Syne', sans-serif;
-  letter-spacing: -0.02em;
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  letter-spacing: -0.025em;
 }
 
 code, pre, .font-mono {

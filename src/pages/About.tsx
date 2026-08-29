@@ -17,7 +17,7 @@ export const About: React.FC = () => {
         <div className="space-y-8 text-[#9a9aa5] text-sm leading-relaxed font-mono">
           
           <div className="pixel-card p-6 sm:p-8">
-            <h3 className="font-syne font-bold text-xl text-white mb-3 flex items-center gap-2">
+            <h3 className="font-display font-bold text-lg sm:text-xl text-white mb-3 flex items-center gap-2">
               <span>💡 The Tutorial Trap</span>
             </h3>
             <p className="mb-4">
@@ -30,7 +30,7 @@ export const About: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="pixel-card p-6">
-              <h4 className="font-syne font-bold text-white mb-2 flex items-center gap-2">
+              <h4 className="font-display font-bold text-base text-white mb-2 flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#10b981]" />
                 <span>Progressive Complexity</span>
               </h4>
@@ -40,7 +40,7 @@ export const About: React.FC = () => {
             </div>
 
             <div className="pixel-card p-6">
-              <h4 className="font-syne font-bold text-white mb-2 flex items-center gap-2">
+              <h4 className="font-display font-bold text-base text-white mb-2 flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#ff3366]" />
                 <span>Real Business Scenarios</span>
               </h4>
@@ -51,7 +51,7 @@ export const About: React.FC = () => {
           </div>
 
           <div className="pixel-card p-6 sm:p-8 border-[#ff3366]/30">
-            <h3 className="font-syne font-bold text-xl text-white mb-3 flex items-center gap-2">
+            <h3 className="font-display font-bold text-lg sm:text-xl text-white mb-3 flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-[#ff3366]" />
               <span>Next Step: Voltora Electronics Enterprise Capstone</span>
             </h3>
@@ -60,7 +60,7 @@ export const About: React.FC = () => {
             </p>
             <Link
               to="/levels/coffee-shop"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#ff3366] text-white font-syne font-bold text-xs shadow-md shadow-[#ff3366]/20"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#ff3366] text-white font-display font-bold text-xs shadow-md shadow-[#ff3366]/20"
             >
               <span>Start from Level 1</span>
               <ArrowRight className="w-3.5 h-3.5" />

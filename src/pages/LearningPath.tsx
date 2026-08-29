@@ -25,7 +25,7 @@ export const LearningPath: React.FC = () => {
           <div className="pixel-card p-6 border-l-2 border-l-[#10b981] flex flex-col justify-between">
             <div>
               <span className="text-[10px] font-mono font-bold text-[#10b981] uppercase">Stage 1 • Levels 1–3</span>
-              <h3 className="font-syne font-bold text-xl text-white mt-1 mb-2">Foundation</h3>
+              <h3 className="font-display font-bold text-lg text-white mt-1 mb-2">Foundation</h3>
               <p className="text-xs text-[#9a9aa5] leading-relaxed mb-4">
                 Single-table dashboards, basic data cleaning, star relationships, and introductory Time Intelligence.
               </p>
@@ -39,7 +39,7 @@ export const LearningPath: React.FC = () => {
           <div className="pixel-card p-6 border-l-2 border-l-[#06b6d4] flex flex-col justify-between">
             <div>
               <span className="text-[10px] font-mono font-bold text-[#06b6d4] uppercase">Stage 2 • Levels 4–5</span>
-              <h3 className="font-syne font-bold text-xl text-white mt-1 mb-2">Core Intermediate</h3>
+              <h3 className="font-display font-bold text-lg text-white mt-1 mb-2">Core Intermediate</h3>
               <p className="text-xs text-[#9a9aa5] leading-relaxed mb-4">
                 Full Kimball star schema, target vs actual variances, return rates, multi-page structured reporting.
               </p>
@@ -53,7 +53,7 @@ export const LearningPath: React.FC = () => {
           <div className="pixel-card p-6 border-l-2 border-l-[#f2c811] flex flex-col justify-between">
             <div>
               <span className="text-[10px] font-mono font-bold text-[#f2c811] uppercase">Stage 3 • Levels 6–9</span>
-              <h3 className="font-syne font-bold text-xl text-white mt-1 mb-2">Advanced Intermediate</h3>
+              <h3 className="font-display font-bold text-lg text-white mt-1 mb-2">Advanced Intermediate</h3>
               <p className="text-xs text-[#9a9aa5] leading-relaxed mb-4">
                 Dynamic RANKX, customer spend tiers, snapshot inventory models, dynamic RLS, and complex DAX.
               </p>
@@ -67,7 +67,7 @@ export const LearningPath: React.FC = () => {
           <div className="pixel-card p-6 border-l-2 border-l-[#ff3366] flex flex-col justify-between">
             <div>
               <span className="text-[10px] font-mono font-bold text-[#ff3366] uppercase">Stage 4 • Level 10</span>
-              <h3 className="font-syne font-bold text-xl text-white mt-1 mb-2">Pre-Capstone</h3>
+              <h3 className="font-display font-bold text-lg text-white mt-1 mb-2">Pre-Capstone</h3>
               <p className="text-xs text-[#9a9aa5] leading-relaxed mb-4">
                 VoltEdge Solutions enterprise scenario with 4 facts, dirty raw data, employee hierarchies, and RLS.
               </p>

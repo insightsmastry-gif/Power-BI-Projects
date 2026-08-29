@@ -21,11 +21,11 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
           {eyebrow}
         </div>
       )}
-      <h2 className="font-syne font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-[1.15] mb-4">
+      <h2 className="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-[1.2] mb-3">
         {title}
       </h2>
       {description && (
-        <p className="text-sm sm:text-base text-[#9a9aa5] leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed">
           {description}
         </p>
       )}

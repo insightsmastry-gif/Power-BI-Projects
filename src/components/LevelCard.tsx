@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Clock, ArrowRight, FolderGit2, CheckCircle2 } from "lucide-react";
 import { Level } from "../types/level";
 import { useProgress } from "../hooks/useProgress";
+import { PowerBILogo } from "./PowerBILogo";
 
 interface LevelCardProps {
   level: Level;
@@ -20,12 +21,13 @@ export const LevelCard: React.FC<LevelCardProps> = ({ level, featured = false })
       }`}
     >
       <div>
-        {/* Mock Browser Header in Pixel Code Labs Style */}
+        {/* Mock Browser Header with Power BI Mini Icon */}
         <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-[#23232b]">
           <div className="flex items-center gap-1.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#ff3366]/70" />
-            <span className="w-2.5 h-2.5 rounded-full bg-[#f2c811]/70" />
-            <span className="w-2.5 h-2.5 rounded-full bg-[#10b981]/70" />
+            <PowerBILogo className="w-3.5 h-3.5 mr-1 shrink-0" />
+            <span className="w-2 h-2 rounded-full bg-[#ff3366]/70" />
+            <span className="w-2 h-2 rounded-full bg-[#f2c811]/70" />
+            <span className="w-2 h-2 rounded-full bg-[#10b981]/70" />
           </div>
           <span className="text-[11px] font-mono text-[#9a9aa5] truncate max-w-[170px]">
             {level.folder.toLowerCase()}.pbix
@@ -53,7 +55,7 @@ export const LevelCard: React.FC<LevelCardProps> = ({ level, featured = false })
         </div>
 
         {/* Title */}
-        <h3 className="font-syne font-bold text-xl sm:text-2xl text-white group-hover:text-[#ff3366] transition-colors mb-2">
+        <h3 className="font-display font-bold text-lg sm:text-xl text-white group-hover:text-[#ff3366] transition-colors mb-2">
           <Link to={`/levels/${level.slug}`}>{level.title}</Link>
         </h3>
 
@@ -95,7 +97,7 @@ export const LevelCard: React.FC<LevelCardProps> = ({ level, featured = false })
 
         <Link
           to={`/levels/${level.slug}`}
-          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1c1c22] hover:bg-[#ff3366] text-white text-xs font-syne font-bold border border-[#23232b] hover:border-[#ff3366] transition-all"
+          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1c1c22] hover:bg-[#ff3366] text-white text-xs font-display font-bold border border-[#23232b] hover:border-[#ff3366] transition-all"
         >
           <span>View Brief</span>
           <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />

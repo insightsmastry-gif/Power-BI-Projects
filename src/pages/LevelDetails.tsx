@@ -19,6 +19,7 @@ import { ResourceCard } from "../components/ResourceCard";
 import { DAXSnippet } from "../components/DAXSnippet";
 import { PageTransition } from "../components/PageTransition";
 import { getFolderUrl } from "../config/github";
+import { PowerBILogo } from "../components/PowerBILogo";
 
 export const LevelDetails: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -37,9 +38,9 @@ export const LevelDetails: React.FC = () => {
   if (!level) {
     return (
       <div className="pt-40 pb-20 text-center max-w-md mx-auto px-4">
-        <h2 className="font-syne text-2xl font-bold text-white mb-4">Level Not Found</h2>
+        <h2 className="font-display text-2xl font-bold text-white mb-4">Level Not Found</h2>
         <p className="text-xs text-[#9a9aa5] mb-6">The requested Power BI level does not exist.</p>
-        <Link to="/projects" className="px-5 py-2.5 bg-[#ff3366] text-white font-syne font-bold rounded-full text-xs">
+        <Link to="/projects" className="px-5 py-2.5 bg-[#ff3366] text-white font-display font-bold rounded-full text-xs">
           Back to Projects
         </Link>
       </div>
@@ -77,6 +78,7 @@ export const LevelDetails: React.FC = () => {
             </Link>
 
             <div className="flex items-center gap-2 text-xs font-mono text-[#9a9aa5]">
+              <PowerBILogo className="w-3.5 h-3.5" />
               <span>Level {level.id} of {LEVELS.length}</span>
             </div>
           </div>
@@ -84,7 +86,7 @@ export const LevelDetails: React.FC = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* Level Header in Pixel Code Labs Style */}
+          {/* Level Header */}
           <div className="pixel-card p-6 sm:p-10 mb-12 relative overflow-hidden">
             {justCompleted && (
               <div className="absolute top-0 left-0 right-0 py-2.5 bg-[#10b981] text-black font-bold text-center text-xs flex items-center justify-center gap-2 shadow-lg">
@@ -110,7 +112,7 @@ export const LevelDetails: React.FC = () => {
                   </span>
                 </div>
 
-                <h1 className="font-syne font-extrabold text-3xl sm:text-5xl text-white tracking-tight leading-tight mb-2">
+                <h1 className="font-display font-extrabold text-2xl sm:text-4xl text-white tracking-tight leading-tight mb-2">
                   {level.title}
                 </h1>
                 <p className="text-xs font-mono text-[#ff3366] font-bold mb-4">
@@ -122,7 +124,7 @@ export const LevelDetails: React.FC = () => {
               </div>
 
               {/* Actions */}
-              <div className="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0 w-full lg:w-auto font-syne">
+              <div className="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0 w-full lg:w-auto font-display">
                 <button
                   onClick={handleToggleCompleted}
                   className={`w-full px-6 py-3.5 rounded-full font-bold text-xs transition-all flex items-center justify-center gap-2 ${
@@ -156,7 +158,7 @@ export const LevelDetails: React.FC = () => {
               
               {/* Business Scenario */}
               <section className="pixel-card p-6 sm:p-8">
-                <h2 className="font-syne font-bold text-xl text-white mb-3 flex items-center gap-2">
+                <h2 className="font-display font-bold text-lg sm:text-xl text-white mb-3 flex items-center gap-2">
                   <span>🏢 Business Scenario & Goal</span>
                 </h2>
                 <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed">
@@ -166,7 +168,7 @@ export const LevelDetails: React.FC = () => {
 
               {/* Objectives */}
               <section>
-                <h2 className="font-syne font-bold text-xl text-white mb-4 flex items-center gap-2">
+                <h2 className="font-display font-bold text-lg sm:text-xl text-white mb-4 flex items-center gap-2">
                   <span>🎯 Key Learning Objectives</span>
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -185,7 +187,7 @@ export const LevelDetails: React.FC = () => {
               {/* Business Questions */}
               {level.businessQuestions.length > 0 && (
                 <section className="pixel-card p-6 sm:p-8 border-[#ff3366]/30">
-                  <h2 className="font-syne font-bold text-lg text-white mb-4 flex items-center gap-2">
+                  <h2 className="font-display font-bold text-base sm:text-lg text-white mb-4 flex items-center gap-2">
                     <HelpCircle className="w-5 h-5 text-[#ff3366]" />
                     <span>Business Questions Your Dashboard Must Answer</span>
                   </h2>
@@ -200,7 +202,7 @@ export const LevelDetails: React.FC = () => {
               {/* DAX Measures */}
               {level.daxMeasures.length > 0 && (
                 <section>
-                  <h2 className="font-syne font-bold text-xl text-white mb-4 flex items-center gap-2">
+                  <h2 className="font-display font-bold text-lg sm:text-xl text-white mb-4 flex items-center gap-2">
                     <span>⚡ Key DAX Measures & Logic</span>
                   </h2>
                   <div className="space-y-4">
@@ -218,7 +220,7 @@ export const LevelDetails: React.FC = () => {
 
               {/* Workflow */}
               <section>
-                <h2 className="font-syne font-bold text-xl text-white mb-4 flex items-center gap-2">
+                <h2 className="font-display font-bold text-lg sm:text-xl text-white mb-4 flex items-center gap-2">
                   <span>📋 Recommended Project Workflow</span>
                 </h2>
                 <div className="space-y-4">
@@ -231,7 +233,7 @@ export const LevelDetails: React.FC = () => {
                         {w.step}
                       </div>
                       <div>
-                        <h4 className="font-syne font-bold text-sm text-white mb-1">
+                        <h4 className="font-display font-bold text-sm text-white mb-1">
                           {w.title}
                         </h4>
                         <p className="text-xs text-[#9a9aa5] leading-relaxed">
@@ -245,7 +247,7 @@ export const LevelDetails: React.FC = () => {
 
               {/* Deliverables */}
               <section className="pixel-card p-6">
-                <h3 className="font-syne font-bold text-base text-white mb-3">
+                <h3 className="font-display font-bold text-sm sm:text-base text-white mb-3">
                   📦 Project Deliverables
                 </h3>
                 <ul className="space-y-2 text-xs font-mono text-[#9a9aa5]">
@@ -266,7 +268,7 @@ export const LevelDetails: React.FC = () => {
               {/* Resources Card */}
               <div className="pixel-card p-6 sticky top-24">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-syne font-bold text-white text-base flex items-center gap-2">
+                  <h3 className="font-display font-bold text-white text-base flex items-center gap-2">
                     <FolderGit2 className="w-4 h-4 text-[#ff3366]" />
                     <span>Project Resources ({level.resources.length})</span>
                   </h3>
@@ -281,7 +283,7 @@ export const LevelDetails: React.FC = () => {
 
               {/* Skills */}
               <div className="pixel-card p-6">
-                <h4 className="font-syne font-bold text-xs text-white uppercase tracking-wider mb-3">
+                <h4 className="font-display font-bold text-xs text-white uppercase tracking-wider mb-3">
                   Skills In This Project
                 </h4>
                 <div className="flex flex-wrap gap-1.5 font-mono">
@@ -310,7 +312,7 @@ export const LevelDetails: React.FC = () => {
                 <ArrowLeft className="w-5 h-5 text-[#9a9aa5]" />
                 <div className="text-left">
                   <div className="text-[10px] font-mono text-[#9a9aa5] uppercase">Previous Level</div>
-                  <div className="font-syne text-sm font-bold text-white">L{prevLevel.id}: {prevLevel.title}</div>
+                  <div className="font-display text-sm font-bold text-white">L{prevLevel.id}: {prevLevel.title}</div>
                 </div>
               </Link>
             ) : <div />}
@@ -322,7 +324,7 @@ export const LevelDetails: React.FC = () => {
               >
                 <div>
                   <div className="text-[10px] font-mono text-[#9a9aa5] uppercase">Next Level</div>
-                  <div className="font-syne text-sm font-bold text-white">L{nextLevel.id}: {nextLevel.title}</div>
+                  <div className="font-display text-sm font-bold text-white">L{nextLevel.id}: {nextLevel.title}</div>
                 </div>
                 <ArrowRight className="w-5 h-5 text-[#ff3366]" />
               </Link>

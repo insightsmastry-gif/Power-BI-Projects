@@ -32,7 +32,7 @@ export const SkillCard: React.FC<SkillCardProps> = ({ category }) => {
             {getIcon(category.icon)}
           </div>
           <div>
-            <h3 className="font-syne font-bold text-xl text-white">
+            <h3 className="font-display font-bold text-lg sm:text-xl text-white">
               {category.title}
             </h3>
             <span className="text-xs text-[#9a9aa5] font-mono">

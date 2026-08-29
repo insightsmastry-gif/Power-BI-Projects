@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Github, ExternalLink } from "lucide-react";
 import { GITHUB_CONFIG, getRepositoryUrl, getZipArchiveUrl } from "../config/github";
+import { PowerBILogo } from "./PowerBILogo";
 
 export const Footer: React.FC = () => {
   return (
@@ -9,17 +10,17 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#23232b]">
           
-          {/* Brand Col in Pixel Code Labs style */}
+          {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-mono font-bold px-2 py-1 rounded-md bg-[#141418] border border-[#23232b] text-[#ff3366]">
-                &lt;/&gt;
-              </span>
-              <span className="font-syne font-extrabold text-lg tracking-tight text-white">
+            <div className="flex items-center gap-2.5">
+              <div className="p-1.5 rounded-xl bg-[#141418] border border-[#23232b] flex items-center justify-center">
+                <PowerBILogo className="w-5 h-5" />
+              </div>
+              <span className="font-display font-extrabold text-lg tracking-tight text-white">
                 Power BI <span className="text-[#ff3366]">Labs</span>
               </span>
             </div>
-            <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed max-w-sm">
+            <p className="text-xs text-[#9a9aa5] leading-relaxed max-w-sm">
               An open-source, progressive 10-level Power BI curriculum designed to help aspiring data analysts and BI engineers master real-world business intelligence by building.
             </p>
             <div className="pt-2">
@@ -37,7 +38,7 @@ export const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-syne font-bold text-white text-xs uppercase tracking-wider mb-4">
+            <h4 className="font-display font-bold text-white text-xs uppercase tracking-wider mb-4">
               Platform
             </h4>
             <ul className="space-y-2.5 text-xs font-mono">
@@ -51,7 +52,7 @@ export const Footer: React.FC = () => {
 
           {/* Evolutionary Stages */}
           <div>
-            <h4 className="font-syne font-bold text-white text-xs uppercase tracking-wider mb-4">
+            <h4 className="font-display font-bold text-white text-xs uppercase tracking-wider mb-4">
               Stages
             </h4>
             <ul className="space-y-2.5 text-xs font-mono">
@@ -64,7 +65,7 @@ export const Footer: React.FC = () => {
 
           {/* Resources */}
           <div>
-            <h4 className="font-syne font-bold text-white text-xs uppercase tracking-wider mb-4">
+            <h4 className="font-display font-bold text-white text-xs uppercase tracking-wider mb-4">
               Resources
             </h4>
             <ul className="space-y-2.5 text-xs font-mono">
