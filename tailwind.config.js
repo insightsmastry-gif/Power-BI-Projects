@@ -8,16 +8,29 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+        syne: ["Syne", "sans-serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       colors: {
-        pbi: {
-          yellow: "#F2C811",
-          gold: "#D97706",
-          dark: "#0F172A",
-          card: "#1E293B",
-        }
+        canvas: "#0a0a0c",
+        surface: {
+          DEFAULT: "#141418",
+          2: "#1c1c22",
+          3: "#24242c",
+        },
+        border: {
+          DEFAULT: "#23232b",
+          subtle: "rgba(255, 255, 255, 0.08)",
+        },
+        accent: {
+          DEFAULT: "#ff3366",
+          hover: "#ff5c85",
+          gold: "#F2C811",
+          emerald: "#10b981",
+          cyan: "#06b6d4"
+        },
+        muted: "#9a9aa5"
       }
     },
   },

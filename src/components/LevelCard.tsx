@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CheckCircle2, Clock, ArrowRight, Lock, FolderGit2 } from "lucide-react";
+import { Clock, ArrowRight, FolderGit2, CheckCircle2 } from "lucide-react";
 import { Level } from "../types/level";
 import { useProgress } from "../hooks/useProgress";
-import { getDifficultyColor } from "../lib/utils";
 
 interface LevelCardProps {
   level: Level;
@@ -11,114 +10,95 @@ interface LevelCardProps {
 }
 
 export const LevelCard: React.FC<LevelCardProps> = ({ level, featured = false }) => {
-  const { getLevelStatus, isLevelUnlocked } = useProgress();
+  const { getLevelStatus } = useProgress();
   const status = getLevelStatus(level.id);
-  const unlocked = isLevelUnlocked(level.id);
-  const diffStyle = getDifficultyColor(level.difficulty);
 
   return (
     <div
-      className={`group relative rounded-2xl transition-all duration-300 flex flex-col justify-between ${
-        featured
-          ? "border-2 border-amber-500/50 bg-gradient-to-br from-white via-slate-50 to-amber-50/20 dark:from-slate-900 dark:via-slate-900/90 dark:to-amber-950/20 shadow-xl shadow-amber-500/5 hover:border-amber-500"
-          : "border border-slate-200 dark:border-slate-800/80 bg-white dark:bg-slate-900/70 hover:border-amber-500/40 dark:hover:border-amber-400/40 shadow-sm hover:shadow-xl"
-      } p-6 sm:p-7`}
+      className={`pixel-card group flex flex-col justify-between p-6 sm:p-7 relative overflow-hidden ${
+        featured ? "border-[#ff3366]/50 bg-[#1c1c22]/90 shadow-xl shadow-[#ff3366]/5" : ""
+      }`}
     >
       <div>
-        {/* Top Header: Badge, Level ID, and Status */}
-        <div className="flex items-center justify-between gap-2 mb-4">
-          <div className="flex items-center gap-2">
-            <span className="font-mono text-xs font-extrabold px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700">
-              LEVEL {String(level.id).padStart(2, "0")}
-            </span>
-            <span className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full border flex items-center gap-1.5 ${diffStyle.bg} ${diffStyle.text} ${diffStyle.border}`}>
-              <span className={`w-1.5 h-1.5 rounded-full ${diffStyle.dot}`} />
+        {/* Mock Browser Header in Pixel Code Labs Style */}
+        <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-[#23232b]">
+          <div className="flex items-center gap-1.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#ff3366]/70" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#f2c811]/70" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#10b981]/70" />
+          </div>
+          <span className="text-[11px] font-mono text-[#9a9aa5] truncate max-w-[170px]">
+            {level.folder.toLowerCase()}.pbix
+          </span>
+          <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-[#1c1c22] text-[#ff3366] border border-[#23232b]">
+            L{String(level.id).padStart(2, "0")}
+          </span>
+        </div>
+
+        {/* Company & Difficulty */}
+        <div className="flex items-center justify-between gap-2 mb-2 font-mono">
+          <span className="text-xs text-[#9a9aa5] truncate">
+            {level.company}
+          </span>
+          <div className="flex items-center gap-1.5">
+            {status === "completed" && (
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30 flex items-center gap-1">
+                <CheckCircle2 className="w-3 h-3" /> Done
+              </span>
+            )}
+            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#141418] border border-[#23232b] text-[#f5f5f7]">
               {level.difficulty}
             </span>
           </div>
-
-          <div className="flex items-center gap-1.5">
-            {status === "completed" ? (
-              <span className="inline-flex items-center gap-1 text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
-                <CheckCircle2 className="w-3.5 h-3.5" />
-                Done
-              </span>
-            ) : status === "in-progress" ? (
-              <span className="inline-flex items-center gap-1 text-xs font-bold text-sky-600 dark:text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded-md border border-sky-500/20 animate-pulse">
-                In Progress
-              </span>
-            ) : !unlocked ? (
-              <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-md">
-                <Lock className="w-3 h-3" />
-                Locked
-              </span>
-            ) : (
-              <span className="text-xs text-slate-400 font-medium">
-                Ready
-              </span>
-            )}
-          </div>
         </div>
 
-        {/* Title and Company */}
-        <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors mb-1">
+        {/* Title */}
+        <h3 className="font-syne font-bold text-xl sm:text-2xl text-white group-hover:text-[#ff3366] transition-colors mb-2">
           <Link to={`/levels/${level.slug}`}>{level.title}</Link>
         </h3>
-        <p className="text-xs text-slate-500 dark:text-slate-400 font-mono mb-3.5">
-          {level.company}
-        </p>
 
         {/* Short Description */}
-        <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-5">
+        <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed mb-5">
           {level.shortDescription}
         </p>
 
-        {/* Skills Tag Cloud */}
-        <div className="mb-6">
-          <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
-            Skills Mastered:
-          </div>
-          <div className="flex flex-wrap gap-1.5">
-            {level.skills.slice(0, 4).map((skill, idx) => (
-              <span
-                key={idx}
-                className="text-xs px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700/50 font-medium"
-              >
-                {skill}
-              </span>
-            ))}
-            {level.skills.length > 4 && (
-              <span className="text-xs px-2 py-1 rounded-md bg-slate-50 dark:bg-slate-800 text-slate-400">
-                +{level.skills.length - 4} more
-              </span>
-            )}
-          </div>
+        {/* Skill Tags */}
+        <div className="flex flex-wrap gap-1.5 mb-6">
+          {level.skills.slice(0, 3).map((skill, idx) => (
+            <span
+              key={idx}
+              className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-[#141418] border border-[#23232b] text-[#9a9aa5]"
+            >
+              {skill}
+            </span>
+          ))}
+          {level.skills.length > 3 && (
+            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[#141418] text-[#9a9aa5]">
+              +{level.skills.length - 3}
+            </span>
+          )}
         </div>
       </div>
 
-      {/* Footer Details: Time, Datasets & Action Button */}
-      <div className="border-t border-slate-100 dark:border-slate-800/80 pt-4 mt-2 flex items-center justify-between gap-2">
-        <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
-          <span className="flex items-center gap-1 font-mono">
+      {/* Footer Info & Action */}
+      <div className="pt-4 border-t border-[#23232b] flex items-center justify-between gap-2">
+        <div className="flex items-center gap-3 text-xs text-[#9a9aa5] font-mono">
+          <span className="flex items-center gap-1">
             <Clock className="w-3.5 h-3.5" />
             {level.estimatedHours}
           </span>
-          <span className="flex items-center gap-1 font-mono">
+          <span className="flex items-center gap-1">
             <FolderGit2 className="w-3.5 h-3.5" />
-            {level.resources.filter(r => r.isDataset).length} Tables
+            {level.resources.filter(r => r.isDataset).length} CSVs
           </span>
         </div>
 
         <Link
           to={`/levels/${level.slug}`}
-          className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-all ${
-            featured
-              ? "bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-md shadow-amber-500/20"
-              : "bg-slate-900 hover:bg-slate-800 text-white dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-100"
-          }`}
+          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1c1c22] hover:bg-[#ff3366] text-white text-xs font-syne font-bold border border-[#23232b] hover:border-[#ff3366] transition-all"
         >
-          <span>Explore Level</span>
-          <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+          <span>View Brief</span>
+          <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
         </Link>
       </div>
     </div>

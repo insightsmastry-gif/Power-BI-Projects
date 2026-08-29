@@ -7,16 +7,16 @@ import { SKILL_CATEGORIES } from "../data/skills";
 export const Skills: React.FC = () => {
   return (
     <PageTransition>
-      <div className="pt-28 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Power BI Competencies"
-          title="Skills Taxonomy & Matrix"
-          description="Master every essential pillar of modern Power BI development: from data cleansing and Kimball modeling to advanced analytical DAX and enterprise security."
+          eyebrow="Competency Framework"
+          title="Skills Taxonomy Across 10 Levels"
+          description="Explore the technical competencies and business intelligence skills taught throughout the curriculum."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {SKILL_CATEGORIES.map((cat) => (
-            <SkillCard key={cat.id} category={cat} />
+          {SKILL_CATEGORIES.map((category) => (
+            <SkillCard key={category.id} category={category} />
           ))}
         </div>
       </div>

@@ -1,109 +1,68 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, BarChart3, ArrowRight, Github, Award } from "lucide-react";
-import { ThemeToggle } from "./ThemeToggle";
-import { useProgress } from "../hooks/useProgress";
-import { getRepositoryUrl } from "../config/github";
+import { Github, Menu, X, ArrowRight } from "lucide-react";
+import { GITHUB_CONFIG, getRepositoryUrl } from "../config/github";
 
 export const Navbar: React.FC = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const { completedCount, totalLevels } = useProgress();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Close mobile menu on route change
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [location]);
 
   const navLinks = [
-    { name: "Home", path: "/" },
     { name: "Learning Path", path: "/learning-path" },
     { name: "Projects", path: "/projects" },
     { name: "Skills", path: "/skills" },
     { name: "About", path: "/about" },
   ];
 
+  const isActive = (path: string) => location.pathname === path;
+
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/80 dark:border-slate-800/80 shadow-sm"
-          : "bg-transparent border-b border-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-18">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 pt-4">
+      <div className="max-w-7xl mx-auto">
+        <nav className="rounded-full bg-[#141418]/90 backdrop-blur-md border border-[#23232b] px-4 sm:px-6 py-3 flex items-center justify-between shadow-2xl transition-all">
           
-          {/* Brand Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-slate-950 font-black shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
-              <BarChart3 className="w-6 h-6 stroke-[2.5]" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-extrabold text-base sm:text-lg tracking-tight text-slate-900 dark:text-white leading-tight">
-                Power BI <span className="text-amber-500">Learning Path</span>
-              </span>
-              <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 font-semibold">
-                10 Real-World Projects
-              </span>
-            </div>
+          {/* Logo Badge in Pixel Code Labs style */}
+          <Link to="/" className="flex items-center gap-2 group">
+            <span className="text-xs font-mono font-bold px-2 py-1 rounded-md bg-[#1c1c22] border border-[#23232b] text-[#ff3366] group-hover:border-[#ff3366]/40 transition-colors">
+              &lt;/&gt;
+            </span>
+            <span className="font-syne font-extrabold text-base sm:text-lg tracking-tight text-white flex items-center gap-1.5">
+              Power BI <span className="text-[#ff3366]">Labs</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-1 lg:gap-2">
-            {navLinks.map((link) => {
-              const isActive = location.pathname === link.path;
-              return (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  className={`px-3.5 py-2 rounded-xl text-sm font-semibold transition-all ${
-                    isActive
-                      ? "text-amber-600 dark:text-amber-400 bg-amber-500/10 dark:bg-amber-400/10 font-bold"
-                      : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60"
-                  }`}
-                >
-                  {link.name}
-                </Link>
-              );
-            })}
-          </nav>
+          <div className="hidden md:flex items-center gap-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all ${
+                  isActive(link.path)
+                    ? "bg-[#1c1c22] text-[#ff3366] font-semibold border border-[#23232b]"
+                    : "text-[#9a9aa5] hover:text-white hover:bg-white/5"
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
 
-          {/* Right Header Actions */}
+          {/* Right Action: GitHub link + Primary CTA Button */}
           <div className="hidden md:flex items-center gap-3">
-            {/* Progress Badge */}
-            <Link
-              to="/learning-path"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 text-xs font-mono font-bold text-slate-700 dark:text-slate-300 hover:border-amber-500/40 transition-all"
-            >
-              <Award className="w-3.5 h-3.5 text-amber-500" />
-              <span>{completedCount}/{totalLevels} Done</span>
-            </Link>
-
-            <ThemeToggle />
-
             <a
               href={getRepositoryUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View on GitHub"
-              className="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+              className="p-2 rounded-full text-[#9a9aa5] hover:text-white hover:bg-[#1c1c22] transition-colors"
+              title="View on GitHub"
             >
-              <Github className="w-5 h-5" />
+              <Github className="w-4 h-4" />
             </a>
 
             <Link
               to="/levels/coffee-shop"
-              className="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow-md shadow-amber-500/20 transition-all flex items-center gap-1.5"
+              className="px-4 py-2 rounded-full bg-[#ff3366] hover:bg-[#ff5c85] text-white font-syne font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-[#ff3366]/20 transition-all transform hover:-translate-y-0.5"
             >
               <span>Start Learning</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -112,54 +71,59 @@ export const Navbar: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center gap-2">
-            <ThemeToggle />
             <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800"
-              aria-label="Toggle menu"
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 rounded-full text-[#9a9aa5] hover:text-white hover:bg-[#1c1c22] transition-colors"
             >
-              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
 
-        </div>
-      </div>
+        </nav>
 
-      {/* Mobile Drawer Menu */}
-      {mobileOpen && (
-        <div className="md:hidden bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 px-4 pt-2 pb-6 space-y-2 shadow-2xl animate-in slide-in-from-top-2">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.path}
-              className={`block px-4 py-3 rounded-xl text-sm font-bold ${
-                location.pathname === link.path
-                  ? "bg-amber-500/10 text-amber-600 dark:text-amber-400"
-                  : "text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-900"
-              }`}
-            >
-              {link.name}
-            </Link>
-          ))}
-          <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-3">
-            <Link
-              to="/levels/coffee-shop"
-              className="w-full py-3 rounded-xl bg-amber-500 text-slate-950 font-bold text-center text-sm shadow-md"
-            >
-              Start Learning (Level 1) →
-            </Link>
-            <a
-              href={getRepositoryUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 font-semibold text-center text-xs flex items-center justify-center gap-2 border border-slate-200 dark:border-slate-800"
-            >
-              <Github className="w-4 h-4" />
-              <span>View GitHub Repository</span>
-            </a>
+        {/* Mobile Dropdown */}
+        {isOpen && (
+          <div className="md:hidden mt-2 p-4 rounded-2xl bg-[#141418] border border-[#23232b] shadow-2xl space-y-3 animate-in fade-in slide-in-from-top-2">
+            <div className="flex flex-col space-y-1">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={() => setIsOpen(false)}
+                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+                    isActive(link.path)
+                      ? "bg-[#1c1c22] text-[#ff3366] font-bold"
+                      : "text-[#9a9aa5] hover:text-white"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+
+            <div className="pt-3 border-t border-[#23232b] flex items-center justify-between">
+              <a
+                href={getRepositoryUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-xs text-[#9a9aa5] hover:text-white"
+              >
+                <Github className="w-4 h-4" />
+                <span>{GITHUB_CONFIG.repository}</span>
+              </a>
+
+              <Link
+                to="/levels/coffee-shop"
+                onClick={() => setIsOpen(false)}
+                className="px-4 py-2 rounded-full bg-[#ff3366] text-white font-syne font-bold text-xs"
+              >
+                Start Level 1 →
+              </Link>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+
+      </div>
     </header>
   );
 };

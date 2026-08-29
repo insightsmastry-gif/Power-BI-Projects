@@ -2,29 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+:root {
+  --canvas: #0a0a0c;
+  --surface: #141418;
+  --surface-2: #1c1c22;
+  --accent: #ff3366;
+  --accent-2: #ff5c85;
+  --text: #f5f5f7;
+  --text-muted: #9a9aa5;
+  --border: #23232b;
+  --ease-organic: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Custom Scrollbars */
+body {
+  background-color: var(--canvas);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Syne', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Pixel Code Labs Card */
+.pixel-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.pixel-card:hover {
+  background-color: var(--surface-2);
+  border-color: rgba(255, 51, 102, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Glowing Neon Elements */
+.pixel-glow {
+  box-shadow: 0 0 35px -5px rgba(255, 51, 102, 0.25);
+}
+
+.pixel-glow-gold {
+  box-shadow: 0 0 35px -5px rgba(242, 200, 17, 0.2);
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #0a0a0c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(156, 163, 175, 0.4);
+  background: #23232b;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(156, 163, 175, 0.7);
+  background: #ff3366;
 }

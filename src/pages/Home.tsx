@@ -4,233 +4,204 @@ import {
   Database, 
   Layers, 
   Cpu, 
-  CheckCircle2, 
-  ArrowRight, 
+  ShieldCheck, 
+  BarChart3, 
   Sparkles, 
-  Download, 
-  Award 
+  ArrowRight, 
+  Download 
 } from "lucide-react";
 import { Hero } from "../components/Hero";
 import { SectionHeading } from "../components/SectionHeading";
-import { LearningRoadmap } from "../components/LearningRoadmap";
+import { LevelCard } from "../components/LevelCard";
 import { ProgressTracker } from "../components/ProgressTracker";
 import { PageTransition } from "../components/PageTransition";
 import { LEVELS } from "../data/levels";
 import { getZipArchiveUrl } from "../config/github";
 
 export const Home: React.FC = () => {
-  const level1 = LEVELS[0];
-
   return (
     <PageTransition>
       {/* 1. Hero Section */}
       <Hero />
 
-      {/* 2. Trust & Core Benefits Section */}
-      <section className="py-16 border-y border-slate-200/80 dark:border-slate-800/80 bg-slate-100/60 dark:bg-slate-900/40">
+      {/* 2. What's Included (Feature Grid in Pixel Code Labs Style) */}
+      <section className="py-20 border-t border-[#23232b] bg-[#0a0a0c]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="flex items-start gap-4">
-              <div className="p-3 rounded-2xl bg-amber-500/10 text-amber-500 border border-amber-500/20 shrink-0">
-                <Database className="w-6 h-6" />
+          <SectionHeading
+            eyebrow="What's Included"
+            title="Everything You Need to Master Power BI"
+            description="No fluff, no toy single-column tables. Everything is engineered to simulate realistic enterprise business intelligence work."
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div className="pixel-card p-6 sm:p-8">
+              <div className="w-10 h-10 rounded-xl bg-[#141418] border border-[#23232b] flex items-center justify-center text-[#ff3366] mb-4">
+                <Database className="w-5 h-5" />
               </div>
-              <div>
-                <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1">
-                  Real Projects
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Build 10 realistic business analytics solutions from coffee shops to enterprise models.
-                </p>
-              </div>
+              <h3 className="font-syne font-bold text-xl text-white mb-2">45+ Real Datasets</h3>
+              <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed font-mono">
+                Transactional logs, target quotas, warehouse inventory snapshots, customer profiles, and user security tables.
+              </p>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="p-3 rounded-2xl bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 shrink-0">
-                <Layers className="w-6 h-6" />
+            <div className="pixel-card p-6 sm:p-8">
+              <div className="w-10 h-10 rounded-xl bg-[#141418] border border-[#23232b] flex items-center justify-center text-[#f2c811] mb-4">
+                <Layers className="w-5 h-5" />
               </div>
-              <div>
-                <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1">
-                  Real Datasets
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Practice with 45+ curated CSV files featuring realistic transactional grains and anomalies.
-                </p>
-              </div>
+              <h3 className="font-syne font-bold text-xl text-white mb-2">Star Schema Modeling</h3>
+              <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed font-mono">
+                Kimball architectural principles, conforming dimensions, surrogate keys, and handling grain mismatches across multiple facts.
+              </p>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="p-3 rounded-2xl bg-sky-500/10 text-sky-500 border border-sky-500/20 shrink-0">
-                <Cpu className="w-6 h-6" />
+            <div className="pixel-card p-6 sm:p-8">
+              <div className="w-10 h-10 rounded-xl bg-[#141418] border border-[#23232b] flex items-center justify-center text-[#06b6d4] mb-4">
+                <Cpu className="w-5 h-5" />
               </div>
-              <div>
-                <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1">
-                  Hands-On Learning
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Write production DAX, build star schemas, and solve actual corporate BI challenges.
-                </p>
-              </div>
+              <h3 className="font-syne font-bold text-xl text-white mb-2">Production DAX Library</h3>
+              <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed font-mono">
+                Time intelligence (YTD, MoM), dynamic RANKX, customer spend tiers with SWITCH, 30-day moving averages, and USERELATIONSHIP.
+              </p>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="p-3 rounded-2xl bg-indigo-500/10 text-indigo-500 border border-indigo-500/20 shrink-0">
-                <Award className="w-6 h-6" />
+            <div className="pixel-card p-6 sm:p-8">
+              <div className="w-10 h-10 rounded-xl bg-[#141418] border border-[#23232b] flex items-center justify-center text-[#10b981] mb-4">
+                <ShieldCheck className="w-5 h-5" />
               </div>
-              <div>
-                <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1">
-                  Beginner to Advanced
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Progress step-by-step through a carefully paced curriculum designed for rapid mastery.
-                </p>
-              </div>
+              <h3 className="font-syne font-bold text-xl text-white mb-2">Dynamic Security (RLS)</h3>
+              <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed font-mono">
+                Role-based data security using USERNAME() and USERPRINCIPALNAME() to restrict territory access dynamically.
+              </p>
             </div>
+
+            <div className="pixel-card p-6 sm:p-8">
+              <div className="w-10 h-10 rounded-xl bg-[#141418] border border-[#23232b] flex items-center justify-center text-[#ff3366] mb-4">
+                <BarChart3 className="w-5 h-5" />
+              </div>
+              <h3 className="font-syne font-bold text-xl text-white mb-2">Executive UI/UX Design</h3>
+              <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed font-mono">
+                Multi-page navigation, drill-through accounts, report page tooltips, and interactive Field Parameters.
+              </p>
+            </div>
+
+            <div className="pixel-card p-6 sm:p-8">
+              <div className="w-10 h-10 rounded-xl bg-[#141418] border border-[#23232b] flex items-center justify-center text-[#f2c811] mb-4">
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <h3 className="font-syne font-bold text-xl text-white mb-2">Pre-Capstone Mastery</h3>
+              <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed font-mono">
+                Solve an enterprise case study (VoltEdge Solutions) combining 4 concurrent facts, messy raw data, and manager hierarchies.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* 3. Learning Journey Progression Visual */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="Your Learning Journey"
-          title={
-            <>
-              10 Levels. <br className="hidden sm:inline" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-yellow-500">
-                One Complete Power BI Journey.
-              </span>
-            </>
-          }
-          description="Start with single-table dashboards and gradually advance toward complex multi-fact models, ranking patterns, dynamic RLS, and an enterprise pre-capstone."
-        />
-
-        {/* Milestone Steps Ribbon */}
-        <div className="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-10 gap-2 sm:gap-3 mb-16">
-          {LEVELS.map((lvl) => (
-            <Link
-              key={lvl.id}
-              to={`/levels/${lvl.slug}`}
-              className="group p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/80 hover:border-amber-500/50 transition-all text-center flex flex-col items-center justify-between min-h-[96px] shadow-sm hover:shadow-md"
-            >
-              <span className="font-mono font-extrabold text-xs text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform">
-                L{lvl.id}
-              </span>
-              <span className="text-[11px] font-bold text-slate-800 dark:text-slate-200 line-clamp-1 leading-tight mt-1">
-                {lvl.title.split(" ")[0]}
-              </span>
-              <span className="text-[9px] font-mono text-slate-400 uppercase mt-auto">
-                {lvl.difficulty.split(" ")[0]}
-              </span>
-            </Link>
-          ))}
-        </div>
-
-        {/* 4. Featured Start: Level 1 Highlight */}
-        <div className="mb-20">
-          <div className="text-xs font-mono font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-3 text-center sm:text-left">
-            RECOMMENDED STARTING POINT
-          </div>
-          <div className="rounded-3xl p-8 sm:p-10 border-2 border-amber-500/40 bg-gradient-to-br from-amber-500/10 via-white to-slate-50 dark:from-amber-950/20 dark:via-slate-900 dark:to-slate-950 shadow-2xl shadow-amber-500/5">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-8">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="font-mono text-xs font-black px-3 py-1 rounded-full bg-amber-500 text-slate-950">
-                    LEVEL 01
-                  </span>
-                  <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
-                    Beginner
-                  </span>
-                  <span className="text-xs text-slate-500 dark:text-slate-400 font-mono ml-auto sm:ml-2">
-                    ⏱️ 2–4 hours
-                  </span>
-                </div>
-
-                <h3 className="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-3">
-                  {level1.title}
-                </h3>
-                <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                  {level1.description}
-                </p>
-
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-                  {level1.skills.map((skill, i) => (
-                    <div key={i} className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 text-xs font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-                      <span>{skill}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="lg:col-span-4 flex flex-col justify-center gap-4 bg-white/70 dark:bg-slate-950/60 p-6 rounded-2xl border border-slate-200 dark:border-slate-800">
-                <div className="text-xs text-slate-500 dark:text-slate-400 font-mono">
-                  Ready to build your first dashboard?
-                </div>
-                <Link
-                  to={`/levels/${level1.slug}`}
-                  className="w-full py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-center text-sm shadow-lg shadow-amber-500/20 transition-all flex items-center justify-center gap-2"
-                >
-                  <span>Start Level 1 Now</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-                <a
-                  href={getZipArchiveUrl()}
-                  className="w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold text-center text-xs border border-slate-200 dark:border-slate-700 transition-all flex items-center justify-center gap-1.5"
-                >
-                  <Download className="w-3.5 h-3.5 text-amber-500" />
-                  <span>Download Starter Data</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* 5. Progress Tracker Banner */}
-        <div className="mb-20">
+      {/* 3. Progress Tracker Section */}
+      <section className="py-12 border-t border-[#23232b] bg-[#0a0a0c]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ProgressTracker />
         </div>
+      </section>
 
-        {/* 6. Connected Learning Roadmap */}
-        <div className="mb-20">
-          <SectionHeading
-            eyebrow="10-Level Roadmap"
-            title="Step-by-Step Curriculum Timeline"
-            description="Each project builds directly on prior skills. Complete each level to systematically expand your modeling, DAX, and visualization capabilities."
-          />
-          <LearningRoadmap />
+      {/* 4. Sample Project Catalog (10 Levels Grid in Pixel Code Labs Style) */}
+      <section className="py-20 border-t border-[#23232b] bg-[#0a0a0c]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-4 mb-12">
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#141418] border border-[#23232b] text-[#ff3366] text-xs font-mono uppercase tracking-wider mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#ff3366]" />
+                Project Catalog
+              </div>
+              <h2 className="font-syne font-extrabold text-3xl sm:text-4xl text-white">
+                10 Real-World Power BI Projects
+              </h2>
+            </div>
+            <Link
+              to="/projects"
+              className="text-xs font-syne font-bold text-[#ff3366] hover:text-[#ff5c85] flex items-center gap-1"
+            >
+              <span>View full catalog →</span>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {LEVELS.map((lvl) => (
+              <LevelCard key={lvl.id} level={lvl} />
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* 7. Final Call to Action */}
-      <section className="py-20 border-t border-slate-200 dark:border-slate-800/80 bg-gradient-to-b from-slate-900 to-slate-950 text-white relative overflow-hidden">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider mb-6">
-            <Sparkles className="w-3.5 h-3.5" />
-            100% Free & Open Source
+      {/* 5. How It Works (3 Steps in Pixel Code Labs Style) */}
+      <section className="py-20 border-t border-[#23232b] bg-[#0a0a0c]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Workflow"
+            title="How It Works"
+            description="Follow a streamlined, professional process for each project level."
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="pixel-card p-6 sm:p-8 relative">
+              <div className="text-4xl font-syne font-black text-[#ff3366] mb-3">01</div>
+              <h3 className="font-syne font-bold text-xl text-white mb-2">Read Brief & Ingest Data</h3>
+              <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed font-mono">
+                Review the company scenario, understand the commercial objectives, and import raw CSV datasets into Power Query.
+              </p>
+            </div>
+
+            <div className="pixel-card p-6 sm:p-8 relative">
+              <div className="text-4xl font-syne font-black text-[#f2c811] mb-3">02</div>
+              <h3 className="font-syne font-bold text-xl text-white mb-2">Model & Author DAX</h3>
+              <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed font-mono">
+                Establish star schema relationships, resolve grain mismatches, and author required DAX measures from the brief.
+              </p>
+            </div>
+
+            <div className="pixel-card p-6 sm:p-8 relative">
+              <div className="text-4xl font-syne font-black text-[#06b6d4] mb-3">03</div>
+              <h3 className="font-syne font-bold text-xl text-white mb-2">Design & Track Progress</h3>
+              <p className="text-xs sm:text-sm text-[#9a9aa5] leading-relaxed font-mono">
+                Build polished interactive dashboards, mark the level as completed, and unlock the next milestone on your roadmap.
+              </p>
+            </div>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight mb-6">
-            Ready to Become a <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-300">
-              Power BI Project Builder?
+        </div>
+      </section>
+
+      {/* 6. Final Call to Action in Pixel Code Labs Style */}
+      <section className="py-24 border-t border-[#23232b] bg-gradient-to-b from-[#141418] to-[#0a0a0c] text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1c1c22] border border-[#23232b] text-[#ff3366] text-xs font-mono uppercase tracking-wider mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff3366]" />
+            Ready to Build?
+          </div>
+          <h2 className="font-syne font-extrabold text-3xl sm:text-5xl text-white mb-6">
+            Start Building Your <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff3366] to-[#f2c811]">
+              Power BI Portfolio Today.
             </span>
           </h2>
-          <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Download the datasets, follow the project briefs, write production DAX, and build a world-class portfolio of 10 real-world business intelligence dashboards.
+          <p className="text-sm sm:text-base text-[#9a9aa5] max-w-xl mx-auto mb-10 leading-relaxed font-mono text-xs sm:text-sm">
+            Download the datasets, open Power BI Desktop, follow the briefs, and master enterprise business intelligence hands-on.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               to="/levels/coffee-shop"
-              className="px-8 py-4 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-base transition-all transform hover:-translate-y-0.5 shadow-xl shadow-amber-500/20 flex items-center gap-2"
+              className="px-8 py-4 rounded-full bg-[#ff3366] hover:bg-[#ff5c85] text-white font-syne font-bold text-sm shadow-xl shadow-[#ff3366]/20 transition-all flex items-center gap-2"
             >
-              <span>Begin Level 1 – Coffee Shop</span>
+              <span>Begin Level 1 (Coffee Shop)</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
               href={getZipArchiveUrl()}
-              className="px-8 py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-base border border-slate-700 transition-all flex items-center gap-2"
+              className="px-6 py-4 rounded-full bg-[#141418] hover:bg-[#1c1c22] text-white font-syne font-bold text-sm border border-[#23232b] transition-all flex items-center gap-2"
             >
-              <Download className="w-4 h-4 text-amber-400" />
-              <span>Download Full Repository</span>
+              <Download className="w-4 h-4 text-[#ff3366]" />
+              <span>Download All Datasets (.zip)</span>
             </a>
           </div>
         </div>
