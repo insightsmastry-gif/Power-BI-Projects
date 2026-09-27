@@ -20,17 +20,17 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
     <div className={`w-full ${className}`}>
       {showLabels && (
         <div className="flex items-center justify-between text-xs font-semibold mb-2">
-          <span className="text-slate-600 dark:text-slate-400">
+          <span className="text-muted">
             {completed} of {total} Levels Completed
           </span>
-          <span className="text-amber-600 dark:text-amber-400 font-mono">
+          <span className="text-brand-2 font-mono">
             {percentage}%
           </span>
         </div>
       )}
-      <div className="h-2.5 w-full bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden p-0.5 border border-slate-300 dark:border-slate-700/60 shadow-inner">
+      <div className="h-2.5 w-full bg-surface-2 rounded-full overflow-hidden p-0.5 border border-line shadow-inner">
         <motion.div
-          className="h-full rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-300 shadow-sm"
+          className="h-full rounded-full bg-gradient-to-r from-brand to-teal shadow-sm"
           initial={{ width: 0 }}
           animate={{ width: `${percentage}%` }}
           transition={{ duration: 0.8, ease: "easeOut" }}

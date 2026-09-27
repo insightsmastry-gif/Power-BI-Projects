@@ -2,7 +2,18 @@ export const GITHUB_CONFIG = {
   username: "insightsmastry-gif",
   repository: "Power-BI-Projects",
   branch: "main",
-  siteUrl: "https://insightsmastry-gif.github.io/Power-BI-Projects"
+  siteUrl: "https://project.insightsmastry.in"
+} as const;
+
+/** This site is a sub-site of the main InsightsMastery Academy website. */
+export const PARENT_SITE = {
+  url: "https://www.insightsmastry.in/",
+  programsUrl: "https://www.insightsmastry.in/courses",
+  blogUrl: "https://www.insightsmastry.in/blog",
+  admissionUrl: "https://www.insightsmastry.in/admission",
+  notesUrl: "https://notes.insightsmastry.in/",
+  privacyUrl: "https://www.insightsmastry.in/privacy-policy",
+  termsUrl: "https://www.insightsmastry.in/terms-of-service"
 } as const;
 
 /**

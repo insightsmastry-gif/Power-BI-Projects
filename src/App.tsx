@@ -24,7 +24,7 @@ export function App() {
   return (
     <HashRouter>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans selection:bg-amber-400 selection:text-slate-950 transition-colors duration-200">
+      <div className="min-h-screen flex flex-col bg-canvas text-ink font-sans selection:bg-brand/20 selection:text-ink transition-colors duration-200">
         <Navbar />
         <main className="flex-grow">
           <Routes>

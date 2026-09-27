@@ -17,20 +17,20 @@ export const DAXSnippet: React.FC<DAXSnippetProps> = ({ name, formula, descripti
   };
 
   return (
-    <div className="stripe-card overflow-hidden">
-      <div className="flex items-center justify-between px-4 py-3 bg-[#0F172A] border-b border-white/10">
+    <div className="im-card overflow-hidden">
+      <div className="flex items-center justify-between px-4 py-3 bg-surface border-b border-line">
         <div className="flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-[#635BFF]" />
-          <span className="font-mono text-xs font-bold text-white">{name}</span>
+          <span className="w-2 h-2 rounded-full bg-brand" />
+          <span className="font-mono text-xs font-bold text-ink">{name}</span>
         </div>
         <button
           onClick={handleCopy}
-          className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1E293B] hover:bg-[#635BFF] text-[#94A3B8] hover:text-white transition-colors text-[11px] font-mono"
+          className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-2 hover:bg-brand text-muted hover:text-ink transition-colors text-[11px] font-mono"
         >
           {copied ? (
             <>
-              <Check className="w-3 h-3 text-[#00D924]" />
-              <span className="text-[#00D924]">Copied</span>
+              <Check className="w-3 h-3 text-success" />
+              <span className="text-success">Copied</span>
             </>
           ) : (
             <>
@@ -41,13 +41,13 @@ export const DAXSnippet: React.FC<DAXSnippetProps> = ({ name, formula, descripti
         </button>
       </div>
 
-      <div className="p-4 bg-[#080B1A]">
-        <pre className="font-mono text-xs text-[#F8FAFC] overflow-x-auto whitespace-pre-wrap leading-relaxed">
+      <div className="p-4 bg-canvas">
+        <pre className="font-mono text-xs text-ink overflow-x-auto whitespace-pre-wrap leading-relaxed">
           <code>{formula}</code>
         </pre>
       </div>
 
-      <div className="px-4 py-2.5 bg-[#0F172A] border-t border-white/10 text-[11px] text-[#94A3B8]">
+      <div className="px-4 py-2.5 bg-surface border-t border-line text-[11px] text-muted">
         {description}
       </div>
     </div>
