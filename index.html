@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Power BI Learning Platform | Real-World Projects & Star Schemas</title>
-    <meta name="description" content="Master Microsoft Power BI with 10 progressive hands-on projects, real datasets, DAX formulas, and Kimball star schemas from beginner to pre-capstone." />
-    
-    <!-- Google Fonts: Plus Jakarta Sans & Inter (Crisp Stripe-grade typography) + JetBrains Mono -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Power BI Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'><rect x='4' y='16' width='5' height='12' rx='1.5' fill='%23F8DF6D'/><rect x='11' y='10' width='5' height='18' rx='1.5' fill='%23F2C811'/><rect x='18' y='5' width='5' height='23' rx='1.5' fill='%23EAA300'/><rect x='25' y='12' width='5' height='16' rx='1.5' fill='%23D97706'/></svg>" />
+    <title>Power BI Projects — InsightsMastery Academy</title>
+    <meta name="description" content="Master Microsoft Power BI with 10 progressive hands-on projects, real datasets, DAX formulas and Kimball star schemas — from beginner to pre-capstone. By InsightsMastery Academy." />
+    <meta name="theme-color" content="#166387" />
+    <link rel="canonical" href="https://project.insightsmastry.in/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="InsightsMastery Academy" />
+    <meta property="og:title" content="Power BI Projects — InsightsMastery Academy" />
+    <meta property="og:description" content="10 progressive Power BI projects with real datasets, DAX and star schemas — from first dashboard to pre-capstone." />
+    <meta property="og:url" content="https://project.insightsmastry.in/" />
+    <meta property="og:image" content="https://project.insightsmastry.in/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/logo-mark.svg" />
+    <script>
+      /* Paint the stored theme before first paint; light is the brand default. */
+      try { if (localStorage.getItem("pbi_hub_theme") === "dark") document.documentElement.classList.add("dark"); } catch (e) {}
+    </script>
   </head>
-  <body class="bg-[#080B1A] text-[#F8FAFC] antialiased selection:bg-[#635BFF] selection:text-white min-h-screen">
+  <body class="antialiased min-h-screen">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

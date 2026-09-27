@@ -79,8 +79,10 @@ export const GITHUB_CONFIG = {
   username: "insightsmastry-gif",
   repository: "Power-BI-Projects",
   branch: "main",
-  siteUrl: "https://insightsmastry-gif.github.io/Power-BI-Projects"
+  siteUrl: "https://project.insightsmastry.in"
 };
+
+export const PARENT_SITE = { url: "https://www.insightsmastry.in/", /* programs, blog, notes… */ };
 ```
 
 ---
@@ -106,18 +108,24 @@ resources: [
 
 ---
 
-## 🚀 GitHub Pages Deployment
+## 🎨 Brand
 
-1. Go to your repository on GitHub: **Settings > Pages**
-2. Under **Build and deployment > Source**, select **GitHub Actions**
-3. Push to `main` branch:
-   ```bash
-   git add .
-   git commit -m "Deploy Power BI Learning Platform"
-   git push origin main
-   ```
-4. The workflow in `.github/workflows/deploy.yml` will automatically build and deploy your site to:
-   `https://insightsmastry-gif.github.io/Power-BI-Projects/`
+The site is a sub-site of <https://www.insightsmastry.in/> and uses its logo
+(`public/logo-mark.svg`), banner header, slate + cyan/teal palette and Outfit/Inter
+type, in a Stripe-style layout. Colours are semantic Tailwind tokens (`canvas`,
+`surface`, `ink`, `muted`, `line`, `brand`, `brand-2`, `teal`…) defined as CSS
+variables in `src/index.css`; `.dark` swaps them. Light is the default.
+
+## 🚀 Deployment
+
+- The website lives on the **`website-source`** branch; `main` holds the project
+  datasets and briefs that the site links to.
+- Every push to `website-source` runs `.github/workflows/deploy.yml`, which builds
+  with Vite and publishes `dist/` to GitHub Pages.
+- Custom domain: **<https://project.insightsmastry.in/>** — DNS `CNAME project →
+  insightsmastry-gif.github.io` (GoDaddy); GitHub Settings → Pages → Custom domain,
+  HTTPS enforced. Old `insightsmastry-gif.github.io/Power-BI-Projects/` links
+  redirect automatically.
 
 ---
 

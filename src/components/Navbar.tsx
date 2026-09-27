@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Github, Menu, X, ArrowRight } from "lucide-react";
-import { GITHUB_CONFIG, getRepositoryUrl } from "../config/github";
-import { PowerBILogo } from "./PowerBILogo";
+import { Github, Menu, X, ArrowUpRight } from "lucide-react";
+import { getRepositoryUrl, PARENT_SITE } from "../config/github";
+import { BrandMark } from "./BrandMark";
+import { ThemeToggle } from "./ThemeToggle";
 
+/** Sub-site header: the parent site's banner, logo and wordmark, plus this site's nav. */
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -15,116 +17,96 @@ export const Navbar: React.FC = () => {
     { name: "About", path: "/about" },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
-
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 pt-4">
-      <div className="max-w-7xl mx-auto">
-        <nav className="rounded-full bg-[#0F172A]/85 backdrop-blur-xl border border-white/10 px-5 sm:px-6 py-3 flex items-center justify-between shadow-2xl shadow-black/40 transition-all">
-          
-          {/* Brand Logo with Power BI Stepped Icon */}
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="p-1.5 rounded-xl bg-[#1E293B] border border-white/10 group-hover:border-[#F2C811]/50 transition-colors flex items-center justify-center shadow-inner">
-              <PowerBILogo className="w-5 h-5" />
-            </div>
-            <span className="font-display font-extrabold text-base sm:text-lg tracking-tight text-white flex items-center gap-1.5">
-              Power BI <span className="text-[#635BFF] font-semibold">Labs</span>
-            </span>
-          </Link>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-banner shadow-sm">
+      <nav className="max-w-6xl mx-auto h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+        <Link to="/" aria-label="InsightsMastery Power BI Projects — home" onClick={() => setIsOpen(false)}>
+          <BrandMark tone="light" />
+        </Link>
 
-          {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-1">
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                location.pathname === link.path ? "bg-white/20 text-white" : "text-white/90 hover:text-white hover:bg-white/10"
+              }`}
+            >
+              {link.name}
+            </Link>
+          ))}
+          <a
+            href={PARENT_SITE.url}
+            rel="noopener"
+            className="px-3 py-2 rounded-lg text-sm font-medium text-white/90 hover:text-white hover:bg-white/10 transition-colors inline-flex items-center gap-1"
+          >
+            Main site <ArrowUpRight className="w-3.5 h-3.5 opacity-75" />
+          </a>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <a
+            href={getRepositoryUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex p-2 rounded-lg border border-white/25 bg-white/10 text-white hover:bg-white/20 transition-colors"
+            title="View the GitHub repository"
+            aria-label="View the GitHub repository"
+          >
+            <Github className="w-4 h-4" />
+          </a>
+          <a
+            href={PARENT_SITE.programsUrl}
+            rel="noopener"
+            className="hidden sm:inline-flex px-5 py-2.5 rounded-lg bg-white text-cyan-800 hover:bg-slate-100 text-sm font-medium shadow-sm transition-colors"
+          >
+            Explore programs
+          </a>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            aria-expanded={isOpen}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            className="lg:hidden p-2 rounded-lg border border-white/25 bg-white/10 text-white hover:bg-white/20 transition-colors"
+          >
+            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
+      </nav>
+
+      {isOpen && (
+        <div className="lg:hidden border-t border-line bg-surface shadow-lg">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all ${
-                  isActive(link.path)
-                    ? "bg-[#1E293B] text-white border border-white/10 shadow-sm"
-                    : "text-[#94A3B8] hover:text-white hover:bg-white/5"
+                onClick={() => setIsOpen(false)}
+                className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                  location.pathname === link.path ? "bg-brand/10 text-brand-2" : "text-muted hover:text-ink hover:bg-surface-2"
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-          </div>
-
-          {/* Right Action: GitHub + Stripe-style CTA */}
-          <div className="hidden md:flex items-center gap-3">
             <a
-              href={getRepositoryUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-full text-[#94A3B8] hover:text-white hover:bg-[#1E293B] transition-colors"
-              title="View GitHub Repository"
+              href={PARENT_SITE.url}
+              rel="noopener"
+              className="px-4 py-2.5 rounded-lg text-sm font-medium text-muted hover:text-ink hover:bg-surface-2 inline-flex items-center gap-1"
             >
-              <Github className="w-4 h-4" />
+              Main site <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
-
-            <Link
-              to="/levels/coffee-shop"
-              className="stripe-btn-primary px-5 py-2 rounded-full text-white font-display font-bold text-xs flex items-center gap-1.5"
+            <a
+              href={PARENT_SITE.programsUrl}
+              rel="noopener"
+              className="im-btn-primary mt-2 px-4 py-3 rounded-lg text-sm font-medium text-center"
             >
-              <span>Start Learning</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
+              Explore programs
+            </a>
           </div>
-
-          {/* Mobile Menu Button */}
-          <div className="flex md:hidden items-center gap-2">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-full text-[#94A3B8] hover:text-white hover:bg-[#1E293B] transition-colors"
-            >
-              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
-          </div>
-
-        </nav>
-
-        {/* Mobile Dropdown */}
-        {isOpen && (
-          <div className="md:hidden mt-2 p-5 rounded-2xl bg-[#0F172A]/95 backdrop-blur-xl border border-white/10 shadow-2xl space-y-3 animate-in fade-in slide-in-from-top-2">
-            <div className="flex flex-col space-y-1">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  onClick={() => setIsOpen(false)}
-                  className={`px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors ${
-                    isActive(link.path)
-                      ? "bg-[#1E293B] text-white"
-                      : "text-[#94A3B8] hover:text-white"
-                  }`}
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
-
-            <div className="pt-3 border-t border-white/10 flex items-center justify-between">
-              <a
-                href={getRepositoryUrl()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-xs text-[#94A3B8] hover:text-white font-mono"
-              >
-                <Github className="w-4 h-4" />
-                <span>{GITHUB_CONFIG.repository}</span>
-              </a>
-
-              <Link
-                to="/levels/coffee-shop"
-                onClick={() => setIsOpen(false)}
-                className="stripe-btn-primary px-4 py-2 rounded-full text-white font-display font-bold text-xs"
-              >
-                Start Level 1 →
-              </Link>
-            </div>
-          </div>
-        )}
-
-      </div>
+        </div>
+      )}
     </header>
   );
 };
