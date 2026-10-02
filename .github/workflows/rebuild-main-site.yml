@@ -1,0 +1,31 @@
+name: Rebuild insightsmastry.in
+
+# insightsmastry.in/projects is built from this repo: datasets and briefs from
+# `main`, level data from `website-source`. Keep this file on BOTH branches —
+# GitHub runs the copy that lives on the branch being pushed.
+on:
+  push:
+    branches: [main, website-source]
+    paths:
+      - 'Level_*/**'
+      - 'src/data/**'
+      - 'src/types/**'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  rebuild:
+    name: Trigger Vercel deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call the deploy hook
+        env:
+          # Vercel → marketing project → Settings → Git → Deploy Hooks (branch main).
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::warning::VERCEL_DEPLOY_HOOK_URL is not set; insightsmastry.in was not rebuilt."
+            exit 0
+          fi
+          curl --fail --silent --show-error -X POST "$HOOK"
